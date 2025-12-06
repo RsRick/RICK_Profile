@@ -1,0 +1,10 @@
+{
+  "name": "newsletter-emails",
+  "version": "1.0.0",
+  "description": "Newsletter email sending function with tracking",
+  "main": "src/main.js",
+  "type": "module",
+  "dependencies": {
+    "node-appwrite": "^11.0.0"
+  }
+}

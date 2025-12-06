@@ -1,0 +1,7 @@
+{
+  "name": "send-otp-email",
+  "version": "1.0.0",
+  "description": "Send OTP verification emails via Resend",
+  "main": "src/main.js",
+  "type": "module"
+}

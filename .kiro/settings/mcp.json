@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+        "mintlify": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@mintlify/mcp@latest"
+            ],
+            "env": {
+                "MINTLIFY_API_KEY": "mint_3ZGXoGeSLuadX1crfB1BJgsY"
+            },
+            "disabled": false,
+            "autoApprove": []
+        }
+    }
+}

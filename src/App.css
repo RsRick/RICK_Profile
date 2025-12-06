@@ -1,0 +1,125 @@
+/* App loading and transition styles */
+.App {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.content-hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: none;
+}
+
+.content-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+}
+
+.app-loading {
+  overflow: hidden;
+}
+
+.app-loaded {
+  overflow: visible;
+}
+
+/* Embed styles for display mode (outside editor) */
+.editor-embed-wrapper {
+  display: inline-block;
+  margin: 1rem 0;
+  border: 1px solid #105652;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+/* Mobile responsive embed - constrain to screen width */
+@media (max-width: 768px) {
+  .editor-embed-wrapper {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .editor-embed-wrapper .embed-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .editor-embed-wrapper iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .project-content .editor-embed-wrapper,
+  .project-modal .editor-embed-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Ensure the wrapper can contain absolutely positioned children */
+.project-modal .editor-embed-wrapper,
+.project-card .editor-embed-wrapper,
+.project-content .editor-embed-wrapper {
+  overflow: visible;
+}
+
+.editor-embed-wrapper .embed-content {
+  width: 100%;
+  height: 100%;
+  pointer-events: auto; /* Enable interaction in display mode by default */
+}
+
+.editor-embed-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Disable pointer events ONLY in the editor for selection purposes */
+.rich-text-editor .editor-embed-wrapper .embed-content {
+  pointer-events: none;
+}
+
+/* Ensure embeds are fully interactive everywhere else */
+.project-modal .editor-embed-wrapper .embed-content,
+.project-card .editor-embed-wrapper .embed-content,
+.project-content .editor-embed-wrapper .embed-content {
+  pointer-events: auto !important;
+}
+
+/* Ensure iframes inside embeds are also interactive */
+.project-modal .editor-embed-wrapper iframe,
+.project-card .editor-embed-wrapper iframe,
+.project-content .editor-embed-wrapper iframe {
+  pointer-events: auto !important;
+}
+
+/* Make sure embed wrapper itself doesn't block clicks */
+.project-modal .editor-embed-wrapper,
+.project-card .editor-embed-wrapper,
+.project-content .editor-embed-wrapper {
+  pointer-events: auto !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure all children of embeds are interactive */
+.project-modal .editor-embed-wrapper *,
+.project-card .editor-embed-wrapper *,
+.project-content .editor-embed-wrapper * {
+  pointer-events: auto !important;
+}
+
+/* Fullscreen button must be above everything */
+.embed-fullscreen-btn {
+  pointer-events: auto !important;
+  z-index: 1000 !important;
+  position: absolute !important;
+}

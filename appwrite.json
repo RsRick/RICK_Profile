@@ -1,0 +1,160 @@
+{
+  "projectId": "portfolioreact",
+  "databases": [
+    {
+      "$id": "portfolio_db",
+      "name": "Portfolio Database"
+    }
+  ],
+  "collections": [
+    {
+      "$id": "newsletter",
+      "databaseId": "portfolio_db",
+      "name": "Newsletter Subscribers",
+      "enabled": true,
+      "documentSecurity": false,
+      "$permissions": [
+        "read(\"any\")",
+        "create(\"any\")",
+        "update(\"users\")",
+        "delete(\"users\")"
+      ],
+      "attributes": [
+        { "key": "email", "type": "string", "required": true, "size": 255 },
+        { "key": "subscribedAt", "type": "string", "required": false, "size": 50 },
+        { "key": "isActive", "type": "boolean", "required": false, "default": true }
+      ],
+      "indexes": [
+        { "key": "email_idx", "type": "unique", "attributes": ["email"] }
+      ]
+    },
+    {
+      "$id": "newsletter_folders",
+      "databaseId": "portfolio_db",
+      "name": "Newsletter Folders",
+      "enabled": true,
+      "documentSecurity": false,
+      "$permissions": [
+        "read(\"users\")",
+        "create(\"users\")",
+        "update(\"users\")",
+        "delete(\"users\")"
+      ],
+      "attributes": [
+        { "key": "name", "type": "string", "required": true, "size": 255 },
+        { "key": "description", "type": "string", "required": false, "size": 500 },
+        { "key": "createdAt", "type": "string", "required": false, "size": 50 }
+      ],
+      "indexes": []
+    },
+    {
+      "$id": "newsletter_campaigns",
+      "databaseId": "portfolio_db",
+      "name": "Newsletter Campaigns",
+      "enabled": true,
+      "documentSecurity": false,
+      "$permissions": [
+        "read(\"users\")",
+        "create(\"users\")",
+        "update(\"users\")",
+        "delete(\"users\")"
+      ],
+      "attributes": [
+        { "key": "name", "type": "string", "required": false, "size": 255 },
+        { "key": "folderId", "type": "string", "required": false, "size": 50 },
+        { "key": "fromName", "type": "string", "required": false, "size": 255 },
+        { "key": "fromEmail", "type": "string", "required": false, "size": 255 },
+        { "key": "subject", "type": "string", "required": true, "size": 500 },
+        { "key": "contentType", "type": "string", "required": false, "size": 20 },
+        { "key": "textContent", "type": "string", "required": false, "size": 100000 },
+        { "key": "htmlContent", "type": "string", "required": false, "size": 500000 },
+        { "key": "trackOpens", "type": "boolean", "required": false, "default": true },
+        { "key": "trackClicks", "type": "boolean", "required": false, "default": true },
+        { "key": "status", "type": "string", "required": false, "size": 20 },
+        { "key": "recipientCount", "type": "integer", "required": false, "default": 0 },
+        { "key": "sentCount", "type": "integer", "required": false, "default": 0 },
+        { "key": "failedCount", "type": "integer", "required": false, "default": 0 },
+        { "key": "openCount", "type": "integer", "required": false, "default": 0 },
+        { "key": "clickCount", "type": "integer", "required": false, "default": 0 },
+        { "key": "createdAt", "type": "string", "required": false, "size": 50 },
+        { "key": "sentAt", "type": "string", "required": false, "size": 50 }
+      ],
+      "indexes": [
+        { "key": "folder_idx", "type": "key", "attributes": ["folderId"] },
+        { "key": "status_idx", "type": "key", "attributes": ["status"] }
+      ]
+    },
+    {
+      "$id": "email_tracking",
+      "databaseId": "portfolio_db",
+      "name": "Email Tracking",
+      "enabled": true,
+      "documentSecurity": false,
+      "$permissions": [
+        "read(\"users\")",
+        "create(\"any\")",
+        "update(\"any\")",
+        "delete(\"users\")"
+      ],
+      "attributes": [
+        { "key": "campaignId", "type": "string", "required": true, "size": 50 },
+        { "key": "subscriberId", "type": "string", "required": false, "size": 50 },
+        { "key": "email", "type": "string", "required": true, "size": 255 },
+        { "key": "type", "type": "string", "required": false, "size": 20 },
+        { "key": "sentAt", "type": "string", "required": false, "size": 50 },
+        { "key": "opened", "type": "boolean", "required": false, "default": false },
+        { "key": "openedAt", "type": "string", "required": false, "size": 50 },
+        { "key": "clicked", "type": "boolean", "required": false, "default": false },
+        { "key": "clickedAt", "type": "string", "required": false, "size": 50 }
+      ],
+      "indexes": [
+        { "key": "campaign_idx", "type": "key", "attributes": ["campaignId"] },
+        { "key": "email_idx", "type": "key", "attributes": ["email"] }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "$id": "send-otp-email",
+      "name": "send-otp-email",
+      "runtime": "node-18.0",
+      "execute": ["any"],
+      "events": [],
+      "schedule": "",
+      "timeout": 15,
+      "enabled": true,
+      "logging": true,
+      "entrypoint": "src/main.js",
+      "commands": "npm install",
+      "path": "functions/send-otp-email"
+    },
+    {
+      "$id": "order-emails",
+      "name": "order-emails",
+      "runtime": "node-18.0",
+      "execute": ["any"],
+      "events": [],
+      "schedule": "",
+      "timeout": 15,
+      "enabled": true,
+      "logging": true,
+      "entrypoint": "src/main.js",
+      "commands": "npm install",
+      "path": "functions/order-emails"
+    },
+    {
+      "$id": "newsletter-emails",
+      "name": "newsletter-emails",
+      "runtime": "node-18.0",
+      "execute": ["any"],
+      "events": [],
+      "schedule": "",
+      "timeout": 300,
+      "enabled": true,
+      "logging": true,
+      "entrypoint": "src/main.js",
+      "commands": "npm install",
+      "path": "functions/newsletter-emails"
+    }
+  ]
+}
