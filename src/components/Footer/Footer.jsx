@@ -58,12 +58,12 @@ export default function Footer() {
             <span>© {currentYear}</span>
             <span className="mx-0.5">|</span>
             <span>All rights reserved to</span>
-            <span className="font-semibold ml-0.5">Md. Parvej Hossain</span>
+            <span className="font-semibold ml-0.5">Authoy Biswas Bidda</span>
           </div>
 
           {/* Newsletter - Right Side */}
           <div className="flex items-center gap-2">
-            <span className="text-white text-xs hidden sm:block">Subscribe to newsletter</span>
+            <span className="text-white text-xs hidden sm:block">Don't miss our future updates! Get Subscribed Today!</span>
             <form onSubmit={handleSubscribe} className="flex items-center">
               <div className="relative flex items-center">
                 <input
