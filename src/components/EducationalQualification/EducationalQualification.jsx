@@ -14,7 +14,7 @@ export default function EducationalQualification() {
       institution: 'Islamic University Bangladesh',
       location: 'Kushtia, Bangladesh',
       duration: 'March 2022 - Current',
-      cgpa: '3.78',
+      cgpa: '3.45',
       scale: '4.00',
       icon: GraduationCap,
       status: 'ongoing',
@@ -22,8 +22,8 @@ export default function EducationalQualification() {
     },
     {
       degree: 'HSC - Higher Secondary Certificate',
-      institution: 'Dukhi Mahmood College',
-      location: 'Shailkupa, Jhenaidah',
+      institution: 'Govt. H.S.S. Collage, Magura',
+      location: 'JHENAIDAH',
       duration: '2018 - 2020',
       cgpa: '5.00',
       scale: '5.00',
@@ -33,8 +33,8 @@ export default function EducationalQualification() {
     },
     {
       degree: 'SSC - Secondary School Certificate',
-      institution: 'Tribeni High School',
-      location: 'Shailkupa, Jhenaidah',
+      institution: 'JGHS - Jhenaidah Government High School',
+      location: 'JHENAIDAH',
       duration: '2016 - 2018',
       cgpa: '5.00',
       scale: '5.00',
@@ -193,7 +193,7 @@ export default function EducationalQualification() {
                         style={{ background: 'linear-gradient(135deg, #105652, #0d4240)' }}
                       >
                         <span className="text-xs opacity-90">CGPA</span>
-                        <span className="text-base">3.78</span>
+                        <span className="text-base">3.45</span>
                         <span className="text-xs opacity-90">/ 4.00</span>
                       </div>
                     </div>
@@ -237,13 +237,13 @@ export default function EducationalQualification() {
                       {/* Institution */}
                       <div className="flex items-start gap-2 mb-1.5 text-gray-700">
                         <BookOpen className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#2AA08F' }} />
-                        <p className="text-sm font-medium">Tribeni High School</p>
+                        <p className="text-sm font-medium">JGHS - Jhenaidah Government High School</p>
                       </div>
 
                       {/* Location */}
                       <div className="flex items-start gap-2 mb-3 text-gray-600">
                         <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#2AA08F' }} />
-                        <p className="text-sm">Shailkupa, Jhenaidah</p>
+                        <p className="text-sm">JHENAIDAH</p>
                       </div>
 
                       {/* GPA Badge */}
@@ -298,13 +298,13 @@ export default function EducationalQualification() {
                       {/* Institution */}
                       <div className="flex items-start gap-2 mb-1.5 text-gray-700">
                         <BookOpen className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#1E8479' }} />
-                        <p className="text-sm font-medium">Dukhi Mahmood College</p>
+                        <p className="text-sm font-medium">Govt. H.S.S. Collage, Magura</p>
                       </div>
 
                       {/* Location */}
                       <div className="flex items-start gap-2 mb-3 text-gray-600">
                         <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#1E8479' }} />
-                        <p className="text-sm">Shailkupa, Jhenaidah</p>
+                        <p className="text-sm">JHENAIDAH</p>
                       </div>
 
                       {/* GPA Badge */}

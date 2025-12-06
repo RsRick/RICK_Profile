@@ -35,9 +35,9 @@ export default function AboutPage() {
   }, [location.hash]);
 
   const [aboutData, setAboutData] = useState({
-    title: 'About Me',
-    subtitle: 'Who am I?',
-    name: 'Parvej Hossain',
+    title: 'Who is Authoy Biswas Bidda',
+    subtitle: 'GIS & Remote Sensing Specialist',
+    name: 'Authoy Biswas Bidda',
     nameFont: "'Playfair Display', serif",
     photoUrl: '',
     bioText: '',
@@ -55,15 +55,15 @@ export default function AboutPage() {
       institution: 'Islamic University Bangladesh',
       location: 'Kushtia, Bangladesh',
       duration: 'March 2022 - Current',
-      cgpa: '3.78',
+      cgpa: '3.45',
       scale: '4.00',
       status: 'ongoing',
       color: '#105652',
     },
     {
       degree: 'HSC - Higher Secondary Certificate',
-      institution: 'Dukhi Mahmood College',
-      location: 'Shailkupa, Jhenaidah',
+      institution: 'Govt. H.S.S. Collage, Magura',
+      location: 'JHENAIDAH',
       duration: '2018 - 2020',
       cgpa: '5.00',
       scale: '5.00',
@@ -72,8 +72,8 @@ export default function AboutPage() {
     },
     {
       degree: 'SSC - Secondary School Certificate',
-      institution: 'Tribeni High School',
-      location: 'Shailkupa, Jhenaidah',
+      institution: 'JGHS - Jhenaidah Government High School',
+      location: 'JHENAIDAH',
       duration: '2016 - 2018',
       cgpa: '5.00',
       scale: '5.00',
@@ -105,9 +105,9 @@ export default function AboutPage() {
       if (result.success && result.data.documents.length > 0) {
         const data = result.data.documents[0];
         setAboutData({
-          title: data.title || 'About Me',
-          subtitle: data.subtitle || 'Who am I?',
-          name: data.name || 'Parvej Hossain',
+          title: data.title || 'Who is Authoy Biswas Bidda',
+          subtitle: data.subtitle || 'GIS & Remote Sensing Specialist',
+          name: data.name || 'Authoy Biswas Bidda',
           nameFont: data.nameFont || "'Playfair Display', serif",
           photoUrl: data.photoUrl || '',
           bioText: data.bioText || '',
@@ -285,9 +285,42 @@ export default function AboutPage() {
                       className="text-gray-600 leading-relaxed space-y-4"
                       style={{ fontFamily: aboutData.bioTextFont }}
                     >
-                      {aboutData.bioText.split('\n\n').filter(p => p.trim()).map((paragraph, index) => (
-                        <p key={index}>{paragraph}</p>
-                      ))}
+                      {aboutData.bioText ? (
+                        aboutData.bioText.split('\n\n').filter(p => p.trim()).map((paragraph, index) => (
+                          <p key={index}>{paragraph}</p>
+                        ))
+                      ) : (
+                        <p>
+                          Authoy Biswas Bidda was born in Jhenaidah, Dhaka, Bangladesh. The name come from the oysters. He completed his school education in{' '}
+                          <a 
+                            href="http://www.jhenidahghs.edu.bd/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-[#105652] hover:underline font-medium"
+                          >
+                            Jhenaidah Government High School
+                          </a>
+                          . He passed his HSC from{' '}
+                          <a 
+                            href="https://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF_%E0%A6%B9%E0%A7%8B%E0%A6%B8%E0%A7%87%E0%A6%A8_%E0%A6%B6%E0%A6%B9%E0%A7%80%E0%A6%A6_%E0%A6%B8%E0%A7%8B%E0%A6%B9%E0%A6%B0%E0%A6%BE%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%80_%E0%A6%95%E0%A6%B2%E0%A7%87%E0%A6%9C,_%E0%A6%AE%E0%A6%BE%E0%A6%97%E0%A7%81%E0%A6%B0%E0%A6%BE" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-[#105652] hover:underline font-medium"
+                          >
+                            Govt. H.S.S. Collage, Magura
+                          </a>
+                          . His 4th year 2nd semester is running Department of Environmental Science and Geography at{' '}
+                          <a 
+                            href="https://iu.ac.bd/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-[#105652] hover:underline font-medium"
+                          >
+                            Islamic University, Kushtia
+                          </a>
+                          , Bangladesh.Along with my studies, I like learning about maps, the environment, and how the Earth works. I enjoy using new tools and technology to understand different things in nature. People say I am ethical, creative, hardworking person. I take part in different class projects and enjoy learning with my friends. In my free time, I love traveling, seeing new places, and improving my skills.
+                        </p>
+                      )}
                     </div>
                   </div>
 

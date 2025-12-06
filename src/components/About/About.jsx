@@ -6,7 +6,7 @@ export default function About() {
   const [aboutData, setAboutData] = useState({
     title: 'about me',
     subtitle: 'Who am I?',
-    name: 'OLIVIA WILSON',
+    name: 'AUTHOY BISWAS BIDDA',
     nameFont: "'Playfair Display', serif",
     photoUrl: '',
     bioText: '',
@@ -30,7 +30,7 @@ export default function About() {
         setAboutData({
           title: data.title || 'about me',
           subtitle: data.subtitle || 'Who am I?',
-          name: data.name || 'OLIVIA WILSON',
+          name: data.name || 'AUTHOY BISWAS BIDDA',
           nameFont: data.nameFont || "'Playfair Display', serif",
           photoUrl: data.photoUrl || '',
           bioText: data.bioText || '',
@@ -192,6 +192,16 @@ export default function About() {
                     }}
                   >
                     {(() => {
+                      if (!aboutData.bioText || aboutData.bioText.trim() === '') {
+                        return (
+                          <div className="md:col-span-2">
+                            <p>
+                              Authoy Biswas Bidda was born in Jhenaidah, Dhaka, Bangladesh. The name come from the oysters. He completed his school education in Jhenaidah Government High School. He passed his HSC from Govt. H.S.S. Collage, Magura. His 4th year 2nd semester is running Department of Environmental Science and Geography at Islamic University, Kushtia, Bangladesh.Along with my studies, I like learning about maps, the environment, and how the Earth works. I enjoy using new tools and technology to understand different things in nature. People say I am ethical, creative, hardworking person. I take part in different class projects and enjoy learning with my friends. In my free time, I love traveling, seeing new places, and improving my skills.
+                            </p>
+                          </div>
+                        );
+                      }
+                      
                       const paragraphs = aboutData.bioText.split('\n\n').filter(p => p.trim());
                       const midPoint = Math.ceil(paragraphs.length / 2);
                       const leftColumn = paragraphs.slice(0, midPoint);

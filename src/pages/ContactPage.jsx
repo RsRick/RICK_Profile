@@ -39,11 +39,11 @@ export default function ContactPage() {
 
   const [settings, setSettings] = useState({
     profileImage: '',
-    name: 'Parvej Hossain',
+    name: 'Authoy Biswas Bidda',
     title: 'GIS & Remote Sensing Specialist',
-    description: 'I am available for impactful research that promotes sustainability and addresses global climate change and environment.',
-    phone: '+880 1714 594091',
-    email: 'official.parvej.hossain@gmail.com',
+    description: 'Authoy Biswas Bidda is available for impactful research that promotes sustainability and addresses global Climate Change and Environment.',
+    phone: '+880 1703 958919',
+    email: 'rsrickbiswas007@gmail.com',
     location: 'Bangladesh',
     socialLinks: []
   });
@@ -198,7 +198,7 @@ export default function ContactPage() {
 
                   {/* Description */}
                   <p className="text-white/80 text-sm leading-relaxed mb-8">
-                    {settings.description}
+                    Authoy Biswas Bidda is available for impactful research that promotes sustainability and addresses global <span className="font-bold">Climate Change and Environment</span>.
                   </p>
 
                   {/* Contact Info - Clickable */}

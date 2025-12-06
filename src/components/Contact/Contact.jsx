@@ -32,11 +32,11 @@ export default function Contact() {
   // Contact settings from database
   const [settings, setSettings] = useState({
     profileImage: '',
-    name: 'Parvej Hossain',
+    name: 'Authoy Biswas Bidda',
     title: 'GIS & Remote Sensing Specialist',
-    description: 'I am available for impactful research that promotes sustainability and addresses global climate change and environment.',
-    phone: '+880 1714 594091',
-    email: 'official.parvej.hossain@gmail.com',
+    description: 'Authoy Biswas Bidda is available for impactful research that promotes sustainability and addresses global Climate Change and Environment.',
+    phone: '+880 1703 958919',
+    email: 'rsrickbiswas007@gmail.com',
     location: 'Bangladesh',
     socialLinks: []
   });
@@ -152,7 +152,9 @@ export default function Contact() {
                 
                 <h3 className="text-2xl font-bold text-white mb-1">{settings.name}</h3>
                 <p className="text-white/70 text-sm mb-6">{settings.title}</p>
-                <p className="text-white/80 text-sm leading-relaxed mb-8">{settings.description}</p>
+                <p className="text-white/80 text-sm leading-relaxed mb-8">
+                  Authoy Biswas Bidda is available for impactful research that promotes sustainability and addresses global <span className="font-bold">Climate Change and Environment</span>.
+                </p>
 
                 <div className="space-y-4 mb-8">
                   {settings.phone && (

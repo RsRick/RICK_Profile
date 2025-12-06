@@ -215,7 +215,7 @@ function App() {
           if (settings.siteTitle) {
             document.title = settings.siteTitle;
           } else {
-            document.title = 'Portfolio of AUTHOY';
+            document.title = 'GIS & Remote Sensing Specialist Authoy Biswas Bidda';
           }
           
           // Update favicon
@@ -223,11 +223,11 @@ function App() {
             updateFavicon(settings.faviconUrl);
           }
         } else {
-          document.title = 'Portfolio of AUTHOY';
+          document.title = 'GIS & Remote Sensing Specialist Authoy Biswas Bidda';
         }
       } catch (error) {
         console.error('Error loading site settings:', error);
-        document.title = 'Portfolio of AUTHOY';
+        document.title = 'GIS & Remote Sensing Specialist Authoy Biswas Bidda';
       }
     };
 

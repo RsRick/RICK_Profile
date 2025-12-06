@@ -20,8 +20,8 @@ export default function ContactSettings() {
     name: 'Parvej Hossain',
     title: 'GIS & Remote Sensing Specialist',
     description: 'I am available for impactful research that promotes sustainability and addresses global climate change and environment.',
-    phone: '+880 1714 594091',
-    email: 'official.parvej.hossain@gmail.com',
+    phone: '+880 1703 958919',
+    email: 'rsrickbiswas007@gmail.com',
     location: 'Bangladesh',
     socialLinks: [
       { platform: 'LinkedIn', url: '', icon: 'linkedin' },
@@ -314,7 +314,7 @@ export default function ContactSettings() {
                 onChange={handleInputChange}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
                 style={{ borderColor: '#105652' }}
-                placeholder="+880 1714 594091"
+                placeholder="+880 1703 958919"
               />
             </div>
             <div>

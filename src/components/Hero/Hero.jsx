@@ -8,15 +8,15 @@ export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const { showToast } = useToast();
-  const EMAIL_ADDRESS = 'official.parvej.hossain@gmail.com';
+  const EMAIL_ADDRESS = 'rsrickbiswas007@gmail.com';
   const [heroName, setHeroName] = useState('Authoy Biswas Bidda');
   const [roles, setRoles] = useState(['GIS Enthusiast', 'Cartographer', 'GIS Data Analyst']);
   const [description, setDescription] = useState(
-    'Skilled in Python, R, and GIS software like ArcGIS Pro, ArcMap, QGIS, and Erdas Imagine, with practical experience in analyzing environmental data. Eager to learn from experts and contribute to impactful research that promotes sustainability and addresses global climate challenges.'
+    'Authoy Biswas Bidda is a GIS & Remote Sensing Specialist driving spatial success with expert solutions in Python, R, ArcGIS Pro, QGIS, and Erdas Imagine. Skilled in analyzing environmental data, he combines trusted GIS expertise to enable smarter decisions for sustainability. Eager to collaborate on impactful research tackling global challenges.'
   );
   const [photoUrl, setPhotoUrl] = useState(null);
-  const [yearsExperience, setYearsExperience] = useState({ number: '5+', text: 'Years\nExperience' });
-  const [projectsCompleted, setProjectsCompleted] = useState({ number: '10+', text: 'Projects\nCompleted' });
+  const [yearsExperience, setYearsExperience] = useState({ number: '2+', text: 'Years\nExperience' });
+  const [projectsCompleted, setProjectsCompleted] = useState({ number: '38+', text: 'Projects\nCompleted' });
   const [statsFont, setStatsFont] = useState("'Poppins', sans-serif");
   const [socialLinks, setSocialLinks] = useState([
     { icon: 'github', label: 'GitHub', href: '#' },
@@ -196,7 +196,7 @@ export default function Hero() {
 
             {/* Main Heading */}
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight whitespace-nowrap">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-gray-800 leading-tight whitespace-nowrap">
                 Hi, I'm{' '}
                 <span
                   className="hero-name relative inline-block"
