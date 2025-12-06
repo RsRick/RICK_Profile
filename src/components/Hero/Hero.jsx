@@ -9,7 +9,7 @@ export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const { showToast } = useToast();
   const EMAIL_ADDRESS = 'official.parvej.hossain@gmail.com';
-  const [heroName, setHeroName] = useState('PARVEJ HOSSAIN');
+  const [heroName, setHeroName] = useState('Authoy Biswas Bidda');
   const [roles, setRoles] = useState(['GIS Enthusiast', 'Cartographer', 'GIS Data Analyst']);
   const [description, setDescription] = useState(
     'Skilled in Python, R, and GIS software like ArcGIS Pro, ArcMap, QGIS, and Erdas Imagine, with practical experience in analyzing environmental data. Eager to learn from experts and contribute to impactful research that promotes sustainability and addresses global climate challenges.'
