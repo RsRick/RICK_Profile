@@ -316,13 +316,13 @@ export default function ShopPage() {
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-gray-700 hover:text-[#105652] font-medium transition-colors duration-300 relative group whitespace-nowrap"
+                  className="text-gray-700 hover:text-[#2596be] font-medium transition-colors duration-300 relative group whitespace-nowrap"
                   style={{ fontFamily: menuItemsFont }}
                 >
                   {link.name}
                   <span
                     className="absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full"
-                    style={{ background: '#105652' }}
+                    style={{ background: '#2596be' }}
                   />
                 </a>
               ))}
@@ -348,9 +348,9 @@ export default function ShopPage() {
               aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6" style={{ color: '#105652' }} />
+                <X className="w-6 h-6" style={{ color: '#2596be' }} />
               ) : (
-                <Menu className="w-6 h-6" style={{ color: '#105652' }} />
+                <Menu className="w-6 h-6" style={{ color: '#2596be' }} />
               )}
             </button>
 
@@ -369,7 +369,7 @@ export default function ShopPage() {
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
-                  className="block py-2 text-gray-700 hover:text-[#105652] font-medium transition-colors duration-300"
+                  className="block py-2 text-gray-700 hover:text-[#2596be] font-medium transition-colors duration-300"
                   style={{ fontFamily: menuItemsFont }}
                 >
                   {link.name}
@@ -385,7 +385,7 @@ export default function ShopPage() {
         <div
           className="absolute rounded-full blur-3xl"
           style={{
-            background: '#1E8479',
+            background: '#3ba8d1',
             width: '600px',
             height: '600px',
             top: '20%',
@@ -397,7 +397,7 @@ export default function ShopPage() {
         <div
           className="absolute rounded-full blur-3xl"
           style={{
-            background: '#105652',
+            background: '#2596be',
             width: '400px',
             height: '400px',
             bottom: '10%',
@@ -422,14 +422,14 @@ export default function ShopPage() {
             className={`
               bg-white shadow-lg border border-gray-200 px-4 py-2.5 pl-11 rounded-xl
               transition-all duration-300 outline-none
-              focus:border-[#105652] focus:shadow-xl focus:ring-2 focus:ring-[#105652]/20
+              focus:border-[#2596be] focus:shadow-xl focus:ring-2 focus:ring-[#2596be]/20
               ${isSearchFocused ? 'w-64 sm:w-72' : 'w-48 sm:w-56'}
             `}
             style={{ fontSize: '0.95rem' }}
           />
           <Search 
             className={`w-5 h-5 absolute left-3.5 top-1/2 -translate-y-1/2 transition-colors ${
-              isSearchFocused ? 'text-[#105652]' : 'text-gray-400'
+              isSearchFocused ? 'text-[#2596be]' : 'text-gray-400'
             }`}
           />
           {searchQuery && (
@@ -449,8 +449,8 @@ export default function ShopPage() {
             className={`
               w-11 h-11 rounded-xl flex items-center justify-center shadow-lg transition-all duration-300
               ${isAuthenticated 
-                ? 'bg-[#105652] text-white hover:bg-[#0d4543]' 
-                : 'bg-white text-gray-600 hover:text-[#105652] hover:shadow-xl border border-gray-200'
+                ? 'bg-[#2596be] text-white hover:bg-[#1d7a9a]' 
+                : 'bg-white text-gray-600 hover:text-[#2596be] hover:shadow-xl border border-gray-200'
               }
             `}
           >
@@ -463,7 +463,7 @@ export default function ShopPage() {
               {isAuthenticated ? (
                 <>
                   {/* User Info */}
-                  <div className="px-4 py-3 bg-gradient-to-r from-[#105652] to-[#1E8479]">
+                  <div className="px-4 py-3 bg-gradient-to-r from-[#2596be] to-[#3ba8d1]">
                     <p className="text-white text-sm font-medium truncate">{customer?.name || 'User'}</p>
                     <p className="text-white/70 text-xs truncate">{customer?.email}</p>
                   </div>
@@ -475,7 +475,7 @@ export default function ShopPage() {
                       }}
                       className="w-full px-4 py-2.5 text-left text-sm text-gray-700 hover:bg-gray-50 flex items-center gap-3 transition-colors"
                     >
-                      <LayoutDashboard className="w-4 h-4 text-[#105652]" />
+                      <LayoutDashboard className="w-4 h-4 text-[#2596be]" />
                       My Dashboard
                     </button>
                     <button
@@ -498,14 +498,14 @@ export default function ShopPage() {
                       onClick={() => openAuthModal(false)}
                       className="w-full px-4 py-2.5 text-left text-sm text-gray-700 hover:bg-gray-50 flex items-center gap-3 transition-colors"
                     >
-                      <LogIn className="w-4 h-4 text-[#105652]" />
+                      <LogIn className="w-4 h-4 text-[#2596be]" />
                       Sign In
                     </button>
                     <button
                       onClick={() => openAuthModal(true)}
                       className="w-full px-4 py-2.5 text-left text-sm text-gray-700 hover:bg-gray-50 flex items-center gap-3 transition-colors"
                     >
-                      <UserPlus className="w-4 h-4 text-[#1E8479]" />
+                      <UserPlus className="w-4 h-4 text-[#3ba8d1]" />
                       Create Account
                     </button>
                   </div>
@@ -524,8 +524,8 @@ export default function ShopPage() {
             onClick={() => setFilter('all')}
             className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
               filter === 'all'
-                ? 'bg-[#105652] text-white shadow-lg'
-                : 'bg-white text-[#105652] border border-[#105652] hover:bg-[#105652]/10'
+                ? 'bg-[#2596be] text-white shadow-lg'
+                : 'bg-white text-[#2596be] border border-[#2596be] hover:bg-[#2596be]/10'
             }`}
           >
             All Products
@@ -547,7 +547,7 @@ export default function ShopPage() {
           <div className="text-center mb-6">
             <p className="text-gray-600">
               {filteredProducts.length > 0 ? (
-                <>Showing results for "<span className="font-medium text-[#105652]">{searchQuery}</span>"</>
+                <>Showing results for "<span className="font-medium text-[#2596be]">{searchQuery}</span>"</>
               ) : (
                 <>No results found for "<span className="font-medium">{searchQuery}</span>"</>
               )}
@@ -558,7 +558,7 @@ export default function ShopPage() {
         {/* Loading State */}
         {loading && (
           <div className="flex justify-center items-center py-20">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#105652]"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2596be]"></div>
           </div>
         )}
 
@@ -576,7 +576,7 @@ export default function ShopPage() {
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="mt-4 px-4 py-2 text-[#105652] hover:bg-[#105652]/10 rounded-lg transition-colors"
+                className="mt-4 px-4 py-2 text-[#2596be] hover:bg-[#2596be]/10 rounded-lg transition-colors"
               >
                 Clear search
               </button>
@@ -637,7 +637,7 @@ export default function ShopPage() {
             onClick={(e) => e.stopPropagation()}
           >
             {/* Decorative Header */}
-            <div className="relative bg-gradient-to-r from-[#105652] to-[#1E8479] px-6 py-8 text-center">
+            <div className="relative bg-gradient-to-r from-[#2596be] to-[#3ba8d1] px-6 py-8 text-center">
               <button
                 onClick={() => setShowAuthModal(false)}
                 className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors"
@@ -660,23 +660,23 @@ export default function ShopPage() {
               <button
                 onClick={() => { setIsSignUp(false); setAuthError(''); }}
                 className={`flex-1 py-3 text-sm font-medium transition-colors relative ${
-                  !isSignUp ? 'text-[#105652]' : 'text-gray-500 hover:text-gray-700'
+                  !isSignUp ? 'text-[#2596be]' : 'text-gray-500 hover:text-gray-700'
                 }`}
               >
                 Sign In
                 {!isSignUp && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#105652]" />
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#2596be]" />
                 )}
               </button>
               <button
                 onClick={() => { setIsSignUp(true); setAuthError(''); }}
                 className={`flex-1 py-3 text-sm font-medium transition-colors relative ${
-                  isSignUp ? 'text-[#105652]' : 'text-gray-500 hover:text-gray-700'
+                  isSignUp ? 'text-[#2596be]' : 'text-gray-500 hover:text-gray-700'
                 }`}
               >
                 Sign Up
                 {isSignUp && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#105652]" />
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#2596be]" />
                 )}
               </button>
             </div>
@@ -691,7 +691,7 @@ export default function ShopPage() {
                     placeholder="Full Name"
                     value={authForm.name}
                     onChange={(e) => setAuthForm({...authForm, name: e.target.value})}
-                    className="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#105652] focus:bg-white transition-all"
+                    className="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#2596be] focus:bg-white transition-all"
                     required={isSignUp}
                   />
                 </div>
@@ -703,7 +703,7 @@ export default function ShopPage() {
                   placeholder="Email Address"
                   value={authForm.email}
                   onChange={(e) => setAuthForm({...authForm, email: e.target.value})}
-                  className="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#105652] focus:bg-white transition-all"
+                  className="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#2596be] focus:bg-white transition-all"
                   required
                 />
               </div>
@@ -714,7 +714,7 @@ export default function ShopPage() {
                   placeholder="Password"
                   value={authForm.password}
                   onChange={(e) => setAuthForm({...authForm, password: e.target.value})}
-                  className="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#105652] focus:bg-white transition-all"
+                  className="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-[#2596be] focus:bg-white transition-all"
                   required
                 />
               </div>
@@ -726,7 +726,7 @@ export default function ShopPage() {
               <button
                 type="submit"
                 disabled={authLoading}
-                className="w-full py-3 bg-gradient-to-r from-[#105652] to-[#1E8479] text-white font-semibold rounded-xl hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
+                className="w-full py-3 bg-gradient-to-r from-[#2596be] to-[#3ba8d1] text-white font-semibold rounded-xl hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
               >
                 {authLoading ? (
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />

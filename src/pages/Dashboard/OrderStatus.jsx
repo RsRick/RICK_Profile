@@ -166,7 +166,7 @@ export default function OrderStatus() {
   if (authLoading || loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <Loader2 className="w-8 h-8 animate-spin text-[#105652]" />
+        <Loader2 className="w-8 h-8 animate-spin text-[#2596be]" />
       </div>
     );
   }
@@ -177,7 +177,7 @@ export default function OrderStatus() {
         <div className="text-center">
           <Package className="w-12 h-12 text-gray-300 mx-auto mb-3" />
           <p className="text-gray-500 mb-4">Order not found</p>
-          <Link to="/dashboard" className="text-[#105652] hover:underline">
+          <Link to="/dashboard" className="text-[#2596be] hover:underline">
             Back to Dashboard
           </Link>
         </div>
@@ -281,7 +281,7 @@ export default function OrderStatus() {
             )}
             <div className="flex justify-between font-semibold">
               <span className="text-gray-800">Total</span>
-              <span className="text-[#105652]">${order.total?.toFixed(2)}</span>
+              <span className="text-[#2596be]">${order.total?.toFixed(2)}</span>
             </div>
           </div>
         </div>
@@ -348,7 +348,7 @@ export default function OrderStatus() {
         {currentStep >= 3 && !isCancelled && order.deliveryFiles && order.deliveryFiles.length > 0 && (
           <div className="mt-6">
             <div className="flex items-center gap-2 mb-4">
-              <Lock className="w-4 h-4 text-[#105652]" />
+              <Lock className="w-4 h-4 text-[#2596be]" />
               <h3 className="text-lg font-semibold text-gray-800">Your Files</h3>
               <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">Secure</span>
             </div>
@@ -423,7 +423,7 @@ export default function OrderStatus() {
         <div className="mt-6 text-center">
           <Link
             to="/dashboard"
-            className="inline-flex items-center gap-2 text-[#105652] hover:underline text-sm"
+            className="inline-flex items-center gap-2 text-[#2596be] hover:underline text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Dashboard
@@ -464,7 +464,7 @@ const StepperWrapper = styled.div`
   }
 
   .stepper-completed .stepper-line {
-    background-color: #105652;
+    background-color: #2596be;
   }
 
   .stepper-step:last-child .stepper-line {
@@ -485,13 +485,13 @@ const StepperWrapper = styled.div`
   }
 
   .stepper-completed .stepper-circle {
-    background-color: #105652;
+    background-color: #2596be;
     color: white;
   }
 
   .stepper-active .stepper-circle {
-    border: 2px solid #105652;
-    color: #105652;
+    border: 2px solid #2596be;
+    color: #2596be;
     background: white;
   }
 
@@ -513,7 +513,7 @@ const StepperWrapper = styled.div`
   }
 
   .stepper-completed .stepper-title {
-    color: #105652;
+    color: #2596be;
   }
 
   .stepper-active .stepper-title {
@@ -563,7 +563,7 @@ const StepperWrapper = styled.div`
     border-radius: 8px;
     font-size: 12px;
     color: #64748b;
-    border-left: 3px solid #105652;
+    border-left: 3px solid #2596be;
   }
 
   .stepper-notes svg {
@@ -585,7 +585,7 @@ const FileCard = styled.div`
 
   .card:hover {
     background-color: #d3ddf1;
-    border: 1.5px solid #105652;
+    border: 1.5px solid #2596be;
   }
 
   .container {
@@ -601,7 +601,7 @@ const FileCard = styled.div`
   .status-ind {
     width: 0.625em;
     height: 0.625em;
-    background-color: #105652;
+    background-color: #2596be;
     margin: 0.375em 0;
     border-radius: 0.5em;
   }
@@ -620,7 +620,7 @@ const FileCard = styled.div`
 
   .text-link {
     font-weight: 500;
-    color: #105652;
+    color: #2596be;
   }
 
   .text-content {
@@ -665,7 +665,7 @@ const FileCard = styled.div`
     font-size: 15px;
     background-color: transparent;
     font-weight: 600;
-    color: #105652;
+    color: #2596be;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -677,7 +677,7 @@ const FileCard = styled.div`
   }
 
   .primary-cta:hover:not(:disabled) {
-    background-color: #105652;
+    background-color: #2596be;
     color: white;
   }
 
@@ -693,3 +693,4 @@ const FileCard = styled.div`
     flex: 1;
   }
 `;
+

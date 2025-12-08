@@ -171,7 +171,7 @@ export default function SkilledOn() {
         <div
           className="absolute rounded-full blur-3xl"
           style={{
-            background: '#1E8479',
+            background: '#3ba8d1',
             width: '400px',
             height: '400px',
             top: '50%',
@@ -198,7 +198,7 @@ export default function SkilledOn() {
 
         .brutalist-button:hover {
           transform: translate(-6px, -6px) rotate(1deg);
-          box-shadow: 10px 10px 0 #000000, 15px 15px 20px rgba(16, 86, 82, 0.2);
+          box-shadow: 10px 10px 0 #000000, 15px 15px 20px rgba(37, 150, 190, 0.2);
         }
 
         .group:hover .arcgis-logo-inner {
@@ -223,14 +223,14 @@ export default function SkilledOn() {
         `}
       </style>
       <div className="container mx-auto px-6 relative z-10">
-        <h2 className="text-3xl font-bold mb-4 text-center" style={{ color: '#105652' }}>
+        <h2 className="text-3xl font-bold mb-4 text-center" style={{ color: '#2596be' }}>
           Skilled On
         </h2>
         <div className="flex flex-nowrap justify-center gap-2 md:gap-3 lg:gap-4 overflow-x-auto pb-2">
           {skills.map((skill) => (
             <button
               key={skill.id}
-              className="group brutalist-button flex flex-col items-center justify-center flex-shrink-0 w-[104px] h-[104px] sm:w-[112px] sm:h-[112px] md:w-[116px] md:h-[116px] lg:w-[120px] lg:h-[120px] text-[#e5dede] group-hover:text-[#105652] font-bold relative cursor-pointer overflow-hidden rounded-[12px] bg-[#063525] border-[3px] border-[#105652] shadow-[4px_4px_1px_#000000] transition-cubic hover:bg-[#1a5c46] hover:border-[#105652]"
+              className="group brutalist-button flex flex-col items-center justify-center flex-shrink-0 w-[104px] h-[104px] sm:w-[112px] sm:h-[112px] md:w-[116px] md:h-[116px] lg:w-[120px] lg:h-[120px] text-[#e5dede] group-hover:text-[#2596be] font-bold relative cursor-pointer overflow-hidden rounded-[12px] bg-[#1d7a9a] border-[3px] border-[#2596be] shadow-[4px_4px_1px_#000000] transition-cubic hover:bg-[#3ba8d1] hover:border-[#2596be]"
               onClick={() => console.log(`${skill.name} button clicked`)}
             >
               <div className="arcgis-logo-inner flex flex-col items-center justify-center transition-cubic z-30 bg-white p-2 rounded-lg shadow-[inset_0_0_8px_rgba(0,0,0,0.3)]">

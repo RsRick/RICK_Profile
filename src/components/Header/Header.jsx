@@ -144,13 +144,13 @@ export default function Header() {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-gray-700 hover:text-[#105652] font-medium transition-colors duration-300 relative group whitespace-nowrap"
+                className="text-gray-700 hover:text-[#2596be] font-medium transition-colors duration-300 relative group whitespace-nowrap"
                 style={{ fontFamily: menuItemsFont }}
               >
                 {link.name}
                 <span
                   className="absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full"
-                  style={{ background: '#105652' }}
+                  style={{ background: '#2596be' }}
                 />
               </a>
             ))}
@@ -176,9 +176,9 @@ export default function Header() {
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className="w-6 h-6" style={{ color: '#105652' }} />
+              <X className="w-6 h-6" style={{ color: '#2596be' }} />
             ) : (
-              <Menu className="w-6 h-6" style={{ color: '#105652' }} />
+              <Menu className="w-6 h-6" style={{ color: '#2596be' }} />
             )}
           </button>
         </div>
@@ -195,7 +195,7 @@ export default function Header() {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="block py-2 text-gray-700 hover:text-[#105652] font-medium transition-colors duration-300"
+                className="block py-2 text-gray-700 hover:text-[#2596be] font-medium transition-colors duration-300"
                 style={{ fontFamily: menuItemsFont }}
               >
                 {link.name}

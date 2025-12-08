@@ -110,7 +110,7 @@ export default function Blog() {
         <div
           className="absolute rounded-full blur-3xl"
           style={{
-            background: '#1E8479',
+            background: '#3ba8d1',
             width: '450px',
             height: '450px',
             top: '20%',
@@ -124,7 +124,7 @@ export default function Blog() {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Title - Compact */}
-        <h2 className="text-3xl font-bold mb-5 text-center" style={{ color: '#105652' }}>
+        <h2 className="text-3xl font-bold mb-5 text-center" style={{ color: '#2596be' }}>
           From the Blog
         </h2>
 
@@ -136,14 +136,14 @@ export default function Blog() {
               onClick={() => handleCategoryChange(category)}
               className={`relative px-4 py-1.5 text-sm font-medium transition-all duration-300 ${
                 selectedCategory === category
-                  ? 'text-[#105652]'
-                  : 'text-gray-500 hover:text-[#105652]'
+                  ? 'text-[#2596be]'
+                  : 'text-gray-500 hover:text-[#2596be]'
               }`}
             >
               {category}
               {/* Animated Underline */}
               <span 
-                className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-[#105652] transition-all duration-300 ${
+                className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-[#2596be] transition-all duration-300 ${
                   selectedCategory === category ? 'w-full' : 'w-0'
                 }`}
               ></span>
@@ -177,7 +177,7 @@ export default function Blog() {
         <div className="flex justify-center mt-6">
           <Link
             to="/blogs"
-            className="group flex items-center gap-2 px-6 py-2 border-2 border-[#105652] text-[#105652] font-medium rounded-none hover:bg-[#105652] hover:text-white transition-all duration-300"
+            className="group flex items-center gap-2 px-6 py-2 border-2 border-[#2596be] text-[#2596be] font-medium rounded-none hover:bg-[#2596be] hover:text-white transition-all duration-300"
           >
             <span className="tracking-wider text-sm uppercase">Explore All Articles</span>
             <svg 
@@ -212,3 +212,5 @@ export default function Blog() {
     </section>
   );
 }
+
+

@@ -59,7 +59,7 @@ export default function Dashboard() {
   if (authLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <Loader2 className="w-8 h-8 animate-spin text-[#105652]" />
+        <Loader2 className="w-8 h-8 animate-spin text-[#2596be]" />
       </div>
     );
   }
@@ -86,7 +86,7 @@ export default function Dashboard() {
           {/* Profile Card */}
           <div className="md:col-span-1">
             <div className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#105652] to-[#1E8479] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-20 h-20 bg-gradient-to-br from-[#2596be] to-[#3ba8d1] rounded-full flex items-center justify-center mx-auto mb-4">
                 <User className="w-10 h-10 text-white" />
               </div>
               <h2 className="text-lg font-semibold text-center text-gray-800 mb-4">{customer?.name || 'Customer'}</h2>
@@ -119,7 +119,7 @@ export default function Dashboard() {
                 className="flex items-center justify-between p-3 hover:bg-gray-50 rounded-xl transition-colors"
               >
                 <div className="flex items-center gap-3">
-                  <ShoppingBag className="w-5 h-5 text-[#105652]" />
+                  <ShoppingBag className="w-5 h-5 text-[#2596be]" />
                   <span className="text-sm font-medium text-gray-700">Continue Shopping</span>
                 </div>
                 <ChevronRight className="w-4 h-4 text-gray-400" />
@@ -129,7 +129,7 @@ export default function Dashboard() {
                 className="flex items-center justify-between p-3 hover:bg-gray-50 rounded-xl transition-colors"
               >
                 <div className="flex items-center gap-3">
-                  <HelpCircle className="w-5 h-5 text-[#105652]" />
+                  <HelpCircle className="w-5 h-5 text-[#2596be]" />
                   <span className="text-sm font-medium text-gray-700">Help & Support</span>
                 </div>
                 <ChevronRight className="w-4 h-4 text-gray-400" />
@@ -143,14 +143,14 @@ export default function Dashboard() {
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100">
               <div className="p-6 border-b border-gray-100">
                 <h2 className="text-lg font-semibold text-gray-800 flex items-center gap-2">
-                  <Package className="w-5 h-5 text-[#105652]" />
+                  <Package className="w-5 h-5 text-[#2596be]" />
                   My Orders
                 </h2>
               </div>
 
               {loading ? (
                 <div className="p-8 flex justify-center">
-                  <Loader2 className="w-6 h-6 animate-spin text-[#105652]" />
+                  <Loader2 className="w-6 h-6 animate-spin text-[#2596be]" />
                 </div>
               ) : orders.length === 0 ? (
                 <div className="p-8 text-center">
@@ -158,7 +158,7 @@ export default function Dashboard() {
                   <p className="text-gray-500 mb-4">No orders yet</p>
                   <Link
                     to="/shop"
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#105652] text-white text-sm rounded-lg hover:bg-[#0d4543]"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#2596be] text-white text-sm rounded-lg hover:bg-[#0d4543]"
                   >
                     <ShoppingBag className="w-4 h-4" />
                     Start Shopping
@@ -207,3 +207,4 @@ export default function Dashboard() {
     </div>
   );
 }
+

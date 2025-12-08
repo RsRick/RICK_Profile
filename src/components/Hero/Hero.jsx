@@ -19,10 +19,10 @@ export default function Hero() {
   const [projectsCompleted, setProjectsCompleted] = useState({ number: '38+', text: 'Projects\nCompleted' });
   const [statsFont, setStatsFont] = useState("'Poppins', sans-serif");
   const [socialLinks, setSocialLinks] = useState([
-    { icon: 'github', label: 'GitHub', href: '#' },
-    { icon: 'linkedin', label: 'LinkedIn', href: '#' },
-    { icon: 'code', label: 'Portfolio', href: '#' },
-    { icon: 'mapPin', label: 'Google Scholar', href: '#' },
+    { icon: 'github', label: 'GitHub', href: 'https://github.com/RsRick' },
+    { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/authoy/' },
+    { icon: 'facebook', label: 'Facebook', href: 'https://www.facebook.com/RsRick0', customIcon: 'https://w7.pngwing.com/pngs/806/294/png-transparent-facebook-logo-logo-facebook-icon-facebook-logo-brand-social-network-scalable-vector-graphics-thumbnail.png' },
+    { icon: 'whatsapp', label: 'WhatsApp', href: 'https://wa.me/8801703958919', customIcon: 'https://cdn.imgbin.com/20/2/13/imgbin-whatsapp-logo-computer-icons-whatsapp-telephone-call-logo-kdH7BEK0iW9Kv43gaw37zFWMh.jpg' },
   ]);
 
   const [displayText, setDisplayText] = useState('');
@@ -151,7 +151,7 @@ export default function Hero() {
         <div
           className="absolute rounded-full opacity-20 blur-3xl"
           style={{
-            background: '#105652',
+            background: '#2596be',
             width: '600px',
             height: '600px',
             top: '-200px',
@@ -162,7 +162,7 @@ export default function Hero() {
         <div
           className="absolute rounded-full opacity-10 blur-3xl"
           style={{
-            background: '#1E8479',
+            background: '#3ba8d1',
             width: '400px',
             height: '400px',
             bottom: '-100px',
@@ -185,10 +185,10 @@ export default function Hero() {
           >
             {/* Greeting Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-lg">
-              <Sparkles className="w-4 h-4" style={{ color: '#105652' }} />
+              <Sparkles className="w-4 h-4" style={{ color: '#2596be' }} />
               <span
                 className="text-sm font-medium"
-                style={{ color: '#105652' }}
+                style={{ color: '#2596be' }}
               >
                 Available for Collaboration
               </span>
@@ -201,7 +201,7 @@ export default function Hero() {
                 <span
                   className="hero-name relative inline-block"
                   style={{ 
-                    color: '#105652',
+                    color: '#2596be',
                     fontSize: 'inherit',
                     letterSpacing: '-0.02em'
                   }}
@@ -210,7 +210,7 @@ export default function Hero() {
                   <div
                     className="absolute -bottom-2 left-0 right-0 h-1 rounded-full"
                     style={{
-                      background: 'linear-gradient(90deg, #105652, #1E8479)',
+                      background: 'linear-gradient(90deg, #2596be, #3ba8d1)',
                       animation: 'shimmer 3s ease-in-out infinite',
                     }}
                   />
@@ -223,7 +223,7 @@ export default function Hero() {
               <span>a</span>
               <span
                 className="relative inline-block min-w-[200px]"
-                style={{ color: '#1E8479' }}
+                style={{ color: '#3ba8d1' }}
               >
                 {displayText}
                 <span className="typewriter-cursor">|</span>
@@ -232,37 +232,57 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-              {description}
+              Authoy Biswas Bidda is a{' '}
+              <a 
+                href="https://en.wikipedia.org/wiki/Geographic_information_system" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#2596be] hover:underline font-semibold"
+              >
+                GIS
+              </a>
+              {' & '}
+              <a 
+                href="https://en.wikipedia.org/wiki/Remote_sensing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#2596be] hover:underline font-semibold"
+              >
+                Remote Sensing
+              </a>
+              {' '}Specialist driving spatial success with expert solutions in Python, R, ArcGIS Pro, QGIS, and Erdas Imagine. Skilled in analyzing environmental data, he combines trusted GIS expertise to enable smarter decisions for sustainability. Eager to collaborate on impactful research tackling global challenges.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
-              <button
-                onClick={handleProfileClick}
-                className="px-8 py-4 rounded-full font-semibold text-white shadow-xl transform hover:scale-105 transition-all duration-300 hover:shadow-2xl"
+              <a
+                href="https://www.researchgate.net/profile/Authoy-Bidda"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-full font-semibold text-white shadow-xl transform hover:scale-105 transition-all duration-300 hover:shadow-2xl inline-block"
                 style={{
-                  background: 'linear-gradient(135deg, #105652, #1E8479)',
+                  background: 'linear-gradient(135deg, #2596be, #3ba8d1)',
                 }}
               >
                 View Research Profile
-              </button>
-              <button
-                onClick={handleContactClick}
+              </a>
+              <a
+                href="mailto:rsrickbiswas007@gmail.com"
                 className="px-8 py-4 rounded-full font-semibold border-2 transform hover:scale-105 transition-all duration-300 bg-white shadow-lg hover:shadow-xl flex items-center"
                 style={{
-                  borderColor: '#105652',
-                  color: '#105652',
+                  borderColor: '#2596be',
+                  color: '#2596be',
                 }}
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Get In Touch
-              </button>
+              </a>
             </div>
 
             {/* Social Links */}
             <div className="space-y-3">
               <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
-                Find Me On
+                Useful Links
               </p>
               <div className="flex gap-4">
                 {socialLinks.map((link, index) => {
@@ -283,7 +303,7 @@ export default function Hero() {
                       >
                         <Icon
                           className="w-6 h-6 group-hover:scale-110 transition-transform duration-300"
-                          style={{ color: '#105652' }}
+                          style={{ color: '#2596be' }}
                         />
                       </button>
                     );
@@ -301,10 +321,18 @@ export default function Hero() {
                       }}
                       aria-label={link.label}
                     >
-                      <Icon
-                        className="w-6 h-6 group-hover:scale-110 transition-transform duration-300"
-                        style={{ color: '#105652' }}
-                      />
+                      {link.customIcon ? (
+                        <img
+                          src={link.customIcon}
+                          alt={link.label}
+                          className="w-6 h-6 object-contain group-hover:scale-110 transition-transform duration-300"
+                        />
+                      ) : (
+                        <Icon
+                          className="w-6 h-6 group-hover:scale-110 transition-transform duration-300"
+                          style={{ color: '#2596be' }}
+                        />
+                      )}
                     </a>
                   );
                 })}
@@ -324,7 +352,7 @@ export default function Hero() {
               {/* Glow Effect Behind Photo */}
               <div
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full opacity-30 blur-3xl"
-                style={{ background: '#105652' }}
+                style={{ background: '#2596be' }}
               />
 
               {/* Professional Photo */}
@@ -339,7 +367,7 @@ export default function Hero() {
                   <div
                     className="absolute inset-0 opacity-10 pointer-events-none"
                     style={{
-                      background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #105652, transparent 50%)`,
+                      background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #2596be, transparent 50%)`,
                     }}
                   />
 
@@ -357,7 +385,7 @@ export default function Hero() {
                           className="w-32 h-32 mx-auto rounded-full mb-4 flex items-center justify-center"
                           style={{
                             background:
-                              'linear-gradient(135deg, #105652, #1E8479)',
+                              'linear-gradient(135deg, #2596be, #3ba8d1)',
                           }}
                         >
                           <Code className="w-16 h-16 text-white" />
@@ -377,7 +405,7 @@ export default function Hero() {
                 >
                   <div
                     className="text-4xl font-bold mb-1"
-                    style={{ color: '#105652' }}
+                    style={{ color: '#2596be' }}
                   >
                     {yearsExperience.number}
                   </div>
@@ -393,7 +421,7 @@ export default function Hero() {
                 >
                   <div
                     className="text-4xl font-bold mb-1"
-                    style={{ color: '#105652' }}
+                    style={{ color: '#2596be' }}
                   >
                     {projectsCompleted.number}
                   </div>

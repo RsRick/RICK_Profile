@@ -96,7 +96,7 @@ export default function BlogsPage() {
         <div
           className="absolute rounded-full blur-3xl"
           style={{
-            background: '#1E8479',
+            background: '#3ba8d1',
             width: '450px',
             height: '450px',
             top: '20%',
@@ -110,7 +110,7 @@ export default function BlogsPage() {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Page Title - Simple */}
-        <h1 className="text-3xl font-bold mb-6 text-center" style={{ color: '#105652' }}>
+        <h1 className="text-3xl font-bold mb-6 text-center" style={{ color: '#2596be' }}>
           Blog
         </h1>
 
@@ -122,14 +122,14 @@ export default function BlogsPage() {
               onClick={() => handleCategoryChange(category)}
               className={`relative px-4 py-1.5 text-sm font-medium transition-all duration-300 ${
                 selectedCategory === category
-                  ? 'text-[#105652]'
-                  : 'text-gray-500 hover:text-[#105652]'
+                  ? 'text-[#2596be]'
+                  : 'text-gray-500 hover:text-[#2596be]'
               }`}
             >
               {category}
               {/* Animated Underline */}
               <span 
-                className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-[#105652] transition-all duration-300 ${
+                className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-[#2596be] transition-all duration-300 ${
                   selectedCategory === category ? 'w-full' : 'w-0'
                 }`}
               ></span>
@@ -186,3 +186,4 @@ export default function BlogsPage() {
     </PageWrapper>
   );
 }
+

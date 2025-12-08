@@ -84,7 +84,7 @@ export default function BlogModal({ blog, onClose, onNavigate, currentIndex, tot
         <button
           onClick={handleClose}
           className="absolute top-4 right-4 z-20 p-2 bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-300 hover:scale-110"
-          style={{ color: '#105652' }}
+          style={{ color: '#2596be' }}
         >
           <X className="w-6 h-6" />
         </button>
@@ -112,14 +112,14 @@ export default function BlogModal({ blog, onClose, onNavigate, currentIndex, tot
                       <button
                         onClick={() => setCurrentImageIndex((prev) => (prev === 0 ? blog.gallery.length - 1 : prev - 1))}
                         className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg transition-all"
-                        style={{ color: '#105652' }}
+                        style={{ color: '#2596be' }}
                       >
                         <ChevronLeft className="w-5 h-5" />
                       </button>
                       <button
                         onClick={() => setCurrentImageIndex((prev) => (prev === blog.gallery.length - 1 ? 0 : prev + 1))}
                         className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg transition-all"
-                        style={{ color: '#105652' }}
+                        style={{ color: '#2596be' }}
                       >
                         <ChevronRight className="w-5 h-5" />
                       </button>
@@ -149,7 +149,7 @@ export default function BlogModal({ blog, onClose, onNavigate, currentIndex, tot
                         onClick={() => setCurrentImageIndex(index)}
                         className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden transition-all ${
                           index === currentImageIndex
-                            ? 'ring-3 ring-[#1E8479] scale-105'
+                            ? 'ring-3 ring-[#3ba8d1] scale-105'
                             : 'opacity-60 hover:opacity-100'
                         }`}
                       >
@@ -170,13 +170,13 @@ export default function BlogModal({ blog, onClose, onNavigate, currentIndex, tot
               {/* Category Badge */}
               <span
                 className="inline-flex self-start px-3 py-1 rounded-full text-xs font-bold text-white mb-3"
-                style={{ backgroundColor: '#105652' }}
+                style={{ backgroundColor: '#2596be' }}
               >
                 {blog.category}
               </span>
 
               {/* Title */}
-              <h2 className="text-xl md:text-3xl font-bold mb-4" style={{ color: '#105652' }}>
+              <h2 className="text-xl md:text-3xl font-bold mb-4" style={{ color: '#2596be' }}>
                 {blog.title}
               </h2>
 
@@ -196,7 +196,7 @@ export default function BlogModal({ blog, onClose, onNavigate, currentIndex, tot
                         />
                       ))
                     ) : (
-                      <div className="w-10 h-10 rounded-full bg-[#105652] flex items-center justify-center border-2 border-white">
+                      <div className="w-10 h-10 rounded-full bg-[#2596be] flex items-center justify-center border-2 border-white">
                         <span className="text-white font-bold text-sm">
                           {blog.authorNames?.[0]?.charAt(0) || 'A'}
                         </span>
@@ -247,7 +247,7 @@ export default function BlogModal({ blog, onClose, onNavigate, currentIndex, tot
                       alert('Link copied!');
                     }}
                     className="flex items-center gap-2 px-4 py-2 rounded-lg text-white text-sm font-medium transition-all hover:scale-105"
-                    style={{ backgroundColor: '#105652' }}
+                    style={{ backgroundColor: '#2596be' }}
                   >
                     <ExternalLink className="w-4 h-4" />
                     Share
@@ -272,3 +272,5 @@ export default function BlogModal({ blog, onClose, onNavigate, currentIndex, tot
   // Use portal to render modal at document root level
   return createPortal(modalContent, document.body);
 }
+
+

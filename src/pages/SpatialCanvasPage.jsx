@@ -88,7 +88,7 @@ export default function SpatialCanvasPage() {
           <div
             className="absolute rounded-full blur-3xl"
             style={{
-              background: '#1E8479',
+              background: '#3ba8d1',
               width: '500px',
               height: '500px',
               top: '10%',
@@ -100,7 +100,7 @@ export default function SpatialCanvasPage() {
           <div
             className="absolute rounded-full blur-3xl"
             style={{
-              background: '#105652',
+              background: '#2596be',
               width: '400px',
               height: '400px',
               bottom: '20%',
@@ -114,7 +114,7 @@ export default function SpatialCanvasPage() {
         <div className="container mx-auto px-6 relative z-10">
           {/* Page Title */}
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold" style={{ color: '#105652' }}>
+            <h1 className="text-4xl font-bold" style={{ color: '#2596be' }}>
               Spatial Canvas
             </h1>
           </div>
@@ -130,7 +130,7 @@ export default function SpatialCanvasPage() {
                     : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md'
                 }`}
                 style={{
-                  backgroundColor: selectedCategory === 'All' ? '#105652' : undefined,
+                  backgroundColor: selectedCategory === 'All' ? '#2596be' : undefined,
                 }}
               >
                 All Maps
@@ -157,7 +157,7 @@ export default function SpatialCanvasPage() {
           {/* Loading State */}
           {loading ? (
             <div className="text-center py-20">
-              <div className="w-12 h-12 border-4 border-t-transparent rounded-full animate-spin mx-auto mb-4" style={{ borderColor: '#105652', borderTopColor: 'transparent' }} />
+              <div className="w-12 h-12 border-4 border-t-transparent rounded-full animate-spin mx-auto mb-4" style={{ borderColor: '#2596be', borderTopColor: 'transparent' }} />
               <p className="text-gray-500">Loading maps...</p>
             </div>
           ) : filteredMaps.length === 0 ? (
@@ -183,8 +183,8 @@ export default function SpatialCanvasPage() {
                   <div
                     className="relative bg-white rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-2"
                     style={{
-                      boxShadow: '6px 6px 0px #105652',
-                      border: '2px solid #105652',
+                      boxShadow: '6px 6px 0px #2596be',
+                      border: '2px solid #2596be',
                     }}
                   >
                     <div className="aspect-[3/4] bg-gray-100 overflow-hidden">
@@ -198,7 +198,7 @@ export default function SpatialCanvasPage() {
                     {/* Title Bar - Fixed 2 line height */}
                     <div 
                       className="p-3"
-                      style={{ background: 'linear-gradient(135deg, #105652 0%, #1E8479 100%)' }}
+                      style={{ background: 'linear-gradient(135deg, #2596be 0%, #3ba8d1 100%)' }}
                     >
                       <h3 className="text-white text-sm font-semibold line-clamp-2 leading-tight min-h-[2.5rem]">
                         {map.title}
@@ -236,7 +236,7 @@ export default function SpatialCanvasPage() {
               <div className="flex items-start justify-between mb-4">
                 <span 
                   className="px-3 py-1 rounded-full text-xs font-bold text-white"
-                  style={{ backgroundColor: categoryColors[selectedMap.category] || '#105652' }}
+                  style={{ backgroundColor: categoryColors[selectedMap.category] || '#2596be' }}
                 >
                   {selectedMap.category}
                 </span>
@@ -248,7 +248,7 @@ export default function SpatialCanvasPage() {
                 </button>
               </div>
 
-              <h2 className="text-2xl font-bold mb-4" style={{ color: '#105652' }}>
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#2596be' }}>
                 {selectedMap.title}
               </h2>
 

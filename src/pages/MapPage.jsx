@@ -13,7 +13,7 @@ export default function MapPage() {
   const navigate = useNavigate();
   const [map, setMap] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [categoryColor, setCategoryColor] = useState('#105652');
+  const [categoryColor, setCategoryColor] = useState('#2596be');
   const [showMiniMap, setShowMiniMap] = useState(true);
   const [viewportPosition, setViewportPosition] = useState({ top: 0, height: 100 });
   const mainImageRef = useRef(null);
@@ -70,7 +70,7 @@ export default function MapPage() {
             [Query.equal('name', mapData.category)]
           );
           if (catResult.success && catResult.data.documents.length > 0) {
-            setCategoryColor(catResult.data.documents[0].color || '#105652');
+            setCategoryColor(catResult.data.documents[0].color || '#2596be');
           }
         }
       } else {
@@ -100,7 +100,7 @@ export default function MapPage() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center" style={{ background: '#FFFAEB' }}>
-        <div className="w-12 h-12 border-4 border-t-transparent rounded-full animate-spin" style={{ borderColor: '#105652', borderTopColor: 'transparent' }} />
+        <div className="w-12 h-12 border-4 border-t-transparent rounded-full animate-spin" style={{ borderColor: '#2596be', borderTopColor: 'transparent' }} />
       </div>
     );
   }
@@ -126,7 +126,7 @@ export default function MapPage() {
         >
           <div 
             className="bg-white rounded-xl overflow-hidden shadow-2xl"
-            style={{ border: '2px solid #105652' }}
+            style={{ border: '2px solid #2596be' }}
           >
             <div className="relative">
               <img
@@ -141,8 +141,8 @@ export default function MapPage() {
                   top: `${viewportPosition.top}%`,
                   height: `${viewportPosition.height}%`,
                   background: 'rgba(16, 86, 82, 0.25)',
-                  borderTop: '2px solid #105652',
-                  borderBottom: '2px solid #105652',
+                  borderTop: '2px solid #2596be',
+                  borderBottom: '2px solid #2596be',
                   boxShadow: '0 0 0 1px rgba(16, 86, 82, 0.3)',
                 }}
               />
@@ -156,7 +156,7 @@ export default function MapPage() {
             </div>
             <div 
               className="px-2 py-1.5 text-center"
-              style={{ background: 'linear-gradient(135deg, #105652 0%, #1E8479 100%)' }}
+              style={{ background: 'linear-gradient(135deg, #2596be 0%, #3ba8d1 100%)' }}
             >
               <p className="text-white text-xs font-medium truncate">{map.title}</p>
             </div>
@@ -169,7 +169,7 @@ export default function MapPage() {
         <button
           onClick={() => setShowMiniMap(true)}
           className="fixed left-4 top-1/2 -translate-y-1/2 z-40 hidden lg:flex items-center gap-2 px-3 py-2 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all"
-          style={{ border: '2px solid #105652', color: '#105652' }}
+          style={{ border: '2px solid #2596be', color: '#2596be' }}
         >
           <Maximize2 className="w-4 h-4" />
           <span className="text-sm font-medium">Map</span>
@@ -183,7 +183,7 @@ export default function MapPage() {
           <div 
             ref={mainImageRef}
             className="bg-white rounded-2xl overflow-hidden shadow-xl mb-6" 
-            style={{ border: '2px solid #105652' }}
+            style={{ border: '2px solid #2596be' }}
           >
             <img
               src={map.imageUrl}
@@ -193,7 +193,7 @@ export default function MapPage() {
           </div>
 
           {/* Map Details Below */}
-          <div className="bg-white rounded-xl p-6 shadow-lg" style={{ border: '2px solid #105652' }}>
+          <div className="bg-white rounded-xl p-6 shadow-lg" style={{ border: '2px solid #2596be' }}>
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div className="flex-1 min-w-0">
                 <span 
@@ -202,7 +202,7 @@ export default function MapPage() {
                 >
                   {map.category}
                 </span>
-                <h1 className="text-2xl md:text-3xl font-bold" style={{ color: '#105652' }}>
+                <h1 className="text-2xl md:text-3xl font-bold" style={{ color: '#2596be' }}>
                   {map.title}
                 </h1>
                 {map.description && (
@@ -218,7 +218,7 @@ export default function MapPage() {
                 <button
                   onClick={handleShare}
                   className="flex items-center gap-2 px-4 py-2 rounded-lg border hover:bg-gray-50 transition-colors"
-                  style={{ borderColor: '#105652', color: '#105652' }}
+                  style={{ borderColor: '#2596be', color: '#2596be' }}
                 >
                   <Share2 className="w-4 h-4" />
                   Share
@@ -229,7 +229,7 @@ export default function MapPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-colors hover:opacity-90"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   <Download className="w-4 h-4" />
                   Download
@@ -242,3 +242,4 @@ export default function MapPage() {
     </div>
   );
 }
+

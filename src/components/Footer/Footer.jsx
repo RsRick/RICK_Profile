@@ -46,7 +46,7 @@ export default function Footer() {
     <footer 
       className="w-full py-2.5 px-4 mt-auto backdrop-blur-md"
       style={{ 
-        background: 'rgba(16, 86, 82, 0.75)',
+        background: 'rgba(37, 150, 190, 0.75)',
         borderTop: '1px solid rgba(255, 255, 255, 0.15)',
         boxShadow: '0 -4px 30px rgba(0, 0, 0, 0.1)'
       }}
@@ -76,10 +76,10 @@ export default function Footer() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-3 py-1.5 bg-white/90 text-[#105652] font-medium text-xs rounded-r-full hover:bg-white transition-all disabled:opacity-70 flex items-center gap-1 backdrop-blur-sm"
+                  className="px-3 py-1.5 bg-white/90 text-[#2596be] font-medium text-xs rounded-r-full hover:bg-white transition-all disabled:opacity-70 flex items-center gap-1 backdrop-blur-sm"
                 >
                   {isSubmitting ? (
-                    <span className="w-3 h-3 border-2 border-[#105652] border-t-transparent rounded-full animate-spin" />
+                    <span className="w-3 h-3 border-2 border-[#2596be] border-t-transparent rounded-full animate-spin" />
                   ) : (
                     <>
                       <span className="hidden sm:inline">Subscribe</span>

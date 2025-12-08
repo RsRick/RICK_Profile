@@ -127,7 +127,7 @@ const StyledWrapper = styled.div`
   .message-title {
     font-size: 2rem;
     font-weight: bold;
-    color: #105652;
+    color: #2596be;
     margin-bottom: 0.75rem;
   }
 
@@ -152,7 +152,7 @@ const StyledWrapper = styled.div`
 
   .btn-primary {
     padding: 0.625rem 1.5rem;
-    background-color: #105652;
+    background-color: #2596be;
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -170,8 +170,8 @@ const StyledWrapper = styled.div`
   .btn-secondary {
     padding: 0.625rem 1.5rem;
     background-color: white;
-    color: #105652;
-    border: 2px solid #105652;
+    color: #2596be;
+    border: 2px solid #2596be;
     border-radius: 0.5rem;
     font-size: 0.875rem;
     font-weight: 600;
@@ -797,3 +797,4 @@ const StyledWrapper = styled.div`
     }
   }
 `;
+

@@ -104,11 +104,11 @@ function InfiniteCarousel({ gallery }) {
   return (
     <div className="mb-10">
       <div className="flex items-center justify-between mb-3 px-2">
-        <h3 className="text-base md:text-lg font-bold" style={{ color: '#105652' }}>
+        <h3 className="text-base md:text-lg font-bold" style={{ color: '#2596be' }}>
           {gallery.title}
         </h3>
         {gallery.eventLink && (
-          <a href={gallery.eventLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 px-3 py-1 text-white text-xs font-medium rounded-lg hover:opacity-90" style={{ backgroundColor: '#105652' }}>
+          <a href={gallery.eventLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 px-3 py-1 text-white text-xs font-medium rounded-lg hover:opacity-90" style={{ backgroundColor: '#2596be' }}>
             Event Link
             <ExternalLink className="w-3 h-3" />
           </a>
@@ -120,7 +120,7 @@ function InfiniteCarousel({ gallery }) {
           <div ref={trackRef} className="flex" style={{ willChange: 'transform' }}>
             {repeatedImages.map((img, idx) => (
               <div key={`${img.id || idx}-${idx}`} className="flex-shrink-0 px-1" style={{ width: `${singleImageWidth}%` }}>
-                <div className="relative aspect-[4/3] rounded-lg overflow-hidden border-2 bg-gray-100" style={{ borderColor: '#105652' }}>
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden border-2 bg-gray-100" style={{ borderColor: '#2596be' }}>
                   <img src={img.url} alt={img.title || `Image ${idx + 1}`} className="w-full h-full object-cover" draggable={false} />
                   {img.title && (
                     <div className={getLabelStyle(gallery.labelDesign || 'ribbon')}>
@@ -170,14 +170,14 @@ export default function ProjectGalleryPage() {
       <div className="flex flex-col min-h-[calc(100vh-144px)]">
         <div className="pt-8 pb-8">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-bold text-center" style={{ color: '#105652' }}>Project Gallery</h1>
+            <h1 className="text-4xl font-bold text-center" style={{ color: '#2596be' }}>Project Gallery</h1>
           </div>
         </div>
 
         <div className="flex-grow container mx-auto px-4 py-12">
           {loading ? (
             <div className="flex items-center justify-center min-h-[400px]">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div>
             </div>
           ) : galleries.length === 0 ? (
             <div className="text-center py-20">
@@ -191,3 +191,4 @@ export default function ProjectGalleryPage() {
     </PageWrapper>
   );
 }
+

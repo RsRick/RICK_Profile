@@ -209,7 +209,7 @@ export default function Projects() {
         <div
           className="absolute rounded-full blur-3xl"
           style={{
-            background: '#1E8479',
+            background: '#3ba8d1',
             width: '450px',
             height: '450px',
             top: '20%',
@@ -223,7 +223,7 @@ export default function Projects() {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Title */}
-        <h2 className="text-3xl font-bold mb-6 text-center" style={{ color: '#105652' }}>
+        <h2 className="text-3xl font-bold mb-6 text-center" style={{ color: '#2596be' }}>
           Featured Projects
         </h2>
 
@@ -239,7 +239,7 @@ export default function Projects() {
                   : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md'
               }`}
               style={{
-                backgroundColor: selectedCategory === category ? '#105652' : undefined,
+                backgroundColor: selectedCategory === category ? '#2596be' : undefined,
               }}
             >
               {category}
@@ -272,13 +272,13 @@ export default function Projects() {
           <Link
             to="/projects"
             className="group relative px-6 py-2.5 rounded-lg font-semibold text-white text-base overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             <span className="relative z-10">View All Projects</span>
             <div
               className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{
-                background: 'linear-gradient(135deg, #1E8479, #105652)',
+                background: 'linear-gradient(135deg, #3ba8d1, #2596be)',
               }}
             />
           </Link>

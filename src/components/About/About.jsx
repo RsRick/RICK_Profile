@@ -58,7 +58,7 @@ export default function About() {
             }`}
             style={{
               boxShadow: '0 10px 40px rgba(0,0,0,0.1), inset 0 0 0 1px rgba(0,0,0,0.1)',
-              border: '3px solid #105652',
+              border: '3px solid #2596be',
               position: 'relative'
             }}
           >
@@ -81,8 +81,8 @@ export default function About() {
                 <div
                   className="relative"
                   style={{
-                    border: '3px solid #105652',
-                    boxShadow: '6px 6px 0 rgba(16, 86, 82, 0.2)'
+                    border: '3px solid #2596be',
+                    boxShadow: '6px 6px 0 rgba(37, 150, 190, 0.2)'
                   }}
                 >
                   {aboutData.photoUrl ? (
@@ -102,13 +102,13 @@ export default function About() {
                 {/* Research Profile Box */}
                 <div
                   className="border-4 border-dashed p-4"
-                  style={{ borderColor: '#105652' }}
+                  style={{ borderColor: '#2596be' }}
                 >
                   <h3
                     className="text-center font-bold mb-4 text-lg"
                     style={{
                       fontFamily: 'Georgia, serif',
-                      color: '#105652',
+                      color: '#2596be',
                       letterSpacing: '1.5px'
                     }}
                   >
@@ -130,8 +130,8 @@ export default function About() {
                         <div
                           className="w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden shadow-md group-hover:shadow-xl"
                           style={{
-                            background: link.iconUrl ? 'white' : '#105652',
-                            border: '2px solid #105652'
+                            background: link.iconUrl ? 'white' : '#2596be',
+                            border: '2px solid #2596be'
                           }}
                         >
                           {link.iconUrl ? (
@@ -166,13 +166,13 @@ export default function About() {
                   </h1>
                   <div
                     className="w-full h-1 mb-4"
-                    style={{ background: '#105652' }}
+                    style={{ background: '#2596be' }}
                   ></div>
                   <h2
                     className="text-2xl md:text-3xl font-serif mb-4"
                     style={{
                       fontFamily: 'Georgia, serif',
-                      color: '#105652'
+                      color: '#2596be'
                     }}
                   >
                     {aboutData.subtitle}
@@ -196,7 +196,7 @@ export default function About() {
                         return (
                           <div className="md:col-span-2">
                             <p>
-                              Authoy Biswas Bidda was born in Jhenaidah, Dhaka, Bangladesh. The name come from the oysters. He completed his school education in Jhenaidah Government High School. He passed his HSC from Govt. H.S.S. Collage, Magura. His 4th year 2nd semester is running Department of Environmental Science and Geography at Islamic University, Kushtia, Bangladesh.Along with my studies, I like learning about maps, the environment, and how the Earth works. I enjoy using new tools and technology to understand different things in nature. People say I am ethical, creative, hardworking person. I take part in different class projects and enjoy learning with my friends. In my free time, I love traveling, seeing new places, and improving my skills.
+                              Authoy Biswas Bidda was born in Jhenaidah, Dhaka, Bangladesh. The name come from the oysters. He completed his school education in Jhenaidah Government High School. He passed his HSC from Govt. H.S.S. Collage, Magura. His 4th year 2nd semester is running Department of Environmental Science and Geography at Islamic University, Kushtia, Bangladesh. Along with my studies, I like learning about maps, the environment, and how the Earth works. I enjoy using new tools and technology to understand different things in nature. People say I am ethical, creative, hardworking person. I take part in different class projects and enjoy learning with my friends. In my free time, I love traveling, seeing new places, and improving my skills.
                             </p>
                           </div>
                         );
@@ -232,7 +232,7 @@ export default function About() {
                     style={{
                       writingMode: 'vertical-rl',
                       textOrientation: 'mixed',
-                      color: '#105652',
+                      color: '#2596be',
                       letterSpacing: '6px',
                       fontFamily: aboutData.nameFont
                     }}

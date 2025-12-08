@@ -166,7 +166,7 @@ export default function ProjectPage() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div>
       </div>
     );
   }
@@ -175,12 +175,12 @@ export default function ProjectPage() {
     return (
       <div className="min-h-screen flex items-center justify-center p-6">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4" style={{ color: '#105652' }}>Project Not Found</h1>
+          <h1 className="text-4xl font-bold mb-4" style={{ color: '#2596be' }}>Project Not Found</h1>
           <p className="text-gray-600 mb-6">The project you're looking for doesn't exist or has been removed.</p>
           <Link
             to="/"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             <ArrowLeft className="w-5 h-5" />
             Back to Home
@@ -236,7 +236,7 @@ export default function ProjectPage() {
                 }`}>
                   {!imageLoaded && (
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div>
+                      <div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div>
                     </div>
                   )}
                   <img
@@ -253,14 +253,14 @@ export default function ProjectPage() {
                       <button
                         onClick={prevImage}
                         className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow-lg transition-all duration-300"
-                        style={{ color: '#105652' }}
+                        style={{ color: '#2596be' }}
                       >
                         <ChevronLeft className="w-5 h-5" />
                       </button>
                       <button
                         onClick={nextImage}
                         className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow-lg transition-all duration-300"
-                        style={{ color: '#105652' }}
+                        style={{ color: '#2596be' }}
                       >
                         <ChevronRight className="w-5 h-5" />
                       </button>
@@ -301,7 +301,7 @@ export default function ProjectPage() {
                             onMouseDown={(e) => e.stopPropagation()}
                             className={`relative h-20 flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 ${
                               index === currentImageIndex
-                                ? 'ring-4 ring-[#1E8479] scale-105'
+                                ? 'ring-4 ring-[#3ba8d1] scale-105'
                                 : 'opacity-60 hover:opacity-100'
                             }`}
                             style={{ width: 'calc(25% - 6px)', minWidth: '80px' }}
@@ -333,7 +333,7 @@ export default function ProjectPage() {
                     className={`font-bold mb-3 ${
                       imageOrientation === 'portrait' ? 'text-3xl' : 'text-4xl'
                     }`}
-                    style={{ color: '#105652' }}
+                    style={{ color: '#2596be' }}
                   >
                     {project.title}
                   </h1>
@@ -356,7 +356,7 @@ export default function ProjectPage() {
                         <div className="relative z-10">
                           <p
                             className="text-xs font-bold uppercase tracking-wider mb-1.5"
-                            style={{ color: '#1E8479' }}
+                            style={{ color: '#3ba8d1' }}
                           >
                             {detail.label}
                           </p>
@@ -376,7 +376,7 @@ export default function ProjectPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-medium text-sm text-white transition-all duration-300 hover:scale-105 shadow-md"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   <span>View Project</span>
                   <ExternalLink className="w-4 h-4" />
@@ -408,7 +408,7 @@ export default function ProjectPage() {
                 height: auto;
               }
               .project-page-content blockquote {
-                border-left: 4px solid #1E8479;
+                border-left: 4px solid #3ba8d1;
                 padding-left: 1.5rem;
                 margin: 1rem 0;
                 font-style: italic;
@@ -419,13 +419,13 @@ export default function ProjectPage() {
                 border-radius: 0.5rem;
               }
               .project-page-content a.editor-link {
-                color: #1E8479;
+                color: #3ba8d1;
                 text-decoration: underline;
                 cursor: pointer;
                 transition: all 0.2s;
               }
               .project-page-content a.editor-link:hover {
-                color: #105652;
+                color: #2596be;
                 background-color: #f0fdfa;
               }
             `}</style>
@@ -445,3 +445,5 @@ export default function ProjectPage() {
     </div>
   );
 }
+
+

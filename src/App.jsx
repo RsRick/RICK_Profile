@@ -168,7 +168,7 @@ function Portfolio() {
       className={`App relative overflow-hidden ${isLoading ? 'app-loading' : 'app-loaded'}`}
       style={{ 
         background: '#FFFAEB',
-        backgroundImage: `linear-gradient(rgba(16, 86, 82, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 86, 82, 0.05) 1px, transparent 1px)`,
+        backgroundImage: `linear-gradient(rgba(37, 150, 190, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(37, 150, 190, 0.05) 1px, transparent 1px)`,
         backgroundSize: '50px 50px',
         backgroundPosition: '0 0',
         minHeight: '100vh'
@@ -363,7 +363,7 @@ function App() {
             } />
             {/* Single Map Page Route */}
             <Route path="/map/:slug" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <MapPage />
               </Suspense>
             } />
@@ -374,70 +374,70 @@ function App() {
               </Suspense>
             } />
             <Route path="/certificate/:slug" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#dc2626' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <CertificatePage />
               </Suspense>
             } />
             {/* Project Gallery Route */}
             <Route path="/project-gallery" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#ec4899' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <ProjectGalleryPage />
               </Suspense>
             } />
             {/* Contact Page Route */}
             <Route path="/contact" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <ContactPage />
               </Suspense>
             } />
             {/* About Page Route */}
             <Route path="/about" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <AboutPage />
               </Suspense>
             } />
             {/* Shop Route */}
             <Route path="/shop" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <ShopPage />
               </Suspense>
             } />
             {/* Cart Route */}
             <Route path="/cart" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <CartPage />
               </Suspense>
             } />
             {/* Checkout Route */}
             <Route path="/checkout" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <CheckoutPage />
               </Suspense>
             } />
             {/* Dashboard Routes */}
             <Route path="/dashboard" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <Dashboard />
               </Suspense>
             } />
             <Route path="/dashboard/order/:orderId" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <OrderStatus />
               </Suspense>
             } />
             <Route path="/dashboard/support" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <Support />
               </Suspense>
             } />
             <Route path="/blog/:slug" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <BlogPage />
               </Suspense>
             } />
             {/* Project Page Routes - with and without prefix */}
             <Route path="/project/:slug" element={
-              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div></div>}>
+              <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div></div>}>
                 <ProjectPage />
               </Suspense>
             } />

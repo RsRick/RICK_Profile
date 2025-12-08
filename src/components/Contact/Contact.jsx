@@ -120,20 +120,20 @@ export default function Contact() {
     <section id="contact" className="py-16 relative overflow-hidden scroll-mt-20">
       {/* Gradient Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute rounded-full blur-3xl" style={{ background: '#105652', width: '400px', height: '400px', top: '20%', right: '-100px', animation: 'float 22s ease-in-out infinite', opacity: 0.1 }} />
-        <div className="absolute rounded-full blur-3xl" style={{ background: '#1E8479', width: '300px', height: '300px', bottom: '10%', left: '-50px', animation: 'float 18s ease-in-out infinite reverse', opacity: 0.08 }} />
+        <div className="absolute rounded-full blur-3xl" style={{ background: '#2596be', width: '400px', height: '400px', top: '20%', right: '-100px', animation: 'float 22s ease-in-out infinite', opacity: 0.1 }} />
+        <div className="absolute rounded-full blur-3xl" style={{ background: '#3ba8d1', width: '300px', height: '300px', bottom: '10%', left: '-50px', animation: 'float 18s ease-in-out infinite reverse', opacity: 0.08 }} />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2" style={{ color: '#105652' }}>Get In Touch</h2>
+          <h2 className="text-3xl font-bold mb-2" style={{ color: '#2596be' }}>Get In Touch</h2>
           <p className="text-gray-500 text-sm">Have a project in mind? Let's work together</p>
         </div>
 
         <div className="max-w-6xl mx-auto grid lg:grid-cols-5 gap-8">
           {/* Left Column - Info Card */}
           <div className="lg:col-span-2">
-            <div className="h-full rounded-lg p-8 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #105652 0%, #1E8479 100%)', boxShadow: '8px 8px 0px #0a3533' }}>
+            <div className="h-full rounded-lg p-8 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #2596be 0%, #3ba8d1 100%)', boxShadow: '8px 8px 0px #1d7a9a' }}>
               <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
                 <svg viewBox="0 0 100 100" className="w-full h-full"><circle cx="80" cy="20" r="40" fill="white" /></svg>
               </div>
@@ -202,9 +202,9 @@ export default function Contact() {
 
           {/* Right Column - Contact Form */}
           <div className="lg:col-span-3">
-            <form onSubmit={handleSubmit} className="bg-white rounded-lg p-8 relative" style={{ border: '2px solid #105652', boxShadow: '6px 6px 0px #105652' }}>
+            <form onSubmit={handleSubmit} className="bg-white rounded-lg p-8 relative" style={{ border: '2px solid #2596be', boxShadow: '6px 6px 0px #2596be' }}>
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-1" style={{ color: '#105652' }}>Send a Message</h3>
+                <h3 className="text-xl font-bold mb-1" style={{ color: '#2596be' }}>Send a Message</h3>
                 <p className="text-gray-500 text-sm">Fill out the form below and I'll get back to you soon</p>
               </div>
 
@@ -216,31 +216,31 @@ export default function Contact() {
 
               <div className="grid md:grid-cols-2 gap-5 mb-5">
                 <div className="relative">
-                  <label className={`absolute left-3 transition-all duration-300 pointer-events-none ${focusedField === 'name' || formData.name ? '-top-2.5 text-xs bg-white px-1 text-[#105652] font-medium' : 'top-3 text-gray-400 text-sm'}`}>Your Name</label>
-                  <input type="text" name="name" value={formData.name} onChange={handleChange} onFocus={() => setFocusedField('name')} onBlur={() => setFocusedField(null)} required className="w-full px-4 py-3 rounded-md border-2 border-gray-200 focus:border-[#105652] outline-none transition-all duration-300" style={{ boxShadow: focusedField === 'name' ? '3px 3px 0px #105652' : 'none' }} />
+                  <label className={`absolute left-3 transition-all duration-300 pointer-events-none ${focusedField === 'name' || formData.name ? '-top-2.5 text-xs bg-white px-1 text-[#2596be] font-medium' : 'top-3 text-gray-400 text-sm'}`}>Your Name</label>
+                  <input type="text" name="name" value={formData.name} onChange={handleChange} onFocus={() => setFocusedField('name')} onBlur={() => setFocusedField(null)} required className="w-full px-4 py-3 rounded-md border-2 border-gray-200 focus:border-[#2596be] outline-none transition-all duration-300" style={{ boxShadow: focusedField === 'name' ? '3px 3px 0px #2596be' : 'none' }} />
                 </div>
                 <div className="relative">
-                  <label className={`absolute left-3 transition-all duration-300 pointer-events-none ${focusedField === 'phone' || formData.phone ? '-top-2.5 text-xs bg-white px-1 text-[#105652] font-medium' : 'top-3 text-gray-400 text-sm'}`}>Phone Number</label>
-                  <input type="tel" name="phone" value={formData.phone} onChange={handleChange} onFocus={() => setFocusedField('phone')} onBlur={() => setFocusedField(null)} className="w-full px-4 py-3 rounded-md border-2 border-gray-200 focus:border-[#105652] outline-none transition-all duration-300" style={{ boxShadow: focusedField === 'phone' ? '3px 3px 0px #105652' : 'none' }} />
+                  <label className={`absolute left-3 transition-all duration-300 pointer-events-none ${focusedField === 'phone' || formData.phone ? '-top-2.5 text-xs bg-white px-1 text-[#2596be] font-medium' : 'top-3 text-gray-400 text-sm'}`}>Phone Number</label>
+                  <input type="tel" name="phone" value={formData.phone} onChange={handleChange} onFocus={() => setFocusedField('phone')} onBlur={() => setFocusedField(null)} className="w-full px-4 py-3 rounded-md border-2 border-gray-200 focus:border-[#2596be] outline-none transition-all duration-300" style={{ boxShadow: focusedField === 'phone' ? '3px 3px 0px #2596be' : 'none' }} />
                 </div>
               </div>
 
               <div className="relative mb-5">
-                <label className={`absolute left-3 transition-all duration-300 pointer-events-none ${focusedField === 'email' || formData.email ? '-top-2.5 text-xs bg-white px-1 text-[#105652] font-medium' : 'top-3 text-gray-400 text-sm'}`}>Email Address</label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange} onFocus={() => setFocusedField('email')} onBlur={() => setFocusedField(null)} required className="w-full px-4 py-3 rounded-md border-2 border-gray-200 focus:border-[#105652] outline-none transition-all duration-300" style={{ boxShadow: focusedField === 'email' ? '3px 3px 0px #105652' : 'none' }} />
+                <label className={`absolute left-3 transition-all duration-300 pointer-events-none ${focusedField === 'email' || formData.email ? '-top-2.5 text-xs bg-white px-1 text-[#2596be] font-medium' : 'top-3 text-gray-400 text-sm'}`}>Email Address</label>
+                <input type="email" name="email" value={formData.email} onChange={handleChange} onFocus={() => setFocusedField('email')} onBlur={() => setFocusedField(null)} required className="w-full px-4 py-3 rounded-md border-2 border-gray-200 focus:border-[#2596be] outline-none transition-all duration-300" style={{ boxShadow: focusedField === 'email' ? '3px 3px 0px #2596be' : 'none' }} />
               </div>
 
               <div className="relative mb-5">
-                <label className={`absolute left-3 transition-all duration-300 pointer-events-none ${focusedField === 'subject' || formData.subject ? '-top-2.5 text-xs bg-white px-1 text-[#105652] font-medium' : 'top-3 text-gray-400 text-sm'}`}>Subject</label>
-                <input type="text" name="subject" value={formData.subject} onChange={handleChange} onFocus={() => setFocusedField('subject')} onBlur={() => setFocusedField(null)} required className="w-full px-4 py-3 rounded-md border-2 border-gray-200 focus:border-[#105652] outline-none transition-all duration-300" style={{ boxShadow: focusedField === 'subject' ? '3px 3px 0px #105652' : 'none' }} />
+                <label className={`absolute left-3 transition-all duration-300 pointer-events-none ${focusedField === 'subject' || formData.subject ? '-top-2.5 text-xs bg-white px-1 text-[#2596be] font-medium' : 'top-3 text-gray-400 text-sm'}`}>Subject</label>
+                <input type="text" name="subject" value={formData.subject} onChange={handleChange} onFocus={() => setFocusedField('subject')} onBlur={() => setFocusedField(null)} required className="w-full px-4 py-3 rounded-md border-2 border-gray-200 focus:border-[#2596be] outline-none transition-all duration-300" style={{ boxShadow: focusedField === 'subject' ? '3px 3px 0px #2596be' : 'none' }} />
               </div>
 
               <div className="relative mb-6">
-                <label className={`absolute left-3 transition-all duration-300 pointer-events-none ${focusedField === 'message' || formData.message ? '-top-2.5 text-xs bg-white px-1 text-[#105652] font-medium' : 'top-3 text-gray-400 text-sm'}`}>Your Message</label>
-                <textarea name="message" value={formData.message} onChange={handleChange} onFocus={() => setFocusedField('message')} onBlur={() => setFocusedField(null)} required rows="4" className="w-full px-4 py-3 rounded-md border-2 border-gray-200 focus:border-[#105652] outline-none transition-all duration-300 resize-none" style={{ boxShadow: focusedField === 'message' ? '3px 3px 0px #105652' : 'none' }} />
+                <label className={`absolute left-3 transition-all duration-300 pointer-events-none ${focusedField === 'message' || formData.message ? '-top-2.5 text-xs bg-white px-1 text-[#2596be] font-medium' : 'top-3 text-gray-400 text-sm'}`}>Your Message</label>
+                <textarea name="message" value={formData.message} onChange={handleChange} onFocus={() => setFocusedField('message')} onBlur={() => setFocusedField(null)} required rows="4" className="w-full px-4 py-3 rounded-md border-2 border-gray-200 focus:border-[#2596be] outline-none transition-all duration-300 resize-none" style={{ boxShadow: focusedField === 'message' ? '3px 3px 0px #2596be' : 'none' }} />
               </div>
 
-              <button type="submit" disabled={isSubmitting} className="group w-full py-3 px-6 rounded-md font-semibold text-white flex items-center justify-center gap-2 transition-all duration-300 hover:translate-x-[-3px] hover:translate-y-[-3px] active:translate-x-0 active:translate-y-0 disabled:opacity-70" style={{ backgroundColor: '#105652', boxShadow: '4px 4px 0px #0a3533' }}>
+              <button type="submit" disabled={isSubmitting} className="group w-full py-3 px-6 rounded-md font-semibold text-white flex items-center justify-center gap-2 transition-all duration-300 hover:translate-x-[-3px] hover:translate-y-[-3px] active:translate-x-0 active:translate-y-0 disabled:opacity-70" style={{ backgroundColor: '#2596be', boxShadow: '4px 4px 0px #1d7a9a' }}>
                 {isSubmitting ? (<><div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>Sending...</>) : (<>Send Message<Send className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" /></>)}
               </button>
             </form>

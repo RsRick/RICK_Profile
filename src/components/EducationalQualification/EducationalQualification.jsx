@@ -18,7 +18,7 @@ export default function EducationalQualification() {
       scale: '4.00',
       icon: GraduationCap,
       status: 'ongoing',
-      color: '#105652',
+      color: '#2596be',
     },
     {
       degree: 'HSC - Higher Secondary Certificate',
@@ -29,7 +29,7 @@ export default function EducationalQualification() {
       scale: '5.00',
       icon: BookOpen,
       status: 'completed',
-      color: '#1E8479',
+      color: '#3ba8d1',
     },
     {
       degree: 'SSC - Secondary School Certificate',
@@ -40,7 +40,7 @@ export default function EducationalQualification() {
       scale: '5.00',
       icon: Award,
       status: 'completed',
-      color: '#2AA08F',
+      color: '#51b9e4',
     },
   ];
 
@@ -58,22 +58,22 @@ export default function EducationalQualification() {
           }`}
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-lg mb-3">
-            <GraduationCap className="w-4 h-4" style={{ color: '#105652' }} />
-            <span className="text-xs font-semibold" style={{ color: '#105652' }}>
+            <GraduationCap className="w-4 h-4" style={{ color: '#2596be' }} />
+            <span className="text-xs font-semibold" style={{ color: '#2596be' }}>
               Academic Journey
             </span>
           </div>
 
           <h2
             className="text-3xl md:text-4xl font-bold mb-3"
-            style={{ color: '#105652' }}
+            style={{ color: '#2596be' }}
           >
             Educational Qualification
           </h2>
 
           <div
             className="w-16 h-1 mx-auto rounded-full"
-            style={{ background: 'linear-gradient(90deg, #105652, #1E8479)' }}
+            style={{ background: 'linear-gradient(90deg, #2596be, #3ba8d1)' }}
           />
         </div>
 
@@ -85,7 +85,7 @@ export default function EducationalQualification() {
             <div
               className="relative w-0.5 h-full mx-auto"
               style={{
-                background: 'linear-gradient(180deg, #105652 0%, #1E8479 50%, #2AA08F 100%)',
+                background: 'linear-gradient(180deg, #2596be 0%, #3ba8d1 50%, #51b9e4 100%)',
                 opacity: 0.3
               }}
             >
@@ -95,8 +95,8 @@ export default function EducationalQualification() {
                   isVisible ? 'top-full' : 'top-0'
                 }`}
                 style={{
-                  background: 'linear-gradient(135deg, #105652, #1E8479)',
-                  boxShadow: '0 0 10px rgba(16, 86, 82, 0.5)',
+                  background: 'linear-gradient(135deg, #2596be, #3ba8d1)',
+                  boxShadow: '0 0 10px rgba(37, 150, 190, 0.5)',
                   transitionDelay: '500ms'
                 }}
               />
@@ -108,7 +108,7 @@ export default function EducationalQualification() {
                 className={`w-4 h-4 rounded-full border-4 border-white shadow-lg transition-all duration-700 ${
                   isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
                 }`}
-                style={{ background: '#105652' }}
+                style={{ background: '#2596be' }}
               />
             </div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -116,7 +116,7 @@ export default function EducationalQualification() {
                 className={`w-4 h-4 rounded-full border-4 border-white shadow-lg transition-all duration-700 delay-150 ${
                   isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
                 }`}
-                style={{ background: '#1E8479' }}
+                style={{ background: '#3ba8d1' }}
               />
             </div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-0">
@@ -124,7 +124,7 @@ export default function EducationalQualification() {
                 className={`w-4 h-4 rounded-full border-4 border-white shadow-lg transition-all duration-700 delay-300 ${
                   isVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
                 }`}
-                style={{ background: '#2AA08F' }}
+                style={{ background: '#51b9e4' }}
               />
             </div>
           </div>
@@ -138,19 +138,19 @@ export default function EducationalQualification() {
                   isVisible ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'
                 }`}
               >
-                <div className="bg-white rounded-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#105652] relative overflow-hidden group">
+                <div className="bg-white rounded-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#2596be] relative overflow-hidden group">
                   {/* Status Badge with Subtle Pulse */}
                   <div className="absolute top-3 right-3">
                     <div
                       className="relative px-3 py-1 rounded-full text-xs font-bold text-white"
-                      style={{ background: '#105652' }}
+                      style={{ background: '#2596be' }}
                     >
                       In Progress
                       {/* Subtle glow effect */}
                       <span
                         className="absolute inset-0 rounded-full opacity-0 animate-ping"
                         style={{
-                          background: '#105652',
+                          background: '#2596be',
                           animationDuration: '3s'
                         }}
                       />
@@ -161,7 +161,7 @@ export default function EducationalQualification() {
                     {/* Icon */}
                     <div
                       className="w-12 h-12 rounded-lg flex items-center justify-center shadow-md flex-shrink-0"
-                      style={{ background: 'linear-gradient(135deg, #105652, #0d4240)' }}
+                      style={{ background: 'linear-gradient(135deg, #2596be, #1d7a9a)' }}
                     >
                       <GraduationCap className="w-6 h-6 text-white" />
                     </div>
@@ -170,27 +170,27 @@ export default function EducationalQualification() {
                       {/* Degree */}
                       <h3
                         className="text-lg font-bold mb-2 leading-tight"
-                        style={{ color: '#105652' }}
+                        style={{ color: '#2596be' }}
                       >
                         BSc in Geography and Environment
                       </h3>
 
                       {/* Institution */}
                       <div className="flex items-start gap-2 mb-1.5 text-gray-700">
-                        <BookOpen className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#105652' }} />
+                        <BookOpen className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#2596be' }} />
                         <p className="text-sm font-medium">Islamic University Bangladesh</p>
                       </div>
 
                       {/* Location */}
                       <div className="flex items-start gap-2 mb-3 text-gray-600">
-                        <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#105652' }} />
+                        <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#2596be' }} />
                         <p className="text-sm">Kushtia, Bangladesh</p>
                       </div>
 
                       {/* CGPA Badge */}
                       <div
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-white shadow-md"
-                        style={{ background: 'linear-gradient(135deg, #105652, #0d4240)' }}
+                        style={{ background: 'linear-gradient(135deg, #2596be, #1d7a9a)' }}
                       >
                         <span className="text-xs opacity-90">CGPA</span>
                         <span className="text-base">3.45</span>
@@ -202,7 +202,7 @@ export default function EducationalQualification() {
                   {/* Duration */}
                   <div className="mt-4 pt-3 border-t border-gray-100">
                     <div className="inline-flex items-center gap-2 text-gray-600">
-                      <Calendar className="w-4 h-4" style={{ color: '#105652' }} />
+                      <Calendar className="w-4 h-4" style={{ color: '#2596be' }} />
                       <span className="text-sm font-semibold">March 2022 - Current</span>
                     </div>
                   </div>
@@ -215,12 +215,12 @@ export default function EducationalQualification() {
                   isVisible ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'
                 }`}
               >
-                <div className="bg-white rounded-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#2AA08F] relative overflow-hidden group">
+                <div className="bg-white rounded-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#51b9e4] relative overflow-hidden group">
                   <div className="flex gap-4">
                     {/* Icon */}
                     <div
                       className="w-12 h-12 rounded-lg flex items-center justify-center shadow-md flex-shrink-0"
-                      style={{ background: 'linear-gradient(135deg, #2AA08F, #1f8173)' }}
+                      style={{ background: 'linear-gradient(135deg, #51b9e4, #3ba8d1)' }}
                     >
                       <Award className="w-6 h-6 text-white" />
                     </div>
@@ -229,27 +229,27 @@ export default function EducationalQualification() {
                       {/* Degree */}
                       <h3
                         className="text-lg font-bold mb-2 leading-tight"
-                        style={{ color: '#2AA08F' }}
+                        style={{ color: '#51b9e4' }}
                       >
                         SSC - Secondary School Certificate
                       </h3>
 
                       {/* Institution */}
                       <div className="flex items-start gap-2 mb-1.5 text-gray-700">
-                        <BookOpen className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#2AA08F' }} />
+                        <BookOpen className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#51b9e4' }} />
                         <p className="text-sm font-medium">JGHS - Jhenaidah Government High School</p>
                       </div>
 
                       {/* Location */}
                       <div className="flex items-start gap-2 mb-3 text-gray-600">
-                        <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#2AA08F' }} />
+                        <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#51b9e4' }} />
                         <p className="text-sm">JHENAIDAH</p>
                       </div>
 
                       {/* GPA Badge */}
                       <div
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-white shadow-md"
-                        style={{ background: 'linear-gradient(135deg, #2AA08F, #1f8173)' }}
+                        style={{ background: 'linear-gradient(135deg, #51b9e4, #3ba8d1)' }}
                       >
                         <span className="text-xs opacity-90">GPA</span>
                         <span className="text-base">5.00</span>
@@ -261,7 +261,7 @@ export default function EducationalQualification() {
                   {/* Duration */}
                   <div className="mt-4 pt-3 border-t border-gray-100">
                     <div className="inline-flex items-center gap-2 text-gray-600">
-                      <Calendar className="w-4 h-4" style={{ color: '#2AA08F' }} />
+                      <Calendar className="w-4 h-4" style={{ color: '#51b9e4' }} />
                       <span className="text-sm font-semibold">2016 - 2018</span>
                     </div>
                   </div>
@@ -276,12 +276,12 @@ export default function EducationalQualification() {
                   isVisible ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'
                 }`}
               >
-                <div className="bg-white rounded-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#1E8479] relative overflow-hidden group">
+                <div className="bg-white rounded-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-[#3ba8d1] relative overflow-hidden group">
                   <div className="flex gap-4">
                     {/* Icon */}
                     <div
                       className="w-12 h-12 rounded-lg flex items-center justify-center shadow-md flex-shrink-0"
-                      style={{ background: 'linear-gradient(135deg, #1E8479, #16685e)' }}
+                      style={{ background: 'linear-gradient(135deg, #3ba8d1, #2596be)' }}
                     >
                       <BookOpen className="w-6 h-6 text-white" />
                     </div>
@@ -290,27 +290,27 @@ export default function EducationalQualification() {
                       {/* Degree */}
                       <h3
                         className="text-lg font-bold mb-2 leading-tight"
-                        style={{ color: '#1E8479' }}
+                        style={{ color: '#3ba8d1' }}
                       >
                         HSC - Higher Secondary Certificate
                       </h3>
 
                       {/* Institution */}
                       <div className="flex items-start gap-2 mb-1.5 text-gray-700">
-                        <BookOpen className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#1E8479' }} />
+                        <BookOpen className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#3ba8d1' }} />
                         <p className="text-sm font-medium">Govt. H.S.S. Collage, Magura</p>
                       </div>
 
                       {/* Location */}
                       <div className="flex items-start gap-2 mb-3 text-gray-600">
-                        <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#1E8479' }} />
+                        <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: '#3ba8d1' }} />
                         <p className="text-sm">JHENAIDAH</p>
                       </div>
 
                       {/* GPA Badge */}
                       <div
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-white shadow-md"
-                        style={{ background: 'linear-gradient(135deg, #1E8479, #16685e)' }}
+                        style={{ background: 'linear-gradient(135deg, #3ba8d1, #2596be)' }}
                       >
                         <span className="text-xs opacity-90">GPA</span>
                         <span className="text-base">5.00</span>
@@ -322,7 +322,7 @@ export default function EducationalQualification() {
                   {/* Duration */}
                   <div className="mt-4 pt-3 border-t border-gray-100">
                     <div className="inline-flex items-center gap-2 text-gray-600">
-                      <Calendar className="w-4 h-4" style={{ color: '#1E8479' }} />
+                      <Calendar className="w-4 h-4" style={{ color: '#3ba8d1' }} />
                       <span className="text-sm font-semibold">2018 - 2020</span>
                     </div>
                   </div>

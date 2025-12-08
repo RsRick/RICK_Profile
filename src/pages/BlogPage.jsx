@@ -88,7 +88,7 @@ export default function BlogPage() {
       <div className="container mx-auto px-6 mb-6">
         <button
           onClick={() => navigate('/blogs')}
-          className="flex items-center gap-2 text-gray-600 hover:text-[#105652] transition-colors"
+          className="flex items-center gap-2 text-gray-600 hover:text-[#2596be] transition-colors"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to Blogs
@@ -140,7 +140,7 @@ export default function BlogPage() {
         {/* Content */}
         <div className="bg-white rounded-2xl shadow-lg p-8">
           {/* Title */}
-          <h1 className="text-4xl font-bold mb-6" style={{ color: '#105652' }}>
+          <h1 className="text-4xl font-bold mb-6" style={{ color: '#2596be' }}>
             {blog.title}
           </h1>
 
@@ -185,7 +185,7 @@ export default function BlogPage() {
             {/* Category */}
             <span
               className="px-3 py-1 rounded-full text-xs font-bold text-white"
-              style={{ backgroundColor: '#105652' }}
+              style={{ backgroundColor: '#2596be' }}
             >
               {blog.category}
             </span>
@@ -206,7 +206,7 @@ export default function BlogPage() {
                 alert('Link copied to clipboard!');
               }}
               className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all duration-300 hover:scale-105"
-              style={{ backgroundColor: '#105652' }}
+              style={{ backgroundColor: '#2596be' }}
             >
               <ExternalLink className="w-5 h-5" />
               Share Blog
@@ -217,3 +217,4 @@ export default function BlogPage() {
     </div>
   );
 }
+

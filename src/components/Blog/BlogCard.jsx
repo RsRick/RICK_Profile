@@ -80,7 +80,7 @@ export default function BlogCard({ blog, onClick, categoryColors, index = 0 }) {
             }`}
             style={{ boxShadow: '0 4px 15px rgba(0,0,0,0.2)' }}
           >
-            <ArrowUpRight className="w-4 h-4 text-[#105652]" />
+            <ArrowUpRight className="w-4 h-4 text-[#2596be]" />
           </div>
         </div>
 
@@ -91,7 +91,7 @@ export default function BlogCard({ blog, onClick, categoryColors, index = 0 }) {
             <span
               className="px-3 py-1 rounded-full text-xs font-bold text-white uppercase tracking-wider"
               style={{
-                backgroundColor: categoryColors[blog.category] || '#105652',
+                backgroundColor: categoryColors[blog.category] || '#2596be',
               }}
             >
               {blog.category}
@@ -106,7 +106,7 @@ export default function BlogCard({ blog, onClick, categoryColors, index = 0 }) {
           <h3 
             className="text-lg font-bold line-clamp-3 leading-snug transition-colors duration-300"
             style={{ 
-              color: isHovered ? '#105652' : '#1f2937',
+              color: isHovered ? '#2596be' : '#1f2937',
               minHeight: '4.5rem', // Space for 3 lines
             }}
           >
@@ -118,7 +118,7 @@ export default function BlogCard({ blog, onClick, categoryColors, index = 0 }) {
             className="h-px my-4 transition-all duration-500"
             style={{
               background: isHovered 
-                ? 'linear-gradient(90deg, #105652, #1E8479, transparent)'
+                ? 'linear-gradient(90deg, #2596be, #3ba8d1, transparent)'
                 : 'linear-gradient(90deg, #e5e7eb, transparent)',
             }}
           />
@@ -140,7 +140,7 @@ export default function BlogCard({ blog, onClick, categoryColors, index = 0 }) {
                 ) : (
                   <div 
                     className="w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold"
-                    style={{ background: 'linear-gradient(135deg, #105652, #1E8479)' }}
+                    style={{ background: 'linear-gradient(135deg, #2596be, #3ba8d1)' }}
                   >
                     {blog.authorNames?.[0]?.charAt(0) || 'A'}
                   </div>
@@ -164,10 +164,13 @@ export default function BlogCard({ blog, onClick, categoryColors, index = 0 }) {
           className="absolute bottom-0 left-0 h-1 transition-all duration-500 ease-out"
           style={{
             width: isHovered ? '100%' : '0%',
-            background: 'linear-gradient(90deg, #105652, #1E8479)',
+            background: 'linear-gradient(90deg, #2596be, #3ba8d1)',
           }}
         />
       </div>
     </div>
   );
 }
+
+
+

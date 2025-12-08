@@ -158,7 +158,7 @@ export default function ContactPage() {
           {/* Back Button */}
           <button
             onClick={() => navigate('/')}
-            className="inline-flex items-center gap-1.5 text-gray-500 hover:text-[#105652] transition-colors mb-6 text-sm"
+            className="inline-flex items-center gap-1.5 text-gray-500 hover:text-[#2596be] transition-colors mb-6 text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back</span>
@@ -170,7 +170,7 @@ export default function ContactPage() {
               {/* Left Side - Profile */}
               <div
                 className="lg:col-span-2 p-8 lg:p-10 text-white relative"
-                style={{ background: 'linear-gradient(160deg, #105652 0%, #0d4542 50%, #1a6b66 100%)' }}
+                style={{ background: 'linear-gradient(160deg, #2596be 0%, #1d7a9a 50%, #3ba8d1 100%)' }}
               >
                 {/* Decorative circles */}
                 <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
@@ -309,7 +309,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         placeholder="John Doe"
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#105652] focus:ring-2 focus:ring-[#105652]/10 outline-none transition-all text-sm"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2596be] focus:ring-2 focus:ring-[#2596be]/10 outline-none transition-all text-sm"
                       />
                     </div>
                     <div>
@@ -321,7 +321,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         placeholder="john@example.com"
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#105652] focus:ring-2 focus:ring-[#105652]/10 outline-none transition-all text-sm"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2596be] focus:ring-2 focus:ring-[#2596be]/10 outline-none transition-all text-sm"
                       />
                     </div>
                   </div>
@@ -335,7 +335,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       placeholder="What's this about?"
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#105652] focus:ring-2 focus:ring-[#105652]/10 outline-none transition-all text-sm"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2596be] focus:ring-2 focus:ring-[#2596be]/10 outline-none transition-all text-sm"
                     />
                   </div>
 
@@ -348,7 +348,7 @@ export default function ContactPage() {
                       required
                       rows="4"
                       placeholder="Tell me about your project or inquiry..."
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#105652] focus:ring-2 focus:ring-[#105652]/10 outline-none transition-all text-sm resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2596be] focus:ring-2 focus:ring-[#2596be]/10 outline-none transition-all text-sm resize-none"
                     />
                   </div>
 
@@ -356,7 +356,7 @@ export default function ContactPage() {
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full py-3.5 px-6 rounded-xl font-medium text-white flex items-center justify-center gap-2 transition-all hover:shadow-lg disabled:opacity-60"
-                    style={{ background: 'linear-gradient(135deg, #105652, #1a6b66)' }}
+                    style={{ background: 'linear-gradient(135deg, #2596be, #3ba8d1)' }}
                   >
                     {isSubmitting ? (
                       <>
@@ -392,7 +392,7 @@ export default function ContactPage() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 hover:bg-[#105652] hover:text-white text-gray-700 text-sm font-medium transition-all"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 hover:bg-[#2596be] hover:text-white text-gray-700 text-sm font-medium transition-all"
                       >
                         <Icon className="w-4 h-4" />
                         <span>{link.label}</span>

@@ -30,10 +30,10 @@ const allProjects = [
     ],
     projectLink: "https://example.com",
     fullDescription: `
-      <h2 style="color: #105652; font-size: 2rem; font-weight: bold; margin-bottom: 1rem;">What it Shows:</h2>
+      <h2 style="color: #2596be; font-size: 2rem; font-weight: bold; margin-bottom: 1rem;">What it Shows:</h2>
       <p style="color: #4a5568; line-height: 1.8; margin-bottom: 1.5rem;">Using USGS earthquake data, I created a seismic risk map of Bangladesh, classifying zones from <em>very low</em> to <em>very high</em> risk. This helps visualize earthquake vulnerability for disaster preparedness and urban planning. A critical tool for policymakers, researchers, and communities!</p>
       
-      <h3 style="color: #1E8479; font-size: 1.5rem; font-weight: bold; margin: 2rem 0 1rem;">Data Collection:</h3>
+      <h3 style="color: #3ba8d1; font-size: 1.5rem; font-weight: bold; margin: 2rem 0 1rem;">Data Collection:</h3>
       <ul style="color: #4a5568; line-height: 1.8; margin-bottom: 1.5rem; padding-left: 2rem;">
         <li>Download earthquake data (2001–2025) from USGS Earthquake Catalog</li>
         <li>For download Bangladesh data, use Geographic region as custom and give the North, South, East, West location in the box.</li>
@@ -42,20 +42,20 @@ const allProjects = [
       
       <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="Data visualization" style="width: 100%; max-width: 700px; border-radius: 1rem; margin: 2rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" />
       
-      <blockquote style="border-left: 4px solid #1E8479; padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #2d3748; font-size: 1.25rem; background: #FFFAEB; padding: 1.5rem; border-radius: 0.5rem;">"Mapping risks today ensures safer cities tomorrow."</blockquote>
+      <blockquote style="border-left: 4px solid #3ba8d1; padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: #2d3748; font-size: 1.25rem; background: #FFFAEB; padding: 1.5rem; border-radius: 0.5rem;">"Mapping risks today ensures safer cities tomorrow."</blockquote>
       
-      <h3 style="color: #1E8479; font-size: 1.5rem; font-weight: bold; margin: 2rem 0 1rem;">Risk Classification:</h3>
+      <h3 style="color: #3ba8d1; font-size: 1.5rem; font-weight: bold; margin: 2rem 0 1rem;">Risk Classification:</h3>
       <p style="color: #4a5568; line-height: 1.8; margin-bottom: 1rem;">Reclassify the interpolated raster into 5 zones using Equal Intervals or Natural Breaks from the symbology pan of the IDW.</p>
       <p style="color: #4a5568; line-height: 1.8; margin-bottom: 1.5rem;">Then change the color as you like.</p>
       
-      <h3 style="color: #1E8479; font-size: 1.5rem; font-weight: bold; margin: 2rem 0 1rem;">Interpolation in ArcGIS Pro:</h3>
+      <h3 style="color: #3ba8d1; font-size: 1.5rem; font-weight: bold; margin: 2rem 0 1rem;">Interpolation in ArcGIS Pro:</h3>
       <pre style="background: #1a202c; color: #e2e8f0; padding: 1.5rem; border-radius: 0.5rem; overflow-x: auto; margin: 1rem 0;"><code>// Python code for IDW interpolation
 import arcpy
 arcpy.env.workspace = "C:/GIS/Projects"
 arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
 </code></pre>
       
-      <a href="https://example.com" style="color: #1E8479; text-decoration: underline; font-weight: 600;">Learn more about seismic analysis →</a>
+      <a href="https://example.com" style="color: #3ba8d1; text-decoration: underline; font-weight: 600;">Learn more about seismic analysis →</a>
     `
   },
   {
@@ -75,7 +75,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">This project analyzes the international flight network connections from Bangladesh using R programming and network visualization techniques.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">This project analyzes the international flight network connections from Bangladesh using R programming and network visualization techniques.</p>`
   },
   {
     id: 3,
@@ -94,7 +94,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1589519160732-57fc498494f8?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">Analysis of land use and land cover transformation in the Kutupalong refugee camp area from 2017 to 2024.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">Analysis of land use and land cover transformation in the Kutupalong refugee camp area from 2017 to 2024.</p>`
   },
   {
     id: 4,
@@ -113,7 +113,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">Multi-spectral index analysis of the Sundarban Mangrove Forest ecosystem.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">Multi-spectral index analysis of the Sundarban Mangrove Forest ecosystem.</p>`
   },
   {
     id: 5,
@@ -132,7 +132,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">Urban heat island effect analysis in Dhaka city.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">Urban heat island effect analysis in Dhaka city.</p>`
   },
   {
     id: 6,
@@ -151,7 +151,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1547683905-f686c993aae5?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">Flood risk mapping and vulnerability assessment.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">Flood risk mapping and vulnerability assessment.</p>`
   },
   {
     id: 7,
@@ -170,7 +170,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">Monitoring coastal erosion patterns over 24 years.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">Monitoring coastal erosion patterns over 24 years.</p>`
   },
   {
     id: 8,
@@ -189,7 +189,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">Agricultural land use classification and analysis.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">Agricultural land use classification and analysis.</p>`
   },
   {
     id: 9,
@@ -208,7 +208,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">Water quality assessment using statistical methods.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">Water quality assessment using statistical methods.</p>`
   },
   {
     id: 10,
@@ -227,7 +227,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">Forest cover change detection and analysis.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">Forest cover change detection and analysis.</p>`
   },
   {
     id: 11,
@@ -246,7 +246,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">Air quality index mapping and analysis.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">Air quality index mapping and analysis.</p>`
   },
   {
     id: 12,
@@ -265,7 +265,7 @@ arcpy.Idw_3d("earthquake_points", "magnitude", "output_raster", 0.001)
       "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?w=800"
     ],
     projectLink: "https://example.com",
-    fullDescription: `<h2 style="color: #105652;">Project Overview:</h2><p style="color: #4a5568;">Population density analysis using statistical methods.</p>`
+    fullDescription: `<h2 style="color: #2596be;">Project Overview:</h2><p style="color: #4a5568;">Population density analysis using statistical methods.</p>`
   }
 ];
 
@@ -459,7 +459,7 @@ export default function ProjectsPage() {
         <div className="container mx-auto px-6">
           {/* Page Title - Center Aligned */}
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold mb-3" style={{ color: '#105652' }}>
+            <h1 className="text-4xl font-bold mb-3" style={{ color: '#2596be' }}>
               Projects
             </h1>
             <p className="text-base text-gray-600">
@@ -484,7 +484,7 @@ export default function ProjectsPage() {
                       : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md'
                   }`}
                   style={{
-                    backgroundColor: selectedCategory === category ? '#105652' : undefined,
+                    backgroundColor: selectedCategory === category ? '#2596be' : undefined,
                   }}
                 >
                   {category}
@@ -538,3 +538,4 @@ export default function ProjectsPage() {
     </PageWrapper>
   );
 }
+

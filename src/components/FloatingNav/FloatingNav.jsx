@@ -170,18 +170,18 @@ const FloatingNav = () => {
             style={{
               width: showLabel ? '160px' : '48px',
               padding: '12px',
-              backgroundColor: isActive ? '#105652' : 'rgba(255,255,255,0.95)',
+              backgroundColor: isActive ? '#2596be' : 'rgba(255,255,255,0.95)',
               boxShadow: isActive 
-                ? '0 8px 25px rgba(16,86,82,0.3)' 
+                ? '0 8px 25px rgba(37,150,190,0.3)' 
                 : '0 4px 15px rgba(0,0,0,0.1)',
-              border: isActive ? 'none' : '1px solid rgba(16,86,82,0.1)',
+              border: isActive ? 'none' : '1px solid rgba(37,150,190,0.1)',
               cursor: 'pointer',
             }}
           >
             <div
               className="flex-shrink-0 transition-transform duration-200"
               style={{
-                color: isActive ? '#ffffff' : '#105652',
+                color: isActive ? '#ffffff' : '#2596be',
                 transform: isHovered && !isActive ? 'scale(1.15)' : 'scale(1)',
               }}
             >
@@ -191,7 +191,7 @@ const FloatingNav = () => {
               className="whitespace-nowrap text-sm font-semibold transition-all duration-300"
               style={{
                 opacity: showLabel ? 1 : 0,
-                color: isActive ? '#ffffff' : '#105652',
+                color: isActive ? '#ffffff' : '#2596be',
               }}
             >
               {item.label}

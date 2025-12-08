@@ -113,7 +113,7 @@ export default function Support() {
   if (authLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <Loader2 className="w-8 h-8 animate-spin text-[#105652]" />
+        <Loader2 className="w-8 h-8 animate-spin text-[#2596be]" />
       </div>
     );
   }
@@ -136,7 +136,7 @@ export default function Support() {
           {/* Left Column - Quick Help Cards */}
           <div className="lg:col-span-1 space-y-4">
             {/* Support Info Card */}
-            <div className="bg-gradient-to-br from-[#105652] to-[#1E8479] rounded-2xl p-6 text-white relative overflow-hidden">
+            <div className="bg-gradient-to-br from-[#2596be] to-[#3ba8d1] rounded-2xl p-6 text-white relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
                 <svg viewBox="0 0 100 100" className="w-full h-full">
                   <circle cx="80" cy="20" r="40" fill="white" />
@@ -162,7 +162,7 @@ export default function Support() {
             {/* Quick Links */}
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
               <h3 className="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-                <FileQuestion className="w-4 h-4 text-[#105652]" />
+                <FileQuestion className="w-4 h-4 text-[#2596be]" />
                 Common Topics
               </h3>
               <div className="space-y-2">
@@ -178,7 +178,7 @@ export default function Support() {
                     onClick={() => setFormData(prev => ({ ...prev, subject: topic.value }))}
                     className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-all ${
                       formData.subject === topic.value 
-                        ? 'bg-[#105652] text-white' 
+                        ? 'bg-[#2596be] text-white' 
                         : 'bg-gray-50 text-gray-700 hover:bg-gray-100'
                     }`}
                   >
@@ -193,7 +193,7 @@ export default function Support() {
           <div className="lg:col-span-2">
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
               {/* Form Header */}
-              <div className="bg-gradient-to-r from-[#105652] to-[#1E8479] p-6">
+              <div className="bg-gradient-to-r from-[#2596be] to-[#3ba8d1] p-6">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
                     <MessageSquare className="w-5 h-5 text-white" />
@@ -221,7 +221,7 @@ export default function Support() {
                 <div className="bg-gray-50 rounded-xl p-4 mb-6">
                   <p className="text-xs text-gray-500 uppercase tracking-wider mb-2">Sending as</p>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-[#105652] rounded-full flex items-center justify-center">
+                    <div className="w-10 h-10 bg-[#2596be] rounded-full flex items-center justify-center">
                       <span className="text-white font-semibold">{customer?.name?.charAt(0) || 'U'}</span>
                     </div>
                     <div>
@@ -241,7 +241,7 @@ export default function Support() {
                     onChange={handleChange}
                     required
                     placeholder="What can we help you with?"
-                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#105652] outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#2596be] outline-none transition-all"
                   />
                 </div>
 
@@ -255,7 +255,7 @@ export default function Support() {
                     required
                     rows="5"
                     placeholder="Please describe your issue or question in detail..."
-                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#105652] outline-none transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#2596be] outline-none transition-all resize-none"
                   />
                 </div>
 
@@ -269,7 +269,7 @@ export default function Support() {
                       name="relatedOrderId"
                       value={formData.relatedOrderId}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#105652] outline-none transition-all appearance-none bg-white cursor-pointer"
+                      className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-[#2596be] outline-none transition-all appearance-none bg-white cursor-pointer"
                     >
                       <option value="">No specific order</option>
                       {loadingOrders ? (
@@ -293,7 +293,7 @@ export default function Support() {
                     </div>
                   </div>
                   {formData.relatedOrderId && (
-                    <p className="text-xs text-[#105652] mt-1 flex items-center gap-1">
+                    <p className="text-xs text-[#2596be] mt-1 flex items-center gap-1">
                       <Package className="w-3 h-3" />
                       Order reference will be included in your message
                     </p>
@@ -304,7 +304,7 @@ export default function Support() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3.5 px-6 bg-gradient-to-r from-[#105652] to-[#1E8479] text-white rounded-xl font-semibold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-[#105652]/20 transition-all disabled:opacity-70"
+                  className="w-full py-3.5 px-6 bg-gradient-to-r from-[#2596be] to-[#3ba8d1] text-white rounded-xl font-semibold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-[#2596be]/20 transition-all disabled:opacity-70"
                 >
                   {isSubmitting ? (
                     <>
@@ -326,3 +326,5 @@ export default function Support() {
     </div>
   );
 }
+
+

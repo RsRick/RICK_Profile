@@ -72,12 +72,12 @@ h1.whitespace-nowrap {
 
 /* CV Button Styles */
 .cv-button {
-  background: linear-gradient(135deg, #105652, #1E8479);
+  background: linear-gradient(135deg, #2596be, #3ba8d1);
   font-family: inherit;
   padding: 0.3em 1em;
   font-weight: 500;
   font-size: 14px;
-  border: 2px solid #105652;
+  border: 2px solid #2596be;
   border-radius: 0.4em;
   box-shadow: 0.08em 0.08em;
   cursor: pointer;
@@ -91,7 +91,7 @@ h1.whitespace-nowrap {
 .cv-button:hover {
   transform: translate(-0.03em, -0.03em);
   box-shadow: 0.12em 0.12em;
-  background: linear-gradient(135deg, #1E8479, #105652);
+  background: linear-gradient(135deg, #3ba8d1, #2596be);
 }
 
 .cv-button:active {

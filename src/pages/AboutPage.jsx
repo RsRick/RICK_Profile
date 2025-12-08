@@ -58,7 +58,7 @@ export default function AboutPage() {
       cgpa: '3.45',
       scale: '4.00',
       status: 'ongoing',
-      color: '#105652',
+      color: '#2596be',
     },
     {
       degree: 'HSC - Higher Secondary Certificate',
@@ -68,7 +68,7 @@ export default function AboutPage() {
       cgpa: '5.00',
       scale: '5.00',
       status: 'completed',
-      color: '#1E8479',
+      color: '#3ba8d1',
     },
     {
       degree: 'SSC - Secondary School Certificate',
@@ -78,7 +78,7 @@ export default function AboutPage() {
       cgpa: '5.00',
       scale: '5.00',
       status: 'completed',
-      color: '#2AA08F',
+      color: '#51b9e4',
     },
   ];
 
@@ -183,7 +183,7 @@ export default function AboutPage() {
           {/* Back Button */}
           <button
             onClick={() => navigate('/')}
-            className="inline-flex items-center gap-1.5 text-gray-500 hover:text-[#105652] transition-colors mb-6 text-sm"
+            className="inline-flex items-center gap-1.5 text-gray-500 hover:text-[#2596be] transition-colors mb-6 text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back</span>
@@ -194,7 +194,7 @@ export default function AboutPage() {
             {/* Header Section */}
             <div
               className="p-8 lg:p-10 text-white relative"
-              style={{ background: 'linear-gradient(160deg, #105652 0%, #0d4542 50%, #1a6b66 100%)' }}
+              style={{ background: 'linear-gradient(160deg, #2596be 0%, #1d7a9a 50%, #3ba8d1 100%)' }}
             >
               {/* Decorative circles */}
               <div className="absolute top-0 right-0 w-40 h-40 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
@@ -240,7 +240,7 @@ export default function AboutPage() {
                     <div className="text-[10px] uppercase tracking-wider text-white/60">Years Exp</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold">10+</div>
+                    <div className="text-2xl font-bold">38+</div>
                     <div className="text-[10px] uppercase tracking-wider text-white/60">Projects</div>
                   </div>
                 </div>
@@ -258,7 +258,7 @@ export default function AboutPage() {
                       onClick={() => setActiveTab(tab.id)}
                       className={`flex-1 flex items-center justify-center gap-2 py-4 text-sm font-medium transition-all border-b-2 ${
                         activeTab === tab.id
-                          ? 'border-[#105652] text-[#105652]'
+                          ? 'border-[#2596be] text-[#2596be]'
                           : 'border-transparent text-gray-500 hover:text-gray-700'
                       }`}
                     >
@@ -278,7 +278,7 @@ export default function AboutPage() {
                   {/* Bio */}
                   <div>
                     <h2 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
-                      <User className="w-5 h-5" style={{ color: '#105652' }} />
+                      <User className="w-5 h-5" style={{ color: '#2596be' }} />
                       About Me
                     </h2>
                     <div
@@ -296,7 +296,7 @@ export default function AboutPage() {
                             href="http://www.jhenidahghs.edu.bd/" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="text-[#105652] hover:underline font-medium"
+                            className="text-[#2596be] hover:underline font-bold"
                           >
                             Jhenaidah Government High School
                           </a>
@@ -305,7 +305,7 @@ export default function AboutPage() {
                             href="https://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF_%E0%A6%B9%E0%A7%8B%E0%A6%B8%E0%A7%87%E0%A6%A8_%E0%A6%B6%E0%A6%B9%E0%A7%80%E0%A6%A6_%E0%A6%B8%E0%A7%8B%E0%A6%B9%E0%A6%B0%E0%A6%BE%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A6%E0%A7%80_%E0%A6%95%E0%A6%B2%E0%A7%87%E0%A6%9C,_%E0%A6%AE%E0%A6%BE%E0%A6%97%E0%A7%81%E0%A6%B0%E0%A6%BE" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="text-[#105652] hover:underline font-medium"
+                            className="text-[#2596be] hover:underline font-bold"
                           >
                             Govt. H.S.S. Collage, Magura
                           </a>
@@ -314,11 +314,11 @@ export default function AboutPage() {
                             href="https://iu.ac.bd/" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="text-[#105652] hover:underline font-medium"
+                            className="text-[#2596be] hover:underline font-bold"
                           >
                             Islamic University, Kushtia
                           </a>
-                          , Bangladesh.Along with my studies, I like learning about maps, the environment, and how the Earth works. I enjoy using new tools and technology to understand different things in nature. People say I am ethical, creative, hardworking person. I take part in different class projects and enjoy learning with my friends. In my free time, I love traveling, seeing new places, and improving my skills.
+                          , Bangladesh. Along with my studies, I like learning about maps, the environment, and how the Earth works. I enjoy using new tools and technology to understand different things in nature. People say I am ethical, creative, hardworking person. I take part in different class projects and enjoy learning with my friends. In my free time, I love traveling, seeing new places, and improving my skills.
                         </p>
                       )}
                     </div>
@@ -328,7 +328,7 @@ export default function AboutPage() {
                   {aboutData.researchLinks.length > 0 && (
                     <div>
                       <h2 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
-                        <Briefcase className="w-5 h-5" style={{ color: '#105652' }} />
+                        <Briefcase className="w-5 h-5" style={{ color: '#2596be' }} />
                         Research Profiles
                       </h2>
                       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -341,13 +341,13 @@ export default function AboutPage() {
                               href={link.url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#105652] hover:text-white text-gray-700 transition-all group"
+                              className="flex items-center gap-3 p-3 rounded-xl bg-gray-50 hover:bg-[#2596be] hover:text-white text-gray-700 transition-all group"
                             >
                               <div className="w-10 h-10 rounded-lg bg-white flex items-center justify-center overflow-hidden shadow-sm group-hover:shadow-md">
                                 {link.iconUrl ? (
                                   <img src={link.iconUrl} alt={link.name} className="w-full h-full object-cover" />
                                 ) : (
-                                  <ExternalLink className="w-5 h-5 text-[#105652]" />
+                                  <ExternalLink className="w-5 h-5 text-[#2596be]" />
                                 )}
                               </div>
                               <span className="text-sm font-medium truncate">{link.name}</span>
@@ -363,7 +363,7 @@ export default function AboutPage() {
               {activeTab === 'education' && (
                 <div>
                   <h2 className="text-lg font-bold text-gray-800 mb-6 flex items-center gap-2">
-                    <GraduationCap className="w-5 h-5" style={{ color: '#105652' }} />
+                    <GraduationCap className="w-5 h-5" style={{ color: '#2596be' }} />
                     Educational Qualification
                   </h2>
 
@@ -371,7 +371,7 @@ export default function AboutPage() {
                     {educationData.map((edu, index) => (
                       <div
                         key={index}
-                        className="relative p-5 rounded-xl border-2 border-gray-100 hover:border-[#105652]/30 transition-all group"
+                        className="relative p-5 rounded-xl border-2 border-gray-100 hover:border-[#2596be]/30 transition-all group"
                       >
                         {/* Status Badge */}
                         {edu.status === 'ongoing' && (
@@ -448,7 +448,7 @@ export default function AboutPage() {
               {activeTab === 'experience' && (
                 <div>
                   <h2 className="text-lg font-bold text-gray-800 mb-6 flex items-center gap-2">
-                    <Briefcase className="w-5 h-5" style={{ color: '#105652' }} />
+                    <Briefcase className="w-5 h-5" style={{ color: '#2596be' }} />
                     Experience & Milestones
                   </h2>
 
@@ -464,14 +464,14 @@ export default function AboutPage() {
                         {/* Vertical Line */}
                         <div 
                           className="absolute left-5 top-0 bottom-0 w-0.5 hidden sm:block"
-                          style={{ background: 'linear-gradient(180deg, #105652 0%, #2AA08F 100%)' }}
+                          style={{ background: 'linear-gradient(180deg, #2596be 0%, #51b9e4 100%)' }}
                         />
                         
                         <div className="space-y-3">
                           {experiences.map((exp, index) => {
                             const TypeIcon = getTypeIcon(exp.type);
                             const isSelected = selectedExp?.$id === exp.$id;
-                            const cardColor = exp.color || '#105652';
+                            const cardColor = exp.color || '#2596be';
                             
                             return (
                               <button
@@ -536,13 +536,13 @@ export default function AboutPage() {
                         {selectedExp && (
                           <div 
                             className="rounded-2xl overflow-hidden shadow-lg border-2 h-full"
-                            style={{ borderColor: selectedExp.color || '#105652' }}
+                            style={{ borderColor: selectedExp.color || '#2596be' }}
                           >
                             {/* Header with gradient */}
                             <div 
                               className="p-6 text-white relative overflow-hidden"
                               style={{ 
-                                background: `linear-gradient(135deg, ${selectedExp.color || '#105652'} 0%, ${selectedExp.colorSecondary || '#1E8479'} 100%)` 
+                                background: `linear-gradient(135deg, ${selectedExp.color || '#2596be'} 0%, ${selectedExp.colorSecondary || '#3ba8d1'} 100%)` 
                               }}
                             >
                               {/* Decorative circle */}
@@ -618,8 +618,8 @@ export default function AboutPage() {
                                         key={idx}
                                         className="px-2.5 py-1 rounded-full text-xs font-medium"
                                         style={{ 
-                                          backgroundColor: `${selectedExp.color || '#105652'}10`,
-                                          color: selectedExp.color || '#105652'
+                                          backgroundColor: `${selectedExp.color || '#2596be'}10`,
+                                          color: selectedExp.color || '#2596be'
                                         }}
                                       >
                                         {skill}
@@ -655,7 +655,7 @@ export default function AboutPage() {
               {activeTab === 'skills' && (
                 <div>
                   <h2 className="text-lg font-bold text-gray-800 mb-6 flex items-center gap-2">
-                    <Code className="w-5 h-5" style={{ color: '#105652' }} />
+                    <Code className="w-5 h-5" style={{ color: '#2596be' }} />
                     Skills & Expertise
                   </h2>
 
@@ -664,7 +664,7 @@ export default function AboutPage() {
                     {/* GIS Category */}
                     <div 
                       className="relative p-5 rounded-2xl overflow-hidden group hover:shadow-lg transition-all"
-                      style={{ background: 'linear-gradient(135deg, #105652 0%, #1a6b66 100%)' }}
+                      style={{ background: 'linear-gradient(135deg, #2596be 0%, #1d7a9a 100%)' }}
                     >
                       <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
                       <div className="relative z-10">
@@ -693,7 +693,7 @@ export default function AboutPage() {
                     {/* Programming Category */}
                     <div 
                       className="relative p-5 rounded-2xl overflow-hidden group hover:shadow-lg transition-all"
-                      style={{ background: 'linear-gradient(135deg, #1E8479 0%, #2AA08F 100%)' }}
+                      style={{ background: 'linear-gradient(135deg, #3ba8d1 0%, #51b9e4 100%)' }}
                     >
                       <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
                       <div className="relative z-10">
@@ -722,7 +722,7 @@ export default function AboutPage() {
                     {/* Analysis Category */}
                     <div 
                       className="relative p-5 rounded-2xl overflow-hidden group hover:shadow-lg transition-all"
-                      style={{ background: 'linear-gradient(135deg, #2AA08F 0%, #3db8a5 100%)' }}
+                      style={{ background: 'linear-gradient(135deg, #51b9e4 0%, #6bc9f0 100%)' }}
                     >
                       <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
                       <div className="relative z-10">
@@ -751,7 +751,7 @@ export default function AboutPage() {
                     {/* Tools Category */}
                     <div 
                       className="relative p-5 rounded-2xl overflow-hidden group hover:shadow-lg transition-all"
-                      style={{ background: 'linear-gradient(135deg, #0d4542 0%, #105652 100%)' }}
+                      style={{ background: 'linear-gradient(135deg, #1d7a9a 0%, #2596be 100%)' }}
                     >
                       <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
                       <div className="relative z-10">

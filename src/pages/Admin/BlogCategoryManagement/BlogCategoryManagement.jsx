@@ -14,7 +14,7 @@ export default function BlogCategoryManagement() {
 
   const [formData, setFormData] = useState({
     name: '',
-    color: '#105652',
+    color: '#2596be',
     order: 0
   });
 
@@ -111,7 +111,7 @@ export default function BlogCategoryManagement() {
   const resetForm = () => {
     setFormData({
       name: '',
-      color: '#105652',
+      color: '#2596be',
       order: categories.length
     });
     setEditingCategory(null);
@@ -152,13 +152,13 @@ export default function BlogCategoryManagement() {
   return (
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>
+        <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>
           Blog Category Management
         </h1>
         <button
           onClick={() => setShowForm(!showForm)}
           className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all duration-300 hover:scale-105"
-          style={{ backgroundColor: '#105652' }}
+          style={{ backgroundColor: '#2596be' }}
         >
           {showForm ? <X className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
           {showForm ? 'Cancel' : 'Add Category'}
@@ -167,7 +167,7 @@ export default function BlogCategoryManagement() {
 
       {showForm && (
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-2xl font-bold mb-4" style={{ color: '#2596be' }}>
             {editingCategory ? 'Edit Category' : 'Add New Category'}
           </h2>
           
@@ -181,7 +181,7 @@ export default function BlogCategoryManagement() {
                 onChange={handleInputChange}
                 required
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
                 placeholder="e.g., Technology, Travel, Lifestyle"
               />
             </div>
@@ -202,8 +202,8 @@ export default function BlogCategoryManagement() {
                   value={formData.color}
                   onChange={handleInputChange}
                   className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                  style={{ borderColor: '#105652' }}
-                  placeholder="#105652"
+                  style={{ borderColor: '#2596be' }}
+                  placeholder="#2596be"
                 />
               </div>
             </div>
@@ -217,7 +217,7 @@ export default function BlogCategoryManagement() {
                 onChange={handleInputChange}
                 min="0"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
               <p className="text-xs text-gray-500 mt-1">
                 Lower numbers appear first
@@ -229,7 +229,7 @@ export default function BlogCategoryManagement() {
                 type="submit"
                 disabled={loading}
                 className="flex items-center gap-2 px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105 disabled:opacity-50"
-                style={{ backgroundColor: '#105652' }}
+                style={{ backgroundColor: '#2596be' }}
               >
                 <Save className="w-5 h-5" />
                 {loading ? 'Saving...' : editingCategory ? 'Update Category' : 'Create Category'}
@@ -238,7 +238,7 @@ export default function BlogCategoryManagement() {
                 type="button"
                 onClick={resetForm}
                 className="px-6 py-3 rounded-lg border-2 transition-all duration-300 hover:scale-105"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
               >
                 Cancel
               </button>
@@ -249,7 +249,7 @@ export default function BlogCategoryManagement() {
 
       {/* Categories List */}
       <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4" style={{ color: '#105652' }}>
+        <h2 className="text-xl font-bold mb-4" style={{ color: '#2596be' }}>
           All Categories ({categories.length})
         </h2>
         
@@ -295,7 +295,7 @@ export default function BlogCategoryManagement() {
                   <button
                     onClick={() => handleEdit(category)}
                     className="p-2 rounded-lg text-white transition-all duration-300 hover:scale-105"
-                    style={{ backgroundColor: '#105652' }}
+                    style={{ backgroundColor: '#2596be' }}
                     title="Edit Category"
                   >
                     <Edit2 className="w-5 h-5" />
@@ -316,3 +316,4 @@ export default function BlogCategoryManagement() {
     </div>
   );
 }
+
