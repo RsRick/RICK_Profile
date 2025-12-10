@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContext';
 import { Mail, Lock, LogIn } from 'lucide-react';
+import EnvDebug from '../../../components/Debug/EnvDebug';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -31,6 +32,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+      <EnvDebug />
       <div className="max-w-md w-full">
         <div className="bg-white rounded-2xl shadow-xl p-8">
           <div className="text-center mb-8">
