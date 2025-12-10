@@ -99,7 +99,7 @@ export default function ContactResponses() {
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
         <div>
-          <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>
+          <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>
             Contact Form Responses
           </h1>
           <p className="text-gray-500 text-sm mt-1">
@@ -173,7 +173,7 @@ export default function ContactResponses() {
                       <button
                         onClick={() => openResponse(response)}
                         className="p-2 rounded-lg text-white transition-all hover:scale-105"
-                        style={{ backgroundColor: '#105652' }}
+                        style={{ backgroundColor: '#2596be' }}
                         title="View Details"
                       >
                         <Eye className="w-4 h-4" />
@@ -205,7 +205,7 @@ export default function ContactResponses() {
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
-            <div className="flex items-center justify-between p-6 border-b" style={{ backgroundColor: '#105652' }}>
+            <div className="flex items-center justify-between p-6 border-b" style={{ backgroundColor: '#2596be' }}>
               <h3 className="text-xl font-bold text-white">Message Details</h3>
               <button
                 onClick={() => setSelectedResponse(null)}
@@ -220,7 +220,7 @@ export default function ContactResponses() {
               {/* Contact Info */}
               <div className="grid md:grid-cols-2 gap-4 mb-6">
                 <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                  <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#105652' }}>
+                  <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#2596be' }}>
                     <User className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -230,7 +230,7 @@ export default function ContactResponses() {
                 </div>
 
                 <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                  <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#105652' }}>
+                  <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#2596be' }}>
                     <Mail className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -243,7 +243,7 @@ export default function ContactResponses() {
 
                 {selectedResponse.phone && (
                   <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                    <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#105652' }}>
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#2596be' }}>
                       <Phone className="w-5 h-5 text-white" />
                     </div>
                     <div>
@@ -256,7 +256,7 @@ export default function ContactResponses() {
                 )}
 
                 <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                  <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#105652' }}>
+                  <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#2596be' }}>
                     <Calendar className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -269,7 +269,7 @@ export default function ContactResponses() {
               {/* Subject */}
               <div className="mb-6">
                 <h4 className="text-sm font-semibold text-gray-500 uppercase mb-2">Subject</h4>
-                <p className="text-lg font-medium" style={{ color: '#105652' }}>
+                <p className="text-lg font-medium" style={{ color: '#2596be' }}>
                   {selectedResponse.subject}
                 </p>
               </div>
@@ -289,7 +289,7 @@ export default function ContactResponses() {
                 <a
                   href={`mailto:${selectedResponse.email}?subject=Re: ${selectedResponse.subject}`}
                   className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all hover:scale-105"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   <Mail className="w-4 h-4" />
                   Reply via Email
@@ -311,3 +311,4 @@ export default function ContactResponses() {
     </div>
   );
 }
+

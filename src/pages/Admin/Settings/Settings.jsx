@@ -237,7 +237,7 @@ export default function Settings() {
       </Link>
 
       <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-        <h1 className="text-3xl font-bold mb-6" style={{ color: '#105652' }}>
+        <h1 className="text-3xl font-bold mb-6" style={{ color: '#2596be' }}>
           Site Settings
         </h1>
 
@@ -251,7 +251,7 @@ export default function Settings() {
             value={siteTitle}
             onChange={(e) => setSiteTitle(e.target.value)}
             placeholder="Parvej Hossain - Portfolio"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none transition-all"
           />
           <p className="mt-2 text-sm text-gray-500">
             This will be displayed in the browser tab title
@@ -297,7 +297,7 @@ export default function Settings() {
             </div>
           )}
 
-          <label className="inline-flex items-center gap-2 px-6 py-3 bg-[#105652] text-white rounded-lg cursor-pointer hover:bg-[#1E8479] transition-colors">
+          <label className="inline-flex items-center gap-2 px-6 py-3 bg-[#2596be] text-white rounded-lg cursor-pointer hover:bg-[#3ba8d1] transition-colors">
             <Upload className="w-5 h-5" />
             <span>{faviconFile ? 'Change Favicon' : 'Upload Favicon'}</span>
             <input
@@ -317,7 +317,7 @@ export default function Settings() {
           <button
             onClick={handleSave}
             disabled={saving}
-            className="px-6 py-3 bg-[#105652] text-white rounded-lg font-semibold hover:bg-[#1E8479] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+            className="px-6 py-3 bg-[#2596be] text-white rounded-lg font-semibold hover:bg-[#3ba8d1] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
           >
             <Save className="w-5 h-5" />
             {saving ? 'Saving...' : 'Save Settings'}
@@ -327,4 +327,5 @@ export default function Settings() {
     </div>
   );
 }
+
 

@@ -10,7 +10,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
   // Title styles
   const [titleFontFamily, setTitleFontFamily] = useState("'Poppins', sans-serif");
   const [titleFontSize, setTitleFontSize] = useState('18');
-  const [titleColor, setTitleColor] = useState('#105652');
+  const [titleColor, setTitleColor] = useState('#2596be');
   const [titleBgColor, setTitleBgColor] = useState('#f0fdfa');
   const [titleFontWeight, setTitleFontWeight] = useState('600');
   
@@ -21,7 +21,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
   const [contentBgColor, setContentBgColor] = useState('#ffffff');
   
   // Border and spacing
-  const [borderColor, setBorderColor] = useState('#105652');
+  const [borderColor, setBorderColor] = useState('#2596be');
   const [borderRadius, setBorderRadius] = useState('8');
   const [padding, setPadding] = useState('16');
 
@@ -34,7 +34,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
       // Title styles
       setTitleFontFamily(initialData.titleStyles?.fontFamily || "'Poppins', sans-serif");
       setTitleFontSize(initialData.titleStyles?.fontSize || '18');
-      setTitleColor(initialData.titleStyles?.color || '#105652');
+      setTitleColor(initialData.titleStyles?.color || '#2596be');
       setTitleBgColor(initialData.titleStyles?.backgroundColor || '#f0fdfa');
       setTitleFontWeight(initialData.titleStyles?.fontWeight || '600');
       
@@ -45,7 +45,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
       setContentBgColor(initialData.contentStyles?.backgroundColor || '#ffffff');
       
       // Border and spacing
-      setBorderColor(initialData.borderColor || '#105652');
+      setBorderColor(initialData.borderColor || '#2596be');
       setBorderRadius(initialData.borderRadius || '8');
       setPadding(initialData.padding || '16');
     }
@@ -85,8 +85,8 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
   const colorPalette = [
     '#000000', '#FFFFFF', '#FF0000', '#00FF00', '#0000FF',
     '#FFFF00', '#FF00FF', '#00FFFF', '#FFA500', '#800080',
-    '#008000', '#FFC0CB', '#A52A2A', '#808080', '#105652',
-    '#1E8479', '#2d3748', '#4a5568', '#718096', '#e53e3e',
+    '#008000', '#FFC0CB', '#A52A2A', '#808080', '#2596be',
+    '#3ba8d1', '#2d3748', '#4a5568', '#718096', '#e53e3e',
     '#f0fdfa', '#ffffff', '#f3f4f6', '#e5e7eb',
   ];
 
@@ -95,7 +95,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
       <div className="bg-white rounded-lg shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="sticky top-0 bg-white border-b px-6 py-4 flex items-center justify-between z-10">
-          <h3 className="text-xl font-bold" style={{ color: '#105652' }}>
+          <h3 className="text-xl font-bold" style={{ color: '#2596be' }}>
             {initialData ? 'Edit FAQ Item' : 'Insert FAQ Item'}
           </h3>
           <button
@@ -120,7 +120,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
               onChange={(e) => setTitle(e.target.value)}
               placeholder="Enter your question or title..."
               className="w-full px-4 py-3 border-2 rounded-lg focus:outline-none focus:ring-2"
-              style={{ borderColor: '#105652' }}
+              style={{ borderColor: '#2596be' }}
             />
           </div>
 
@@ -134,7 +134,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
               onChange={(e) => setContent(e.target.value)}
               placeholder="Enter the answer or content... You can use line breaks for paragraphs."
               className="w-full px-4 py-3 border-2 rounded-lg focus:outline-none focus:ring-2 min-h-[150px]"
-              style={{ borderColor: '#105652' }}
+              style={{ borderColor: '#2596be' }}
             />
             <p className="text-xs text-gray-500 mt-1">
               Tip: Press Enter to create new paragraphs. Use bullet points with "•" or numbers.
@@ -158,8 +158,8 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
           </div>
 
           {/* Title Styling */}
-          <div className="border-2 rounded-lg p-4" style={{ borderColor: '#105652' }}>
-            <h4 className="text-md font-bold mb-4" style={{ color: '#105652' }}>
+          <div className="border-2 rounded-lg p-4" style={{ borderColor: '#2596be' }}>
+            <h4 className="text-md font-bold mb-4" style={{ color: '#2596be' }}>
               Title Styling
             </h4>
             
@@ -177,7 +177,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
                     if (font) loadGoogleFont(font.name);
                   }}
                   className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 text-sm"
-                  style={{ borderColor: '#105652', fontFamily: titleFontFamily }}
+                  style={{ borderColor: '#2596be', fontFamily: titleFontFamily }}
                 >
                   <option value="serif">Serif</option>
                   <option value="sans-serif">Sans-serif</option>
@@ -247,7 +247,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
                   value={titleFontSize}
                   onChange={(e) => setTitleFontSize(e.target.value)}
                   className="w-full"
-                  style={{ accentColor: '#105652' }}
+                  style={{ accentColor: '#2596be' }}
                 />
               </div>
 
@@ -277,7 +277,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
                       type="button"
                       onClick={() => setTitleColor(color)}
                       className="w-6 h-6 rounded border-2"
-                      style={{ backgroundColor: color, borderColor: titleColor === color ? '#105652' : '#e5e7eb' }}
+                      style={{ backgroundColor: color, borderColor: titleColor === color ? '#2596be' : '#e5e7eb' }}
                     />
                   ))}
                 </div>
@@ -309,7 +309,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
                       type="button"
                       onClick={() => setTitleBgColor(color)}
                       className="w-6 h-6 rounded border-2"
-                      style={{ backgroundColor: color, borderColor: titleBgColor === color ? '#105652' : '#e5e7eb' }}
+                      style={{ backgroundColor: color, borderColor: titleBgColor === color ? '#2596be' : '#e5e7eb' }}
                     />
                   ))}
                 </div>
@@ -340,8 +340,8 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
           </div>
 
           {/* Content Styling */}
-          <div className="border-2 rounded-lg p-4" style={{ borderColor: '#1E8479' }}>
-            <h4 className="text-md font-bold mb-4" style={{ color: '#1E8479' }}>
+          <div className="border-2 rounded-lg p-4" style={{ borderColor: '#3ba8d1' }}>
+            <h4 className="text-md font-bold mb-4" style={{ color: '#3ba8d1' }}>
               Content Styling
             </h4>
             
@@ -359,7 +359,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
                     if (font) loadGoogleFont(font.name);
                   }}
                   className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 text-sm"
-                  style={{ borderColor: '#1E8479', fontFamily: contentFontFamily }}
+                  style={{ borderColor: '#3ba8d1', fontFamily: contentFontFamily }}
                 >
                   <option value="serif">Serif</option>
                   <option value="sans-serif">Sans-serif</option>
@@ -429,7 +429,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
                   value={contentFontSize}
                   onChange={(e) => setContentFontSize(e.target.value)}
                   className="w-full"
-                  style={{ accentColor: '#1E8479' }}
+                  style={{ accentColor: '#3ba8d1' }}
                 />
               </div>
 
@@ -459,7 +459,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
                       type="button"
                       onClick={() => setContentColor(color)}
                       className="w-6 h-6 rounded border-2"
-                      style={{ backgroundColor: color, borderColor: contentColor === color ? '#1E8479' : '#e5e7eb' }}
+                      style={{ backgroundColor: color, borderColor: contentColor === color ? '#3ba8d1' : '#e5e7eb' }}
                     />
                   ))}
                 </div>
@@ -491,7 +491,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
                       type="button"
                       onClick={() => setContentBgColor(color)}
                       className="w-6 h-6 rounded border-2"
-                      style={{ backgroundColor: color, borderColor: contentBgColor === color ? '#1E8479' : '#e5e7eb' }}
+                      style={{ backgroundColor: color, borderColor: contentBgColor === color ? '#3ba8d1' : '#e5e7eb' }}
                     />
                   ))}
                 </div>
@@ -562,8 +562,8 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
           </div>
 
           {/* Preview */}
-          <div className="border-2 rounded-lg p-4" style={{ borderColor: '#105652' }}>
-            <h4 className="text-md font-bold mb-4" style={{ color: '#105652' }}>
+          <div className="border-2 rounded-lg p-4" style={{ borderColor: '#2596be' }}>
+            <h4 className="text-md font-bold mb-4" style={{ color: '#2596be' }}>
               Preview
             </h4>
             
@@ -638,7 +638,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
             type="button"
             onClick={onCancel}
             className="px-6 py-2 border-2 rounded-lg font-medium transition-colors"
-            style={{ borderColor: '#105652', color: '#105652' }}
+            style={{ borderColor: '#2596be', color: '#2596be' }}
           >
             Cancel
           </button>
@@ -646,7 +646,7 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
             type="button"
             onClick={handleSave}
             className="px-6 py-2 rounded-lg text-white font-medium transition-colors"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             {initialData ? 'Update' : 'Insert'} FAQ
           </button>
@@ -655,3 +655,4 @@ export default function FaqInput({ initialData, customFonts = [], onSave, onCanc
     </div>
   );
 }
+

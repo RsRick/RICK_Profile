@@ -138,7 +138,7 @@ export default function ProfileImageCropper({ onCropComplete, onCancel }) {
         <div className="p-6">
           {/* Header */}
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold" style={{ color: '#105652' }}>
+            <h2 className="text-2xl font-bold" style={{ color: '#2596be' }}>
               Edit Profile Image
             </h2>
             <button
@@ -153,7 +153,7 @@ export default function ProfileImageCropper({ onCropComplete, onCancel }) {
             <div className="space-y-4">
               {/* Upload Area */}
               <div 
-                className="border-2 border-dashed border-gray-300 rounded-xl p-12 text-center hover:border-[#105652] transition-colors cursor-pointer"
+                className="border-2 border-dashed border-gray-300 rounded-xl p-12 text-center hover:border-[#2596be] transition-colors cursor-pointer"
                 onClick={() => fileInputRef.current?.click()}
               >
                 <Upload className="w-16 h-16 text-gray-400 mx-auto mb-4" />
@@ -248,7 +248,7 @@ export default function ProfileImageCropper({ onCropComplete, onCancel }) {
                       step="0.05"
                       value={zoom}
                       onChange={(e) => setZoom(parseFloat(e.target.value))}
-                      className="flex-1 accent-[#105652]"
+                      className="flex-1 accent-[#2596be]"
                     />
                     <span className="text-sm font-mono w-12 text-right">{Math.round(zoom * 100)}%</span>
                   </div>
@@ -285,7 +285,7 @@ export default function ProfileImageCropper({ onCropComplete, onCancel }) {
                       style={{ 
                         width: '100px', 
                         height: '100px',
-                        borderColor: '#105652'
+                        borderColor: '#2596be'
                       }}
                     />
                     <p className="text-xs text-gray-400 mt-1">Large</p>
@@ -297,7 +297,7 @@ export default function ProfileImageCropper({ onCropComplete, onCancel }) {
                       style={{ 
                         width: '60px', 
                         height: '60px',
-                        borderColor: '#105652'
+                        borderColor: '#2596be'
                       }}
                     />
                     <p className="text-xs text-gray-400 mt-1">Medium</p>
@@ -309,7 +309,7 @@ export default function ProfileImageCropper({ onCropComplete, onCancel }) {
                       style={{ 
                         width: '40px', 
                         height: '40px',
-                        borderColor: '#105652'
+                        borderColor: '#2596be'
                       }}
                     />
                     <p className="text-xs text-gray-400 mt-1">Small</p>
@@ -327,7 +327,7 @@ export default function ProfileImageCropper({ onCropComplete, onCancel }) {
                     setPosition({ x: 0, y: 0 });
                   }}
                   className="flex items-center gap-2 px-5 py-2.5 rounded-lg border-2 transition-all hover:bg-gray-50"
-                  style={{ borderColor: '#105652', color: '#105652' }}
+                  style={{ borderColor: '#2596be', color: '#2596be' }}
                 >
                   <Upload className="w-4 h-4" />
                   Change Image
@@ -342,7 +342,7 @@ export default function ProfileImageCropper({ onCropComplete, onCancel }) {
                 <button
                   onClick={handleCropConfirm}
                   className="flex items-center gap-2 px-5 py-2.5 rounded-lg text-white transition-all hover:scale-105"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   <Check className="w-4 h-4" />
                   Apply
@@ -355,3 +355,4 @@ export default function ProfileImageCropper({ onCropComplete, onCancel }) {
     </div>
   );
 }
+

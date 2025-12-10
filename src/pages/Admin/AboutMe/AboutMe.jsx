@@ -280,7 +280,7 @@ export default function AboutMe() {
               type="text"
               value={formData.title}
               onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
               placeholder="about me"
             />
           </div>
@@ -292,7 +292,7 @@ export default function AboutMe() {
               type="text"
               value={formData.subtitle}
               onChange={(e) => setFormData({ ...formData, subtitle: e.target.value })}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
               placeholder="Who am I?"
             />
           </div>
@@ -308,7 +308,7 @@ export default function AboutMe() {
               type="text"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value.toUpperCase() })}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent uppercase font-bold tracking-widest"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent uppercase font-bold tracking-widest"
               placeholder="OLIVIA WILSON"
               maxLength={30}
             />
@@ -350,7 +350,7 @@ export default function AboutMe() {
               />
               <label
                 htmlFor="photo-upload"
-                className={`inline-flex items-center gap-2 px-4 py-2 bg-[#105652] text-white rounded-lg hover:bg-[#0d4240] cursor-pointer transition-colors ${uploading ? 'opacity-50 cursor-not-allowed' : ''}`}
+                className={`inline-flex items-center gap-2 px-4 py-2 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4240] cursor-pointer transition-colors ${uploading ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 <Upload className="w-4 h-4" />
                 {uploading ? 'Uploading...' : 'Upload Photo'}
@@ -421,7 +421,7 @@ export default function AboutMe() {
               }
             }}
             rows={12}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent font-serif mt-4"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent font-serif mt-4"
             placeholder="Write your bio here... Use double line breaks (press Enter twice) to create new paragraphs."
             style={{ fontFamily: formData.bioTextFont }}
             maxLength={2500}
@@ -451,7 +451,7 @@ export default function AboutMe() {
             </label>
             <button
               onClick={handleAddResearchLink}
-              className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#105652] text-white text-sm rounded-lg hover:bg-[#0d4240] transition-colors"
+              className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#2596be] text-white text-sm rounded-lg hover:bg-[#0d4240] transition-colors"
             >
               <Plus className="w-4 h-4" />
               Add Link
@@ -496,7 +496,7 @@ export default function AboutMe() {
                         <img
                           src={link.iconUrl}
                           alt="Icon"
-                          className="w-16 h-16 object-cover rounded-lg border-2 border-[#105652]"
+                          className="w-16 h-16 object-cover rounded-lg border-2 border-[#2596be]"
                         />
                         <button
                           onClick={() => {
@@ -527,7 +527,7 @@ export default function AboutMe() {
                     />
                     <label
                       htmlFor={`icon-upload-${index}`}
-                      className="block text-center mt-1 text-xs text-[#105652] hover:underline cursor-pointer"
+                      className="block text-center mt-1 text-xs text-[#2596be] hover:underline cursor-pointer"
                     >
                       {link.iconUrl ? 'Change' : 'Upload'}
                     </label>
@@ -540,14 +540,14 @@ export default function AboutMe() {
                       value={link.name}
                       onChange={(e) => handleResearchLinkChange(index, 'name', e.target.value)}
                       placeholder="Platform name (e.g., ResearchGate)"
-                      className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#105652] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#2596be] focus:border-transparent text-sm"
                     />
                     <input
                       type="url"
                       value={link.url}
                       onChange={(e) => handleResearchLinkChange(index, 'url', e.target.value)}
                       placeholder="https://..."
-                      className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#105652] focus:border-transparent text-sm"
+                      className="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#2596be] focus:border-transparent text-sm"
                     />
                     <div className="flex items-center gap-2 text-sm">
                       <span className="text-gray-600">Order: {index + 1}</span>
@@ -596,7 +596,7 @@ export default function AboutMe() {
           <button
             onClick={handleSave}
             disabled={loading || uploading}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#105652] text-white rounded-lg hover:bg-[#0d4240] disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-semibold"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4240] disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-semibold"
           >
             <Save className="w-5 h-5" />
             {loading ? 'Saving...' : 'Save Changes'}
@@ -614,3 +614,4 @@ export default function AboutMe() {
     </div>
   );
 }
+

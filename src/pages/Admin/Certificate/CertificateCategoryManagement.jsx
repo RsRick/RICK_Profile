@@ -10,7 +10,7 @@ export default function CertificateCategoryManagement() {
   const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
   const [editingId, setEditingId] = useState(null);
-  const [formData, setFormData] = useState({ name: '', color: '#105652' });
+  const [formData, setFormData] = useState({ name: '', color: '#2596be' });
   const { showToast } = useToast();
 
   useEffect(() => {
@@ -67,7 +67,7 @@ export default function CertificateCategoryManagement() {
 
   const handleEdit = (cat) => {
     setEditingId(cat.$id);
-    setFormData({ name: cat.name, color: cat.color || '#105652' });
+    setFormData({ name: cat.name, color: cat.color || '#2596be' });
     setShowForm(true);
   };
 
@@ -85,7 +85,7 @@ export default function CertificateCategoryManagement() {
   };
 
   const resetForm = () => {
-    setFormData({ name: '', color: '#105652' });
+    setFormData({ name: '', color: '#2596be' });
     setEditingId(null);
     setShowForm(false);
   };
@@ -95,15 +95,15 @@ export default function CertificateCategoryManagement() {
   return (
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>Certificate Categories</h1>
-        <button onClick={() => setShowForm(true)} className="flex items-center gap-2 px-4 py-2 rounded-lg text-white hover:scale-105 transition-all" style={{ backgroundColor: '#105652' }}>
+        <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>Certificate Categories</h1>
+        <button onClick={() => setShowForm(true)} className="flex items-center gap-2 px-4 py-2 rounded-lg text-white hover:scale-105 transition-all" style={{ backgroundColor: '#2596be' }}>
           <Plus className="w-5 h-5" /> Add Category
         </button>
       </div>
 
       {showForm && (
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h3 className="text-lg font-bold mb-4" style={{ color: '#105652' }}>{editingId ? 'Edit Category' : 'Add Category'}</h3>
+          <h3 className="text-lg font-bold mb-4" style={{ color: '#2596be' }}>{editingId ? 'Edit Category' : 'Add Category'}</h3>
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium mb-2">Name *</label>
@@ -112,7 +112,7 @@ export default function CertificateCategoryManagement() {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
                 placeholder="e.g., GIS, Python, R"
               />
             </div>
@@ -130,13 +130,13 @@ export default function CertificateCategoryManagement() {
                   value={formData.color}
                   onChange={(e) => setFormData({ ...formData, color: e.target.value })}
                   className="flex-1 px-4 py-2 border rounded-lg focus:outline-none"
-                  style={{ borderColor: '#105652' }}
+                  style={{ borderColor: '#2596be' }}
                 />
               </div>
             </div>
           </div>
           <div className="flex gap-3 mt-4">
-            <button onClick={handleSubmit} className="flex items-center gap-2 px-6 py-2 rounded-lg text-white" style={{ backgroundColor: '#105652' }}>
+            <button onClick={handleSubmit} className="flex items-center gap-2 px-6 py-2 rounded-lg text-white" style={{ backgroundColor: '#2596be' }}>
               <Save className="w-4 h-4" /> {editingId ? 'Update' : 'Save'}
             </button>
             <button onClick={resetForm} className="flex items-center gap-2 px-6 py-2 rounded-lg border hover:bg-gray-50">
@@ -174,3 +174,4 @@ export default function CertificateCategoryManagement() {
     </div>
   );
 }
+

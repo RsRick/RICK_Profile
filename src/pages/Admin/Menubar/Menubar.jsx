@@ -222,7 +222,7 @@ export default function Menubar() {
 
   return (
     <div className="max-w-6xl">
-      <h1 className="text-3xl font-bold mb-8" style={{ color: '#105652' }}>
+      <h1 className="text-3xl font-bold mb-8" style={{ color: '#2596be' }}>
         Menubar Management
       </h1>
 
@@ -261,7 +261,7 @@ export default function Menubar() {
             <div
               className="px-4 py-2 rounded-lg text-white font-medium flex items-center gap-2 hover:opacity-90 transition-opacity"
               style={{
-                background: 'linear-gradient(135deg, #105652, #1E8479)',
+                background: 'linear-gradient(135deg, #2596be, #3ba8d1)',
               }}
             >
               <Upload className="w-4 h-4" />
@@ -290,13 +290,13 @@ export default function Menubar() {
             .map((item, index) => (
               <div
                 key={item.id}
-                className="flex items-center gap-4 p-4 border border-gray-200 rounded-lg hover:border-[#105652] transition-colors"
+                className="flex items-center gap-4 p-4 border border-gray-200 rounded-lg hover:border-[#2596be] transition-colors"
               >
                 <div className="flex flex-col items-center gap-1">
                   <button
                     onClick={() => moveItem(index, 'up')}
                     disabled={index === 0}
-                    className="text-gray-400 hover:text-[#105652] disabled:opacity-30 disabled:cursor-not-allowed p-1"
+                    className="text-gray-400 hover:text-[#2596be] disabled:opacity-30 disabled:cursor-not-allowed p-1"
                     title="Move up"
                   >
                     <ChevronUp className="w-4 h-4" />
@@ -305,7 +305,7 @@ export default function Menubar() {
                   <button
                     onClick={() => moveItem(index, 'down')}
                     disabled={index === menuItems.length - 1}
-                    className="text-gray-400 hover:text-[#105652] disabled:opacity-30 disabled:cursor-not-allowed p-1"
+                    className="text-gray-400 hover:text-[#2596be] disabled:opacity-30 disabled:cursor-not-allowed p-1"
                     title="Move down"
                   >
                     <ChevronDown className="w-4 h-4" />
@@ -315,14 +315,14 @@ export default function Menubar() {
                   type="text"
                   value={item.name}
                   onChange={(e) => handleMenuNameChange(item.id, e.target.value)}
-                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#105652]"
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2596be]"
                 />
                 <input
                   type="text"
                   value={item.href}
                   onChange={(e) => handleMenuHrefChange(item.id, e.target.value)}
                   placeholder="#section"
-                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#105652]"
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2596be]"
                 />
                 <button
                   onClick={() => toggleMenuItem(item.id)}
@@ -359,7 +359,7 @@ export default function Menubar() {
               onChange={(e) =>
                 setCvButton({ ...cvButton, text: e.target.value })
               }
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#105652]"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2596be]"
             />
           </div>
           <div>
@@ -373,7 +373,7 @@ export default function Menubar() {
                 setCvButton({ ...cvButton, link: e.target.value })
               }
               placeholder="https://..."
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#105652]"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2596be]"
             />
           </div>
         </div>
@@ -392,7 +392,7 @@ export default function Menubar() {
           disabled={saving}
           className="px-6 py-3 rounded-lg text-white font-medium flex items-center gap-2 hover:opacity-90 transition-opacity disabled:opacity-50"
           style={{
-            background: 'linear-gradient(135deg, #105652, #1E8479)',
+            background: 'linear-gradient(135deg, #2596be, #3ba8d1)',
           }}
         >
           <Save className="w-5 h-5" />
@@ -402,4 +402,5 @@ export default function Menubar() {
     </div>
   );
 }
+
 

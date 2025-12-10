@@ -62,7 +62,7 @@ export default function FeaturedMapsManagement() {
 
   const getCategoryColor = (categoryName) => {
     const cat = categories.find(c => c.name === categoryName);
-    return cat?.color || '#105652';
+    return cat?.color || '#2596be';
   };
 
   const featuredMaps = maps.filter(m => m.featured);
@@ -76,14 +76,14 @@ export default function FeaturedMapsManagement() {
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
         <div>
-          <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>Featured Maps</h1>
+          <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>Featured Maps</h1>
           <p className="text-gray-500 text-sm mt-1">
             Select which maps to display on the homepage
           </p>
         </div>
         <div className="flex items-center gap-3 bg-white px-4 py-2 rounded-lg shadow">
           <span className="text-sm font-medium">Featured:</span>
-          <span className="text-2xl font-bold" style={{ color: '#105652' }}>
+          <span className="text-2xl font-bold" style={{ color: '#2596be' }}>
             {featuredMaps.length}
           </span>
           <span className="text-gray-400">maps</span>
@@ -92,7 +92,7 @@ export default function FeaturedMapsManagement() {
 
       {/* Featured Maps Section */}
       <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-        <h2 className="text-lg font-bold mb-4 flex items-center gap-2" style={{ color: '#105652' }}>
+        <h2 className="text-lg font-bold mb-4 flex items-center gap-2" style={{ color: '#2596be' }}>
           <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
           Currently Featured ({featuredMaps.length})
         </h2>
@@ -134,7 +134,7 @@ export default function FeaturedMapsManagement() {
 
       {/* All Maps Section */}
       <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-lg font-bold mb-4" style={{ color: '#105652' }}>
+        <h2 className="text-lg font-bold mb-4" style={{ color: '#2596be' }}>
           All Maps ({nonFeaturedMaps.length} not featured)
         </h2>
         
@@ -147,7 +147,7 @@ export default function FeaturedMapsManagement() {
             {nonFeaturedMaps.map(map => (
               <div 
                 key={map.$id}
-                className="relative group rounded-lg overflow-hidden border hover:border-[#105652] transition-colors"
+                className="relative group rounded-lg overflow-hidden border hover:border-[#2596be] transition-colors"
               >
                 <div className="aspect-[3/4]">
                   <img 
@@ -168,7 +168,7 @@ export default function FeaturedMapsManagement() {
                 </div>
                 <button
                   onClick={() => toggleFeatured(map.$id, false)}
-                  className="absolute top-2 right-2 p-1.5 bg-white/80 rounded-full text-gray-600 hover:bg-[#105652] hover:text-white transition-colors opacity-0 group-hover:opacity-100"
+                  className="absolute top-2 right-2 p-1.5 bg-white/80 rounded-full text-gray-600 hover:bg-[#2596be] hover:text-white transition-colors opacity-0 group-hover:opacity-100"
                   title="Add to featured"
                 >
                   <Star className="w-4 h-4" />
@@ -181,3 +181,4 @@ export default function FeaturedMapsManagement() {
     </div>
   );
 }
+

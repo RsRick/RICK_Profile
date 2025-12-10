@@ -275,7 +275,7 @@ export default function OrderManagement() {
               placeholder="Search by order ID, email, or name..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
             />
           </div>
         </div>
@@ -284,7 +284,7 @@ export default function OrderManagement() {
           <select
             value={filterStatus}
             onChange={(e) => setFilterStatus(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
           >
             <option value="all">All Status</option>
             <option value="placed">Placed</option>
@@ -298,7 +298,7 @@ export default function OrderManagement() {
       {/* Orders Table */}
       {loading ? (
         <div className="flex justify-center py-12">
-          <Loader2 className="w-8 h-8 animate-spin text-[#105652]" />
+          <Loader2 className="w-8 h-8 animate-spin text-[#2596be]" />
         </div>
       ) : filteredOrders.length === 0 ? (
         <div className="text-center py-12 bg-white rounded-lg border border-gray-200">
@@ -353,7 +353,7 @@ export default function OrderManagement() {
                     <td className="px-6 py-4 text-right">
                       <button
                         onClick={() => openOrderDetails(order)}
-                        className="p-2 text-[#105652] hover:bg-[#105652]/10 rounded-lg transition-colors"
+                        className="p-2 text-[#2596be] hover:bg-[#2596be]/10 rounded-lg transition-colors"
                       >
                         <Eye className="w-4 h-4" />
                       </button>
@@ -451,7 +451,7 @@ export default function OrderManagement() {
                   <select
                     value={editForm.status}
                     onChange={(e) => setEditForm({ ...editForm, status: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent text-base"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent text-base"
                   >
                     <option value="placed">1. Placed</option>
                     <option value="processing">2. Processing</option>
@@ -618,7 +618,7 @@ export default function OrderManagement() {
                         type="button"
                         onClick={() => fileInputRef.current?.click()}
                         disabled={uploadingFile}
-                        className="flex items-center gap-2 px-4 py-2 border-2 border-dashed border-gray-300 rounded-lg hover:border-[#105652] hover:bg-[#105652]/5 transition-colors"
+                        className="flex items-center gap-2 px-4 py-2 border-2 border-dashed border-gray-300 rounded-lg hover:border-[#2596be] hover:bg-[#2596be]/5 transition-colors"
                       >
                         {uploadingFile ? (
                           <Loader2 className="w-4 h-4 animate-spin" />
@@ -634,13 +634,13 @@ export default function OrderManagement() {
                       <div className="space-y-3">
                         {editForm.deliveryFiles.map((file) => (
                           <div key={file.id} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                            <FileText className="w-5 h-5 text-[#105652] flex-shrink-0" />
+                            <FileText className="w-5 h-5 text-[#2596be] flex-shrink-0" />
                             <div className="flex-1">
                               <input
                                 type="text"
                                 value={file.displayName}
                                 onChange={(e) => updateFileDisplayName(file.id, e.target.value)}
-                                className="w-full px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#105652]"
+                                className="w-full px-2 py-1 text-sm border border-gray-300 rounded focus:ring-1 focus:ring-[#2596be]"
                                 placeholder="File display name"
                               />
                               <p className="text-xs text-gray-400 mt-1">
@@ -691,7 +691,7 @@ export default function OrderManagement() {
                 <button
                   onClick={() => handleSave(true)}
                   disabled={saving || sendingEmail}
-                  className="w-full px-4 py-3 bg-[#105652] text-white rounded-lg hover:bg-[#0d4543] font-medium flex items-center justify-center gap-2"
+                  className="w-full px-4 py-3 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4543] font-medium flex items-center justify-center gap-2"
                 >
                   {sendingEmail ? (
                     <>
@@ -720,3 +720,4 @@ export default function OrderManagement() {
     </div>
   );
 }
+

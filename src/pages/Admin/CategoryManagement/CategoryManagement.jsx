@@ -132,7 +132,7 @@ export default function CategoryManagement() {
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
         <div>
-          <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>
+          <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>
             Category Management
           </h1>
           <p className="text-gray-600 mt-1">
@@ -142,7 +142,7 @@ export default function CategoryManagement() {
         <button
           onClick={() => setShowForm(!showForm)}
           className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all duration-300 hover:scale-105"
-          style={{ backgroundColor: '#105652' }}
+          style={{ backgroundColor: '#2596be' }}
         >
           {showForm ? <X className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
           {showForm ? 'Cancel' : 'Add Category'}
@@ -152,7 +152,7 @@ export default function CategoryManagement() {
       {/* Add/Edit Form */}
       {showForm && (
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-2xl font-bold mb-4" style={{ color: '#2596be' }}>
             {editingCategory ? 'Edit Category' : 'Add New Category'}
           </h2>
           
@@ -168,7 +168,7 @@ export default function CategoryManagement() {
                 required
                 maxLength="50"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
                 placeholder="e.g., Machine Learning, Web Development"
               />
             </div>
@@ -209,7 +209,7 @@ export default function CategoryManagement() {
                 onChange={(e) => setFormData(prev => ({ ...prev, order: e.target.value }))}
                 min="0"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
                 placeholder="0"
               />
               <p className="text-sm text-gray-500 mt-1">
@@ -222,7 +222,7 @@ export default function CategoryManagement() {
                 type="submit"
                 disabled={loading}
                 className="flex items-center gap-2 px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105 disabled:opacity-50"
-                style={{ backgroundColor: '#105652' }}
+                style={{ backgroundColor: '#2596be' }}
               >
                 <Save className="w-5 h-5" />
                 {loading ? 'Saving...' : editingCategory ? 'Update Category' : 'Create Category'}
@@ -231,7 +231,7 @@ export default function CategoryManagement() {
                 type="button"
                 onClick={resetForm}
                 className="px-6 py-3 rounded-lg border-2 transition-all duration-300 hover:scale-105"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
               >
                 Cancel
               </button>
@@ -242,7 +242,7 @@ export default function CategoryManagement() {
 
       {/* Categories List */}
       <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4" style={{ color: '#105652' }}>
+        <h2 className="text-xl font-bold mb-4" style={{ color: '#2596be' }}>
           All Categories ({categories.length})
         </h2>
         
@@ -277,7 +277,7 @@ export default function CategoryManagement() {
                   <button
                     onClick={() => handleEdit(category)}
                     className="flex items-center gap-1 px-3 py-2 rounded-lg text-white text-sm transition-all duration-300 hover:scale-105"
-                    style={{ backgroundColor: '#105652' }}
+                    style={{ backgroundColor: '#2596be' }}
                   >
                     <Edit2 className="w-4 h-4" />
                     Edit
@@ -298,3 +298,4 @@ export default function CategoryManagement() {
     </div>
   );
 }
+

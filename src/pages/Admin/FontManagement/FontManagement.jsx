@@ -210,7 +210,7 @@ export default function FontManagement() {
               value={uploadForm.fontName}
               onChange={(e) => setUploadForm({ ...uploadForm, fontName: e.target.value })}
               placeholder="e.g., My Custom Font"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
               disabled={uploading}
             />
           </div>
@@ -271,7 +271,7 @@ export default function FontManagement() {
           <button
             onClick={handleUploadFont}
             disabled={uploading || !uploadForm.fontName.trim() || !uploadForm.file}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[#105652] text-white rounded-lg hover:bg-[#0d4240] disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-semibold"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4240] disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-semibold"
           >
             <Upload className="w-5 h-5" />
             {uploading ? 'Uploading...' : 'Upload Font'}
@@ -380,3 +380,4 @@ export default function FontManagement() {
     </div>
   );
 }
+

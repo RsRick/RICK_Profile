@@ -16,7 +16,7 @@ const experienceTypes = [
 
 // Preset colors
 const presetColors = [
-  { primary: '#105652', secondary: '#1E8479', name: 'Teal' },
+  { primary: '#2596be', secondary: '#3ba8d1', name: 'Teal' },
   { primary: '#1e40af', secondary: '#3b82f6', name: 'Blue' },
   { primary: '#7c3aed', secondary: '#a78bfa', name: 'Purple' },
   { primary: '#dc2626', secondary: '#f87171', name: 'Red' },
@@ -37,8 +37,8 @@ const emptyExperience = {
   current: false,
   skills: [],
   highlights: [],
-  color: '#105652',
-  colorSecondary: '#1E8479',
+  color: '#2596be',
+  colorSecondary: '#3ba8d1',
   imageUrl: '',
   credentialUrl: '',
   featured: true,
@@ -297,7 +297,7 @@ export default function ExperienceManagement() {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-[400px]">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#105652' }}></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2" style={{ borderColor: '#2596be' }}></div>
       </div>
     );
   }
@@ -308,13 +308,13 @@ export default function ExperienceManagement() {
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
-          <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>Experience Management</h1>
+          <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>Experience Management</h1>
           <p className="text-gray-600 mt-1">Manage your work experience, education, and achievements</p>
         </div>
         <button
           onClick={() => openModal()}
           className="flex items-center gap-2 px-4 py-2 text-white rounded-lg hover:opacity-90 transition-colors"
-          style={{ backgroundColor: '#105652' }}
+          style={{ backgroundColor: '#2596be' }}
         >
           <Plus className="w-5 h-5" />
           Add Experience
@@ -330,7 +330,7 @@ export default function ExperienceManagement() {
           <button
             onClick={() => openModal()}
             className="inline-flex items-center gap-2 px-6 py-3 text-white rounded-lg hover:opacity-90"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             <Plus className="w-5 h-5" />
             Add Experience
@@ -368,7 +368,7 @@ export default function ExperienceManagement() {
                   {/* Icon */}
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ backgroundColor: exp.color || '#105652' }}
+                    style={{ backgroundColor: exp.color || '#2596be' }}
                   >
                     <TypeIcon className="w-6 h-6 text-white" />
                   </div>
@@ -379,7 +379,7 @@ export default function ExperienceManagement() {
                       <h3 className="font-semibold text-gray-900 truncate">{exp.title}</h3>
                       <span
                         className="px-2 py-0.5 rounded-full text-xs font-medium text-white"
-                        style={{ backgroundColor: exp.color || '#105652' }}
+                        style={{ backgroundColor: exp.color || '#2596be' }}
                       >
                         {exp.type}
                       </span>
@@ -442,7 +442,7 @@ export default function ExperienceManagement() {
         <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-hidden shadow-2xl">
             {/* Modal Header */}
-            <div className="p-6 border-b border-gray-200 flex items-center justify-between" style={{ backgroundColor: '#105652' }}>
+            <div className="p-6 border-b border-gray-200 flex items-center justify-between" style={{ backgroundColor: '#2596be' }}>
               <h2 className="text-xl font-bold text-white">
                 {editingExp ? 'Edit Experience' : 'Add New Experience'}
               </h2>
@@ -461,7 +461,7 @@ export default function ExperienceManagement() {
                     type="text"
                     value={formData.title}
                     onChange={(e) => setFormData(prev => ({ ...prev, title: e.target.value }))}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                     placeholder="e.g., Software Engineer, Bachelor's Degree, Best Paper Award"
                     required
                   />
@@ -474,7 +474,7 @@ export default function ExperienceManagement() {
                     type="text"
                     value={formData.organization}
                     onChange={(e) => setFormData(prev => ({ ...prev, organization: e.target.value }))}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                     placeholder="e.g., Google, MIT, IEEE"
                   />
                 </div>
@@ -486,7 +486,7 @@ export default function ExperienceManagement() {
                     <select
                       value={formData.type}
                       onChange={(e) => setFormData(prev => ({ ...prev, type: e.target.value }))}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                     >
                       {experienceTypes.map(type => (
                         <option key={type.value} value={type.value}>{type.label}</option>
@@ -499,7 +499,7 @@ export default function ExperienceManagement() {
                       type="text"
                       value={formData.location}
                       onChange={(e) => setFormData(prev => ({ ...prev, location: e.target.value }))}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                       placeholder="e.g., San Francisco, CA"
                     />
                   </div>
@@ -513,7 +513,7 @@ export default function ExperienceManagement() {
                       type="date"
                       value={formData.startDate}
                       onChange={(e) => setFormData(prev => ({ ...prev, startDate: e.target.value }))}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                     />
                   </div>
                   <div>
@@ -523,7 +523,7 @@ export default function ExperienceManagement() {
                       value={formData.endDate}
                       onChange={(e) => setFormData(prev => ({ ...prev, endDate: e.target.value }))}
                       disabled={formData.current}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent disabled:bg-gray-100"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent disabled:bg-gray-100"
                     />
                     <label className="flex items-center gap-2 mt-2">
                       <input
@@ -544,7 +544,7 @@ export default function ExperienceManagement() {
                     value={formData.description}
                     onChange={(e) => setFormData(prev => ({ ...prev, description: e.target.value }))}
                     rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent resize-none"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent resize-none"
                     placeholder="Describe your role, achievements, or what you learned..."
                   />
                 </div>
@@ -558,7 +558,7 @@ export default function ExperienceManagement() {
                       value={skillInput}
                       onChange={(e) => setSkillInput(e.target.value)}
                       onKeyPress={(e) => e.key === 'Enter' && (e.preventDefault(), addSkill())}
-                      className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                      className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                       placeholder="Add a skill and press Enter"
                     />
                     <button
@@ -575,7 +575,7 @@ export default function ExperienceManagement() {
                         <span
                           key={idx}
                           className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm"
-                          style={{ backgroundColor: 'rgba(16, 86, 82, 0.1)', color: '#105652' }}
+                          style={{ backgroundColor: 'rgba(16, 86, 82, 0.1)', color: '#2596be' }}
                         >
                           {skill}
                           <button type="button" onClick={() => removeSkill(skill)} className="hover:text-red-500">
@@ -596,7 +596,7 @@ export default function ExperienceManagement() {
                       value={highlightInput}
                       onChange={(e) => setHighlightInput(e.target.value)}
                       onKeyPress={(e) => e.key === 'Enter' && (e.preventDefault(), addHighlight())}
-                      className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                      className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                       placeholder="Add a highlight and press Enter"
                     />
                     <button
@@ -661,7 +661,7 @@ export default function ExperienceManagement() {
                     type="url"
                     value={formData.credentialUrl}
                     onChange={(e) => setFormData(prev => ({ ...prev, credentialUrl: e.target.value }))}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                     placeholder="https://..."
                   />
                 </div>
@@ -691,7 +691,7 @@ export default function ExperienceManagement() {
                   type="submit"
                   disabled={saving}
                   className="flex items-center gap-2 px-6 py-2 text-white rounded-lg hover:opacity-90 disabled:opacity-50"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   {saving ? (
                     <>
@@ -713,3 +713,4 @@ export default function ExperienceManagement() {
     </div>
   );
 }
+

@@ -144,7 +144,7 @@ export default function ImageEditor({ imageUrl, onSave, onCancel }) {
       >
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b" style={{ borderColor: '#e5e7eb' }}>
-          <h3 className="text-lg font-bold" style={{ color: '#105652' }}>
+          <h3 className="text-lg font-bold" style={{ color: '#2596be' }}>
             Edit Image
           </h3>
           <button
@@ -152,7 +152,7 @@ export default function ImageEditor({ imageUrl, onSave, onCancel }) {
             className="p-1 hover:bg-gray-100 rounded-full transition-colors"
             type="button"
           >
-            <X className="w-5 h-5" style={{ color: '#105652' }} />
+            <X className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
         </div>
 
@@ -165,7 +165,7 @@ export default function ImageEditor({ imageUrl, onSave, onCancel }) {
               width={400}
               height={300}
               className="border-2 cursor-move bg-white rounded"
-              style={{ borderColor: '#105652', maxWidth: '100%' }}
+              style={{ borderColor: '#2596be', maxWidth: '100%' }}
               onMouseDown={handleMouseDown}
               onMouseMove={handleMouseMove}
               onMouseUp={handleMouseUp}
@@ -177,13 +177,13 @@ export default function ImageEditor({ imageUrl, onSave, onCancel }) {
           <div className="space-y-3">
             {/* Zoom Controls */}
             <div className="flex items-center gap-3">
-              <label className="text-sm font-medium min-w-[80px]" style={{ color: '#105652' }}>
+              <label className="text-sm font-medium min-w-[80px]" style={{ color: '#2596be' }}>
                 Zoom: {Math.round(zoom * 100)}%
               </label>
               <button
                 onClick={handleZoomOut}
                 className="p-2 border rounded hover:bg-gray-50"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
                 type="button"
               >
                 <ZoomOut className="w-4 h-4" />
@@ -199,12 +199,12 @@ export default function ImageEditor({ imageUrl, onSave, onCancel }) {
                   setZoom(parseFloat(e.target.value));
                 }}
                 className="flex-1"
-                style={{ accentColor: '#105652' }}
+                style={{ accentColor: '#2596be' }}
               />
               <button
                 onClick={handleZoomIn}
                 className="p-2 border rounded hover:bg-gray-50"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
                 type="button"
               >
                 <ZoomIn className="w-4 h-4" />
@@ -216,7 +216,7 @@ export default function ImageEditor({ imageUrl, onSave, onCancel }) {
               <button
                 onClick={handleRotate}
                 className="flex-1 px-4 py-2 border rounded-lg hover:bg-gray-50 flex items-center justify-center gap-2"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
                 type="button"
               >
                 <RotateCw className="w-4 h-4" />
@@ -225,7 +225,7 @@ export default function ImageEditor({ imageUrl, onSave, onCancel }) {
               <button
                 onClick={handleReset}
                 className="flex-1 px-4 py-2 border rounded-lg hover:bg-gray-50"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
                 type="button"
               >
                 Reset
@@ -242,7 +242,7 @@ export default function ImageEditor({ imageUrl, onSave, onCancel }) {
               <button
                 onClick={handleCancel}
                 className="flex-1 px-4 py-2 border rounded-lg hover:bg-gray-50 font-medium"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
                 type="button"
               >
                 Cancel
@@ -250,7 +250,7 @@ export default function ImageEditor({ imageUrl, onSave, onCancel }) {
               <button
                 onClick={handleSave}
                 className="flex-1 px-4 py-2 rounded-lg text-white font-medium flex items-center justify-center gap-2"
-                style={{ backgroundColor: '#105652' }}
+                style={{ backgroundColor: '#2596be' }}
                 type="button"
               >
                 <Check className="w-4 h-4" />
@@ -263,3 +263,4 @@ export default function ImageEditor({ imageUrl, onSave, onCancel }) {
     </div>
   );
 }
+

@@ -9,8 +9,8 @@ export default function MapCategoryManagement() {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
   const [editingId, setEditingId] = useState(null);
-  const [editForm, setEditForm] = useState({ name: '', color: '#105652' });
-  const [newCategory, setNewCategory] = useState({ name: '', color: '#105652' });
+  const [editForm, setEditForm] = useState({ name: '', color: '#2596be' });
+  const [newCategory, setNewCategory] = useState({ name: '', color: '#2596be' });
   const [showAddForm, setShowAddForm] = useState(false);
   const { showToast } = useToast();
 
@@ -52,7 +52,7 @@ export default function MapCategoryManagement() {
 
       if (result.success) {
         showToast('Category added successfully', 'success');
-        setNewCategory({ name: '', color: '#105652' });
+        setNewCategory({ name: '', color: '#2596be' });
         setShowAddForm(false);
         loadCategories();
       } else {
@@ -113,7 +113,7 @@ export default function MapCategoryManagement() {
   };
 
   const colorPresets = [
-    '#105652', '#1E8479', '#ef4444', '#f97316', '#eab308', 
+    '#2596be', '#3ba8d1', '#ef4444', '#f97316', '#eab308', 
     '#22c55e', '#3b82f6', '#8b5cf6', '#ec4899', '#6b7280'
   ];
 
@@ -124,11 +124,11 @@ export default function MapCategoryManagement() {
   return (
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>Map Categories</h1>
+        <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>Map Categories</h1>
         <button
           onClick={() => setShowAddForm(true)}
           className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all hover:scale-105"
-          style={{ backgroundColor: '#105652' }}
+          style={{ backgroundColor: '#2596be' }}
         >
           <Plus className="w-5 h-5" />
           Add Category
@@ -138,7 +138,7 @@ export default function MapCategoryManagement() {
       {/* Add Form */}
       {showAddForm && (
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h3 className="text-lg font-bold mb-4" style={{ color: '#105652' }}>New Category</h3>
+          <h3 className="text-lg font-bold mb-4" style={{ color: '#2596be' }}>New Category</h3>
           <div className="flex flex-wrap gap-4 items-end">
             <div className="flex-1 min-w-[200px]">
               <label className="block text-sm font-medium mb-2">Name</label>
@@ -147,7 +147,7 @@ export default function MapCategoryManagement() {
                 value={newCategory.name}
                 onChange={(e) => setNewCategory({ ...newCategory, name: e.target.value })}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
                 placeholder="e.g., GIS, Remote Sensing"
               />
             </div>
@@ -176,7 +176,7 @@ export default function MapCategoryManagement() {
               <button
                 onClick={handleAdd}
                 className="flex items-center gap-2 px-4 py-2 rounded-lg text-white"
-                style={{ backgroundColor: '#105652' }}
+                style={{ backgroundColor: '#2596be' }}
               >
                 <Save className="w-4 h-4" />
                 Save
@@ -225,7 +225,7 @@ export default function MapCategoryManagement() {
                         value={editForm.name}
                         onChange={(e) => setEditForm({ ...editForm, name: e.target.value })}
                         className="px-3 py-1 border rounded-lg focus:outline-none focus:ring-2"
-                        style={{ borderColor: '#105652' }}
+                        style={{ borderColor: '#2596be' }}
                       />
                     ) : (
                       <span className="font-medium">{category.name}</span>
@@ -252,7 +252,7 @@ export default function MapCategoryManagement() {
                         <button
                           onClick={handleSaveEdit}
                           className="p-2 rounded-lg text-white"
-                          style={{ backgroundColor: '#105652' }}
+                          style={{ backgroundColor: '#2596be' }}
                         >
                           <Save className="w-4 h-4" />
                         </button>
@@ -268,7 +268,7 @@ export default function MapCategoryManagement() {
                         <button
                           onClick={() => handleEdit(category)}
                           className="p-2 rounded-lg text-white"
-                          style={{ backgroundColor: '#105652' }}
+                          style={{ backgroundColor: '#2596be' }}
                         >
                           <Edit2 className="w-4 h-4" />
                         </button>
@@ -290,3 +290,4 @@ export default function MapCategoryManagement() {
     </div>
   );
 }
+

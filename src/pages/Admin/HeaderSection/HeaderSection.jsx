@@ -247,7 +247,7 @@ export default function HeaderSection() {
   return (
     <div className="max-w-4xl mx-auto space-y-6">
       <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-        <h1 className="text-3xl font-bold mb-6" style={{ color: '#105652' }}>
+        <h1 className="text-3xl font-bold mb-6" style={{ color: '#2596be' }}>
           Header Section Settings
         </h1>
 
@@ -261,7 +261,7 @@ export default function HeaderSection() {
             value={heroName}
             onChange={(e) => setHeroName(e.target.value)}
             placeholder="PARVEJ HOSSAIN"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none transition-all mb-4"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none transition-all mb-4"
           />
           <FontSelector
             value={heroNameFont}
@@ -290,20 +290,20 @@ export default function HeaderSection() {
                   type="text"
                   value={role.text}
                   onChange={(e) => handleRoleChange(role.id, e.target.value)}
-                  className="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none"
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none"
                 />
                 <div className="flex gap-1">
                   <button
                     onClick={() => handleRoleMove(index, 'up')}
                     disabled={index === 0}
-                    className="p-1 text-gray-600 hover:text-[#105652] disabled:opacity-30 disabled:cursor-not-allowed"
+                    className="p-1 text-gray-600 hover:text-[#2596be] disabled:opacity-30 disabled:cursor-not-allowed"
                   >
                     <ChevronUp className="w-4 h-4" />
                   </button>
                   <button
                     onClick={() => handleRoleMove(index, 'down')}
                     disabled={index === roles.length - 1}
-                    className="p-1 text-gray-600 hover:text-[#105652] disabled:opacity-30 disabled:cursor-not-allowed"
+                    className="p-1 text-gray-600 hover:text-[#2596be] disabled:opacity-30 disabled:cursor-not-allowed"
                   >
                     <ChevronDown className="w-4 h-4" />
                   </button>
@@ -318,7 +318,7 @@ export default function HeaderSection() {
             ))}
             <button
               onClick={handleAddRole}
-              className="w-full px-4 py-2 border-2 border-dashed border-gray-300 rounded-lg text-gray-600 hover:border-[#105652] hover:text-[#105652] transition-colors flex items-center justify-center gap-2"
+              className="w-full px-4 py-2 border-2 border-dashed border-gray-300 rounded-lg text-gray-600 hover:border-[#2596be] hover:text-[#2596be] transition-colors flex items-center justify-center gap-2"
             >
               <Plus className="w-4 h-4" />
               Add Role
@@ -335,7 +335,7 @@ export default function HeaderSection() {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             rows={5}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none transition-all resize-none mb-4"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none transition-all resize-none mb-4"
             placeholder="Enter your description..."
           />
           <FontSelector
@@ -384,7 +384,7 @@ export default function HeaderSection() {
               </div>
             </div>
           )}
-          <label className="inline-flex items-center gap-2 px-6 py-3 bg-[#105652] text-white rounded-lg cursor-pointer hover:bg-[#1E8479] transition-colors">
+          <label className="inline-flex items-center gap-2 px-6 py-3 bg-[#2596be] text-white rounded-lg cursor-pointer hover:bg-[#3ba8d1] transition-colors">
             <Upload className="w-5 h-5" />
             <span>{photoFile ? 'Change Photo' : 'Upload Photo'}</span>
             <input
@@ -422,14 +422,14 @@ export default function HeaderSection() {
                 value={yearsExperience.number}
                 onChange={(e) => setYearsExperience({ ...yearsExperience, number: e.target.value })}
                 placeholder="5+"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none mb-2"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none mb-2"
               />
               <textarea
                 value={yearsExperience.text}
                 onChange={(e) => setYearsExperience({ ...yearsExperience, text: e.target.value })}
                 rows={2}
                 placeholder="Years\nExperience"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none resize-none text-sm"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none resize-none text-sm"
               />
             </div>
             <div>
@@ -441,14 +441,14 @@ export default function HeaderSection() {
                 value={projectsCompleted.number}
                 onChange={(e) => setProjectsCompleted({ ...projectsCompleted, number: e.target.value })}
                 placeholder="10+"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none mb-2"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none mb-2"
               />
               <textarea
                 value={projectsCompleted.text}
                 onChange={(e) => setProjectsCompleted({ ...projectsCompleted, text: e.target.value })}
                 rows={2}
                 placeholder="Projects\nCompleted"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none resize-none text-sm"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none resize-none text-sm"
               />
             </div>
           </div>
@@ -466,7 +466,7 @@ export default function HeaderSection() {
                 <select
                   value={link.icon}
                   onChange={(e) => handleSocialChange(link.id, 'icon', e.target.value)}
-                  className="px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none"
+                  className="px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none"
                 >
                   {Object.keys(ICON_MAP).map((key) => (
                     <option key={key} value={key}>
@@ -479,27 +479,27 @@ export default function HeaderSection() {
                   value={link.label}
                   onChange={(e) => handleSocialChange(link.id, 'label', e.target.value)}
                   placeholder="Label"
-                  className="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none"
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none"
                 />
                 <input
                   type="url"
                   value={link.href}
                   onChange={(e) => handleSocialChange(link.id, 'href', e.target.value)}
                   placeholder="URL"
-                  className="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#105652] focus:border-transparent outline-none"
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-[#2596be] focus:border-transparent outline-none"
                 />
                 <div className="flex gap-1">
                   <button
                     onClick={() => handleSocialMove(index, 'up')}
                     disabled={index === 0}
-                    className="p-1 text-gray-600 hover:text-[#105652] disabled:opacity-30 disabled:cursor-not-allowed"
+                    className="p-1 text-gray-600 hover:text-[#2596be] disabled:opacity-30 disabled:cursor-not-allowed"
                   >
                     <ChevronUp className="w-4 h-4" />
                   </button>
                   <button
                     onClick={() => handleSocialMove(index, 'down')}
                     disabled={index === socialLinks.length - 1}
-                    className="p-1 text-gray-600 hover:text-[#105652] disabled:opacity-30 disabled:cursor-not-allowed"
+                    className="p-1 text-gray-600 hover:text-[#2596be] disabled:opacity-30 disabled:cursor-not-allowed"
                   >
                     <ChevronDown className="w-4 h-4" />
                   </button>
@@ -514,7 +514,7 @@ export default function HeaderSection() {
             ))}
             <button
               onClick={handleAddSocial}
-              className="w-full px-4 py-2 border-2 border-dashed border-gray-300 rounded-lg text-gray-600 hover:border-[#105652] hover:text-[#105652] transition-colors flex items-center justify-center gap-2"
+              className="w-full px-4 py-2 border-2 border-dashed border-gray-300 rounded-lg text-gray-600 hover:border-[#2596be] hover:text-[#2596be] transition-colors flex items-center justify-center gap-2"
             >
               <Plus className="w-4 h-4" />
               Add Social Link
@@ -527,7 +527,7 @@ export default function HeaderSection() {
           <button
             onClick={handleSave}
             disabled={saving}
-            className="px-6 py-3 bg-[#105652] text-white rounded-lg font-semibold hover:bg-[#1E8479] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+            className="px-6 py-3 bg-[#2596be] text-white rounded-lg font-semibold hover:bg-[#3ba8d1] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
           >
             <Save className="w-5 h-5" />
             {saving ? 'Saving...' : 'Save Settings'}
@@ -537,5 +537,6 @@ export default function HeaderSection() {
     </div>
   );
 }
+
 
 

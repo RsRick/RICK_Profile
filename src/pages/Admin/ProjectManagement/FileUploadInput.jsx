@@ -103,7 +103,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
       >
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b" style={{ borderColor: '#e5e7eb' }}>
-          <h2 className="text-2xl font-bold" style={{ color: '#105652' }}>
+          <h2 className="text-2xl font-bold" style={{ color: '#2596be' }}>
             {initialData ? 'Edit File Download' : 'Insert File Download'}
           </h2>
           <button
@@ -115,7 +115,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
             }}
             className="p-2 hover:bg-gray-100 rounded-full transition-colors"
           >
-            <X className="w-6 h-6" style={{ color: '#105652' }} />
+            <X className="w-6 h-6" style={{ color: '#2596be' }} />
           </button>
         </div>
 
@@ -127,7 +127,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
 
           {/* File Name Input */}
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+            <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
               File Name (First Line)
             </label>
             <input
@@ -136,7 +136,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
               onChange={(e) => setFileName(e.target.value)}
               placeholder="e.g., Project Documentation.pdf"
               className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-              style={{ borderColor: '#105652' }}
+              style={{ borderColor: '#2596be' }}
               maxLength={100}
             />
             <p className="text-xs text-gray-500 mt-1">
@@ -146,7 +146,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
 
           {/* Button Text Input */}
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+            <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
               Button Text (Second Line)
             </label>
             <input
@@ -155,7 +155,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
               onChange={(e) => setButtonText(e.target.value)}
               placeholder="e.g., Click here to download"
               className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-              style={{ borderColor: '#105652' }}
+              style={{ borderColor: '#2596be' }}
               maxLength={50}
             />
             <p className="text-xs text-gray-500 mt-1">
@@ -166,7 +166,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
           {/* Upload Method Selection */}
           {!initialData && (
             <div className="mb-4">
-              <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+              <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
                 Upload Method
               </label>
               <div className="flex gap-2">
@@ -175,8 +175,8 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
                   onClick={() => setUploadMethod('url')}
                   className={`flex-1 px-4 py-2 border rounded-lg transition-colors flex items-center justify-center gap-2 ${
                     uploadMethod === 'url' 
-                      ? 'border-[#105652] bg-[#105652] text-white' 
-                      : 'border-gray-300 hover:border-[#105652]'
+                      ? 'border-[#2596be] bg-[#2596be] text-white' 
+                      : 'border-gray-300 hover:border-[#2596be]'
                   }`}
                 >
                   <LinkIcon className="w-4 h-4" />
@@ -187,8 +187,8 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
                   onClick={() => setUploadMethod('upload')}
                   className={`flex-1 px-4 py-2 border rounded-lg transition-colors flex items-center justify-center gap-2 ${
                     uploadMethod === 'upload' 
-                      ? 'border-[#105652] bg-[#105652] text-white' 
-                      : 'border-gray-300 hover:border-[#105652]'
+                      ? 'border-[#2596be] bg-[#2596be] text-white' 
+                      : 'border-gray-300 hover:border-[#2596be]'
                   }`}
                 >
                   <Upload className="w-4 h-4" />
@@ -201,7 +201,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
           {/* URL Input */}
           {uploadMethod === 'url' && (
             <div className="mb-4">
-              <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+              <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
                 File URL
               </label>
               <input
@@ -210,7 +210,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
                 onChange={(e) => setFileUrl(e.target.value)}
                 placeholder="https://example.com/file.pdf"
                 className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
               <p className="text-xs text-gray-500 mt-1">
                 Enter the direct download URL
@@ -221,10 +221,10 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
           {/* File Upload */}
           {uploadMethod === 'upload' && !initialData && (
             <div className="mb-4">
-              <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+              <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
                 Upload File
               </label>
-              <div className="border-2 border-dashed rounded-lg p-6 text-center" style={{ borderColor: '#105652' }}>
+              <div className="border-2 border-dashed rounded-lg p-6 text-center" style={{ borderColor: '#2596be' }}>
                 <input
                   type="file"
                   onChange={handleFileSelect}
@@ -235,8 +235,8 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
                   htmlFor="file-upload-input"
                   className="cursor-pointer flex flex-col items-center gap-2"
                 >
-                  <File className="w-12 h-12" style={{ color: '#105652' }} />
-                  <span className="text-sm font-medium" style={{ color: '#105652' }}>
+                  <File className="w-12 h-12" style={{ color: '#2596be' }} />
+                  <span className="text-sm font-medium" style={{ color: '#2596be' }}>
                     {selectedFile ? selectedFile.name : 'Click to select a file'}
                   </span>
                   <span className="text-xs text-gray-500">
@@ -251,7 +251,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
                       className="h-2 rounded-full transition-all duration-300"
                       style={{ 
                         width: `${uploadProgress}%`,
-                        backgroundColor: '#105652'
+                        backgroundColor: '#2596be'
                       }}
                     />
                   </div>
@@ -266,7 +266,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
           {/* Preview */}
           {fileName && buttonText && (
             <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-              <p className="text-sm font-medium mb-3" style={{ color: '#105652' }}>Preview:</p>
+              <p className="text-sm font-medium mb-3" style={{ color: '#2596be' }}>Preview:</p>
               <div className="file-download-preview" style={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -330,7 +330,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
               onCancel();
             }}
             className="px-6 py-2 border rounded-lg hover:bg-gray-50 transition-colors"
-            style={{ borderColor: '#105652', color: '#105652' }}
+            style={{ borderColor: '#2596be', color: '#2596be' }}
           >
             Cancel
           </button>
@@ -339,7 +339,7 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
             onClick={handleSave}
             disabled={uploading || !fileName.trim() || !buttonText.trim()}
             className="px-6 py-2 rounded-lg text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             {uploading ? 'Uploading...' : initialData ? 'Update' : 'Insert File Download'}
           </button>
@@ -348,3 +348,4 @@ export default function FileUploadInput({ onSave, onCancel, initialData }) {
     </div>
   );
 }
+

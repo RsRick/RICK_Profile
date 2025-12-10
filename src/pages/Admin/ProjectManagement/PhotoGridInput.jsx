@@ -167,7 +167,7 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
       >
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b" style={{ borderColor: '#e5e7eb' }}>
-          <h2 className="text-2xl font-bold" style={{ color: '#105652' }}>
+          <h2 className="text-2xl font-bold" style={{ color: '#2596be' }}>
             {step === 1 ? 'Select Grid Layout' : 'Add Images to Grid'}
           </h2>
           <button
@@ -175,7 +175,7 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
             onClick={onCancel}
             className="p-2 hover:bg-gray-100 rounded-full transition-colors"
           >
-            <X className="w-6 h-6" style={{ color: '#105652' }} />
+            <X className="w-6 h-6" style={{ color: '#2596be' }} />
           </button>
         </div>
 
@@ -192,7 +192,7 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                   <button
                     key={layout.id}
                     onClick={() => handleLayoutSelect(layout)}
-                    className="p-4 border-2 rounded-lg hover:border-[#105652] transition-colors group"
+                    className="p-4 border-2 rounded-lg hover:border-[#2596be] transition-colors group"
                     style={{ borderColor: '#e5e7eb' }}
                   >
                     {/* Actual Layout Preview */}
@@ -221,7 +221,7 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <p className="text-sm font-medium" style={{ color: '#105652' }}>
+                      <p className="text-sm font-medium" style={{ color: '#2596be' }}>
                         Layout: {selectedLayout.name}
                       </p>
                       <p className="text-xs text-gray-500">
@@ -231,15 +231,15 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                     <button
                       onClick={() => setStep(1)}
                       className="text-sm px-4 py-2 border rounded-lg hover:bg-gray-50"
-                      style={{ borderColor: '#105652', color: '#105652' }}
+                      style={{ borderColor: '#2596be', color: '#2596be' }}
                     >
                       Change Layout
                     </button>
                   </div>
 
                   {/* Grid Height Control */}
-                  <div className="mb-4 p-4 bg-gray-50 rounded-lg border" style={{ borderColor: '#105652' }}>
-                    <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+                  <div className="mb-4 p-4 bg-gray-50 rounded-lg border" style={{ borderColor: '#2596be' }}>
+                    <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
                       Grid Height: {gridHeight}px
                     </label>
                     <input
@@ -250,7 +250,7 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                       value={gridHeight}
                       onChange={(e) => setGridHeight(parseInt(e.target.value))}
                       className="w-full"
-                      style={{ accentColor: '#105652' }}
+                      style={{ accentColor: '#2596be' }}
                     />
                     <div className="flex justify-between text-xs text-gray-500 mt-1">
                       <span>Small (200px)</span>
@@ -268,9 +268,9 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                       <button
                         key={index}
                         onClick={() => setEditingCell(index)}
-                        className="relative border-2 border-dashed rounded-lg overflow-hidden hover:border-[#105652] transition-colors group"
+                        className="relative border-2 border-dashed rounded-lg overflow-hidden hover:border-[#2596be] transition-colors group"
                         style={{ 
-                          borderColor: img ? '#105652' : '#e5e7eb',
+                          borderColor: img ? '#2596be' : '#e5e7eb',
                           minHeight: '150px'
                         }}
                       >
@@ -316,13 +316,13 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                     </button>
                   </div>
 
-                  <h3 className="text-lg font-semibold mb-4" style={{ color: '#105652' }}>
+                  <h3 className="text-lg font-semibold mb-4" style={{ color: '#2596be' }}>
                     Add Image to Cell {editingCell + 1}
                   </h3>
 
                   {/* Upload Method */}
                   <div className="mb-4">
-                    <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+                    <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
                       Upload Method
                     </label>
                     <div className="flex gap-2">
@@ -331,8 +331,8 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                         onClick={() => setUploadMethod('url')}
                         className={`flex-1 px-4 py-2 border rounded-lg transition-colors flex items-center justify-center gap-2 ${
                           uploadMethod === 'url' 
-                            ? 'border-[#105652] bg-[#105652] text-white' 
-                            : 'border-gray-300 hover:border-[#105652]'
+                            ? 'border-[#2596be] bg-[#2596be] text-white' 
+                            : 'border-gray-300 hover:border-[#2596be]'
                         }`}
                       >
                         <LinkIcon className="w-4 h-4" />
@@ -343,8 +343,8 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                         onClick={() => setUploadMethod('upload')}
                         className={`flex-1 px-4 py-2 border rounded-lg transition-colors flex items-center justify-center gap-2 ${
                           uploadMethod === 'upload' 
-                            ? 'border-[#105652] bg-[#105652] text-white' 
-                            : 'border-gray-300 hover:border-[#105652]'
+                            ? 'border-[#2596be] bg-[#2596be] text-white' 
+                            : 'border-gray-300 hover:border-[#2596be]'
                         }`}
                       >
                         <Upload className="w-4 h-4" />
@@ -356,7 +356,7 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                   {/* URL Input */}
                   {uploadMethod === 'url' && (
                     <div className="mb-4">
-                      <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+                      <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
                         Image URL
                       </label>
                       <input
@@ -365,7 +365,7 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                         onChange={(e) => setImageUrl(e.target.value)}
                         placeholder="https://example.com/image.jpg"
                         className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                        style={{ borderColor: '#105652' }}
+                        style={{ borderColor: '#2596be' }}
                       />
                     </div>
                   )}
@@ -373,10 +373,10 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                   {/* File Upload */}
                   {uploadMethod === 'upload' && (
                     <div className="mb-4">
-                      <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+                      <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
                         Upload Image
                       </label>
-                      <div className="border-2 border-dashed rounded-lg p-6 text-center" style={{ borderColor: '#105652' }}>
+                      <div className="border-2 border-dashed rounded-lg p-6 text-center" style={{ borderColor: '#2596be' }}>
                         <input
                           type="file"
                           accept="image/*"
@@ -388,8 +388,8 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                           htmlFor="grid-image-upload"
                           className="cursor-pointer flex flex-col items-center gap-2"
                         >
-                          <Upload className="w-12 h-12" style={{ color: '#105652' }} />
-                          <span className="text-sm font-medium" style={{ color: '#105652' }}>
+                          <Upload className="w-12 h-12" style={{ color: '#2596be' }} />
+                          <span className="text-sm font-medium" style={{ color: '#2596be' }}>
                             {selectedFile ? selectedFile.name : 'Click to select an image'}
                           </span>
                         </label>
@@ -401,7 +401,7 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
                     onClick={handleAddImage}
                     disabled={uploading || (!imageUrl && !selectedFile)}
                     className="w-full px-6 py-3 rounded-lg text-white disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ backgroundColor: '#105652' }}
+                    style={{ backgroundColor: '#2596be' }}
                   >
                     {uploading ? 'Uploading...' : 'Add Image'}
                   </button>
@@ -417,14 +417,14 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
             <button
               onClick={onCancel}
               className="px-6 py-2 border rounded-lg hover:bg-gray-50"
-              style={{ borderColor: '#105652', color: '#105652' }}
+              style={{ borderColor: '#2596be', color: '#2596be' }}
             >
               Cancel
             </button>
             <button
               onClick={handleSave}
               className="px-6 py-2 rounded-lg text-white"
-              style={{ backgroundColor: '#105652' }}
+              style={{ backgroundColor: '#2596be' }}
             >
               {initialData ? 'Update Grid' : 'Insert Grid'}
             </button>
@@ -444,3 +444,4 @@ export default function PhotoGridInput({ onSave, onCancel, initialData }) {
     </div>
   );
 }
+

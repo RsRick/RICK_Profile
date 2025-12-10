@@ -124,7 +124,7 @@ export default function DomainManagement({ onBack }) {
     return (
       <div className="p-6">
         <div className="bg-white rounded-lg shadow-lg p-12 text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 mx-auto" style={{ borderColor: '#105652' }}></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 mx-auto" style={{ borderColor: '#2596be' }}></div>
           <p className="text-gray-600 mt-4">Loading domains...</p>
         </div>
       </div>
@@ -143,7 +143,7 @@ export default function DomainManagement({ onBack }) {
             <ArrowLeft className="w-5 h-5" />
             Back to Shortlinks
           </button>
-          <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>
+          <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>
             Custom Domain Management
           </h1>
           <p className="text-gray-600 mt-1">
@@ -153,7 +153,7 @@ export default function DomainManagement({ onBack }) {
         <button
           onClick={() => setShowAddForm(!showAddForm)}
           className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all duration-300 hover:scale-105"
-          style={{ backgroundColor: '#105652' }}
+          style={{ backgroundColor: '#2596be' }}
         >
           <Plus className="w-5 h-5" />
           Add Domain
@@ -163,7 +163,7 @@ export default function DomainManagement({ onBack }) {
       {/* Add Domain Form */}
       {showAddForm && (
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h2 className="text-xl font-semibold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-xl font-semibold mb-4" style={{ color: '#2596be' }}>
             Add Custom Domain
           </h2>
           
@@ -179,7 +179,7 @@ export default function DomainManagement({ onBack }) {
                 placeholder="link.yourdomain.com"
                 required
                 className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
               <p className="text-gray-500 text-sm mt-1">
                 Enter a subdomain (e.g., link.yourdomain.com)
@@ -194,14 +194,14 @@ export default function DomainManagement({ onBack }) {
                   setNewDomain('');
                 }}
                 className="px-4 py-2 rounded-lg border-2 transition-all duration-300"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
               >
                 Cancel
               </button>
               <button
                 type="submit"
                 className="px-4 py-2 rounded-lg text-white transition-all duration-300 hover:scale-105"
-                style={{ backgroundColor: '#105652' }}
+                style={{ backgroundColor: '#2596be' }}
               >
                 Add Domain
               </button>
@@ -223,7 +223,7 @@ export default function DomainManagement({ onBack }) {
           <button
             onClick={() => setShowAddForm(true)}
             className="px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             Add Your First Domain
           </button>
@@ -268,7 +268,7 @@ export default function DomainManagement({ onBack }) {
                       onClick={() => handleVerifyDomain(domain)}
                       disabled={verifying[domain.$id]}
                       className="flex items-center gap-2 px-4 py-2 rounded-lg border-2 transition-all duration-300 hover:scale-105 disabled:opacity-50"
-                      style={{ borderColor: '#105652', color: '#105652' }}
+                      style={{ borderColor: '#2596be', color: '#2596be' }}
                     >
                       {verifying[domain.$id] ? (
                         <>
@@ -286,7 +286,7 @@ export default function DomainManagement({ onBack }) {
                     <button
                       onClick={() => handleToggleActive(domain)}
                       className="px-4 py-2 rounded-lg border-2 transition-all duration-300 hover:scale-105"
-                      style={{ borderColor: '#105652', color: '#105652' }}
+                      style={{ borderColor: '#2596be', color: '#2596be' }}
                     >
                       {domain.isActive ? 'Disable' : 'Enable'}
                     </button>
@@ -294,7 +294,7 @@ export default function DomainManagement({ onBack }) {
                     <button
                       onClick={() => toggleExpanded(domain.$id)}
                       className="flex items-center gap-2 px-4 py-2 rounded-lg border-2 transition-all duration-300"
-                      style={{ borderColor: '#105652', color: '#105652' }}
+                      style={{ borderColor: '#2596be', color: '#2596be' }}
                     >
                       DNS Setup
                       {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
@@ -313,7 +313,7 @@ export default function DomainManagement({ onBack }) {
                 {/* DNS Instructions (Expandable) */}
                 {isExpanded && (
                   <div className="border-t bg-gray-50 p-6">
-                    <h4 className="font-semibold mb-4" style={{ color: '#105652' }}>
+                    <h4 className="font-semibold mb-4" style={{ color: '#2596be' }}>
                       DNS Configuration Instructions
                     </h4>
 
@@ -321,7 +321,7 @@ export default function DomainManagement({ onBack }) {
                       {instructions.steps.map((step) => (
                         <div key={step.step} className="flex gap-4">
                           <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold"
-                            style={{ backgroundColor: '#105652' }}
+                            style={{ backgroundColor: '#2596be' }}
                           >
                             {step.step}
                           </div>
@@ -395,3 +395,4 @@ export default function DomainManagement({ onBack }) {
     </div>
   );
 }
+

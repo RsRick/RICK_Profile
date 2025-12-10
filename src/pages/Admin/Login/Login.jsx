@@ -37,12 +37,12 @@ export default function Login() {
             <div
               className="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center mb-4"
               style={{
-                background: 'linear-gradient(135deg, #105652, #1E8479)',
+                background: 'linear-gradient(135deg, #2596be, #3ba8d1)',
               }}
             >
               <LogIn className="w-8 h-8 text-white" />
             </div>
-            <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>
+            <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>
               Admin Login
             </h1>
             <p className="text-gray-600 mt-2">Sign in to access the admin panel</p>
@@ -66,8 +66,8 @@ export default function Login() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#105652]"
-                  placeholder="admin@example.com"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2596be]"
+                  placeholder="Enter your email address"
                 />
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function Login() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#105652]"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2596be]"
                   placeholder="Enter your password"
                 />
               </div>
@@ -94,7 +94,7 @@ export default function Login() {
               disabled={loading}
               className="w-full px-6 py-3 rounded-lg text-white font-medium flex items-center justify-center gap-2 hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
               style={{
-                background: 'linear-gradient(135deg, #105652, #1E8479)',
+                background: 'linear-gradient(135deg, #2596be, #3ba8d1)',
               }}
             >
               {loading ? (
@@ -115,6 +115,7 @@ export default function Login() {
     </div>
   );
 }
+
 
 
 

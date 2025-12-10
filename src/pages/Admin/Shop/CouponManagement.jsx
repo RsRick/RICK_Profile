@@ -243,7 +243,7 @@ export default function CouponManagement() {
           <h1 className="text-2xl font-bold text-gray-800">Coupon Management</h1>
           <p className="text-gray-600 mt-1">Create and manage discount coupons</p>
         </div>
-        <button onClick={openAddModal} className="flex items-center gap-2 px-4 py-2 bg-[#105652] text-white rounded-lg hover:bg-[#0d4543] transition-colors">
+        <button onClick={openAddModal} className="flex items-center gap-2 px-4 py-2 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4543] transition-colors">
           <Plus className="w-5 h-5" />
           Add Coupon
         </button>
@@ -252,7 +252,7 @@ export default function CouponManagement() {
       {/* Coupons Grid */}
       {loading ? (
         <div className="flex justify-center py-12">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#105652]"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#2596be]"></div>
         </div>
       ) : coupons.length === 0 ? (
         <div className="text-center py-12 bg-white rounded-lg border border-gray-200">
@@ -265,11 +265,11 @@ export default function CouponManagement() {
             <div 
               key={coupon.$id} 
               className={`bg-white rounded-xl border-2 overflow-hidden transition-all hover:shadow-lg ${
-                !coupon.isActive || isExpired(coupon.expiryDate) ? 'border-gray-200 opacity-60' : 'border-[#105652]/20'
+                !coupon.isActive || isExpired(coupon.expiryDate) ? 'border-gray-200 opacity-60' : 'border-[#2596be]/20'
               }`}
             >
               {/* Coupon Header */}
-              <div className="bg-gradient-to-r from-[#105652] to-[#1E8479] p-4 text-white relative">
+              <div className="bg-gradient-to-r from-[#2596be] to-[#3ba8d1] p-4 text-white relative">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     {getTypeIcon(coupon.type)}
@@ -340,7 +340,7 @@ export default function CouponManagement() {
                   <div className="flex gap-1">
                     <button 
                       onClick={() => handleEdit(coupon)} 
-                      className="p-2 text-gray-500 hover:text-[#105652] hover:bg-[#105652]/10 rounded-lg transition-colors"
+                      className="p-2 text-gray-500 hover:text-[#2596be] hover:bg-[#2596be]/10 rounded-lg transition-colors"
                     >
                       <Edit2 className="w-4 h-4" />
                     </button>
@@ -379,7 +379,7 @@ export default function CouponManagement() {
                     type="text"
                     value={formData.code}
                     onChange={(e) => setFormData(prev => ({ ...prev, code: e.target.value.toUpperCase() }))}
-                    className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent uppercase"
+                    className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent uppercase"
                     placeholder="SUMMER20"
                     required
                   />
@@ -408,7 +408,7 @@ export default function CouponManagement() {
                       onClick={() => setFormData(prev => ({ ...prev, type: value }))}
                       className={`flex flex-col items-center gap-1 p-3 rounded-lg border-2 transition-all ${
                         formData.type === value
-                          ? 'border-[#105652] bg-[#105652]/5 text-[#105652]'
+                          ? 'border-[#2596be] bg-[#2596be]/5 text-[#2596be]'
                           : 'border-gray-200 hover:border-gray-300'
                       }`}
                     >
@@ -437,7 +437,7 @@ export default function CouponManagement() {
                     max={formData.type === 'percent' ? 100 : undefined}
                     value={formData.value}
                     onChange={(e) => setFormData(prev => ({ ...prev, value: e.target.value }))}
-                    className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                    className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                     placeholder={formData.type === 'percent' ? '20' : '10.00'}
                     required
                   />
@@ -453,7 +453,7 @@ export default function CouponManagement() {
                     onClick={() => setFormData(prev => ({ ...prev, applyTo: 'cart', productId: '', productName: '' }))}
                     className={`flex items-center justify-center gap-2 p-3 rounded-lg border-2 transition-all ${
                       formData.applyTo === 'cart'
-                        ? 'border-[#105652] bg-[#105652]/5 text-[#105652]'
+                        ? 'border-[#2596be] bg-[#2596be]/5 text-[#2596be]'
                         : 'border-gray-200 hover:border-gray-300'
                     }`}
                   >
@@ -465,7 +465,7 @@ export default function CouponManagement() {
                     onClick={() => setFormData(prev => ({ ...prev, applyTo: 'product' }))}
                     className={`flex items-center justify-center gap-2 p-3 rounded-lg border-2 transition-all ${
                       formData.applyTo === 'product'
-                        ? 'border-[#105652] bg-[#105652]/5 text-[#105652]'
+                        ? 'border-[#2596be] bg-[#2596be]/5 text-[#2596be]'
                         : 'border-gray-200 hover:border-gray-300'
                     }`}
                   >
@@ -489,7 +489,7 @@ export default function CouponManagement() {
                         productName: product?.name || ''
                       }));
                     }}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                     required
                   >
                     <option value="">Select a product</option>
@@ -511,7 +511,7 @@ export default function CouponManagement() {
                     min="0"
                     value={formData.minPurchase}
                     onChange={(e) => setFormData(prev => ({ ...prev, minPurchase: e.target.value }))}
-                    className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                    className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                     placeholder="0.00"
                   />
                 </div>
@@ -526,7 +526,7 @@ export default function CouponManagement() {
                   min="0"
                   value={formData.maxUses}
                   onChange={(e) => setFormData(prev => ({ ...prev, maxUses: e.target.value }))}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                   placeholder="Unlimited"
                 />
                 <p className="text-xs text-gray-500 mt-1">Leave empty for unlimited uses</p>
@@ -541,7 +541,7 @@ export default function CouponManagement() {
                     type="date"
                     value={formData.expiryDate}
                     onChange={(e) => setFormData(prev => ({ ...prev, expiryDate: e.target.value }))}
-                    className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                    className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                   />
                 </div>
                 <p className="text-xs text-gray-500 mt-1">Leave empty for no expiration</p>
@@ -557,7 +557,7 @@ export default function CouponManagement() {
                     onChange={(e) => setFormData(prev => ({ ...prev, isActive: e.target.checked }))}
                     className="sr-only peer"
                   />
-                  <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#105652]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#105652]"></div>
+                  <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#2596be]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#2596be]"></div>
                 </label>
               </div>
 
@@ -572,7 +572,7 @@ export default function CouponManagement() {
                 </button>
                 <button
                   type="submit"
-                  className="flex-1 px-4 py-2.5 bg-[#105652] text-white rounded-lg hover:bg-[#0d4543] font-medium"
+                  className="flex-1 px-4 py-2.5 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4543] font-medium"
                 >
                   {editingCoupon ? 'Update Coupon' : 'Create Coupon'}
                 </button>
@@ -584,3 +584,4 @@ export default function CouponManagement() {
     </div>
   );
 }
+

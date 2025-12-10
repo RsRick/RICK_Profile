@@ -88,7 +88,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
     return (
       <div className="p-6">
         <div className="bg-white rounded-lg shadow-lg p-12 text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 mx-auto" style={{ borderColor: '#105652' }}></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 mx-auto" style={{ borderColor: '#2596be' }}></div>
           <p className="text-gray-600 mt-4">Loading analytics...</p>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
             <ArrowLeft className="w-5 h-5" />
             Back to Shortlinks
           </button>
-          <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>
+          <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>
             Analytics: /{shortlink.customPath}
           </h1>
           <p className="text-gray-600 mt-1 flex items-center gap-2">
@@ -120,7 +120,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
             value={dateRange}
             onChange={(e) => setDateRange(Number(e.target.value))}
             className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-            style={{ borderColor: '#105652' }}
+            style={{ borderColor: '#2596be' }}
           >
             <option value={7}>Last 7 days</option>
             <option value={30}>Last 30 days</option>
@@ -129,7 +129,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
           <button
             onClick={handleExport}
             className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all duration-300 hover:scale-105"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             <Download className="w-5 h-5" />
             Export CSV
@@ -143,7 +143,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-gray-600 text-sm">Total Clicks</p>
-              <p className="text-3xl font-bold mt-1" style={{ color: '#105652' }}>
+              <p className="text-3xl font-bold mt-1" style={{ color: '#2596be' }}>
                 {summary?.totalClicks || 0}
               </p>
             </div>
@@ -155,7 +155,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-gray-600 text-sm">Unique Visitors</p>
-              <p className="text-3xl font-bold mt-1" style={{ color: '#105652' }}>
+              <p className="text-3xl font-bold mt-1" style={{ color: '#2596be' }}>
                 {summary?.uniqueVisitors || 0}
               </p>
             </div>
@@ -167,7 +167,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-gray-600 text-sm">Avg. Clicks/Day</p>
-              <p className="text-3xl font-bold mt-1" style={{ color: '#105652' }}>
+              <p className="text-3xl font-bold mt-1" style={{ color: '#2596be' }}>
                 {summary?.avgClicksPerDay?.toFixed(1) || 0}
               </p>
             </div>
@@ -179,7 +179,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-gray-600 text-sm">First Click</p>
-              <p className="text-lg font-bold mt-1" style={{ color: '#105652' }}>
+              <p className="text-lg font-bold mt-1" style={{ color: '#2596be' }}>
                 {summary?.firstClick ? new Date(summary.firstClick).toLocaleDateString() : 'N/A'}
               </p>
             </div>
@@ -190,7 +190,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
 
       {/* Click Trends Chart */}
       <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-        <h2 className="text-xl font-semibold mb-4" style={{ color: '#105652' }}>
+        <h2 className="text-xl font-semibold mb-4" style={{ color: '#2596be' }}>
           Click Trends
         </h2>
         
@@ -207,7 +207,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
                       className="h-full rounded-full flex items-center justify-end pr-2 text-white text-sm font-medium transition-all duration-300"
                       style={{
                         width: `${(trend.clicks / maxTrendValue) * 100}%`,
-                        backgroundColor: '#105652',
+                        backgroundColor: '#2596be',
                         minWidth: trend.clicks > 0 ? '30px' : '0'
                       }}
                     >
@@ -229,7 +229,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         {/* Geographic Distribution */}
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h2 className="text-xl font-semibold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-xl font-semibold mb-4" style={{ color: '#2596be' }}>
             Geographic Distribution
           </h2>
           
@@ -247,7 +247,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
                         className="h-full rounded-full"
                         style={{
                           width: `${geo.percentage}%`,
-                          backgroundColor: '#105652'
+                          backgroundColor: '#2596be'
                         }}
                       />
                     </div>
@@ -265,7 +265,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
 
         {/* Referrer Sources */}
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h2 className="text-xl font-semibold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-xl font-semibold mb-4" style={{ color: '#2596be' }}>
             Top Referrers
           </h2>
           
@@ -283,7 +283,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
                         className="h-full rounded-full"
                         style={{
                           width: `${ref.percentage}%`,
-                          backgroundColor: '#105652'
+                          backgroundColor: '#2596be'
                         }}
                       />
                     </div>
@@ -303,7 +303,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Device Types */}
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h2 className="text-xl font-semibold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-xl font-semibold mb-4" style={{ color: '#2596be' }}>
             Device Types
           </h2>
           
@@ -321,7 +321,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
                         className="h-full rounded-full"
                         style={{
                           width: `${device.percentage}%`,
-                          backgroundColor: '#105652'
+                          backgroundColor: '#2596be'
                         }}
                       />
                     </div>
@@ -339,7 +339,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
 
         {/* Browsers */}
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h2 className="text-xl font-semibold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-xl font-semibold mb-4" style={{ color: '#2596be' }}>
             Top Browsers
           </h2>
           
@@ -357,7 +357,7 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
                         className="h-full rounded-full"
                         style={{
                           width: `${browser.percentage}%`,
-                          backgroundColor: '#105652'
+                          backgroundColor: '#2596be'
                         }}
                       />
                     </div>
@@ -376,3 +376,4 @@ export default function AnalyticsDashboard({ shortlink, onBack }) {
     </div>
   );
 }
+

@@ -32,7 +32,7 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
       >
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b" style={{ borderColor: '#e5e7eb' }}>
-          <h2 className="text-2xl font-bold" style={{ color: '#105652' }}>
+          <h2 className="text-2xl font-bold" style={{ color: '#2596be' }}>
             Insert Author
           </h2>
           <button
@@ -44,7 +44,7 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
             }}
             className="p-2 hover:bg-gray-100 rounded-full transition-colors"
           >
-            <X className="w-6 h-6" style={{ color: '#105652' }} />
+            <X className="w-6 h-6" style={{ color: '#2596be' }} />
           </button>
         </div>
 
@@ -56,7 +56,7 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
 
           {/* Author Name Input */}
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+            <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
               Author Name
             </label>
             <input
@@ -65,7 +65,7 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
               onChange={(e) => setAuthorName(e.target.value)}
               placeholder="e.g., John Doe, Jane Smith"
               className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-              style={{ borderColor: '#105652' }}
+              style={{ borderColor: '#2596be' }}
               maxLength={50}
               autoFocus
               onKeyDown={(e) => {
@@ -82,7 +82,7 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
 
           {/* Alignment Options */}
           <div className="mb-6">
-            <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+            <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
               Alignment
             </label>
             <div className="flex gap-2">
@@ -91,8 +91,8 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
                 onClick={() => setAlignment('left')}
                 className={`flex-1 px-4 py-2 border rounded-lg transition-colors ${
                   alignment === 'left' 
-                    ? 'border-[#105652] bg-[#105652] text-white' 
-                    : 'border-gray-300 hover:border-[#105652]'
+                    ? 'border-[#2596be] bg-[#2596be] text-white' 
+                    : 'border-gray-300 hover:border-[#2596be]'
                 }`}
               >
                 Left
@@ -102,8 +102,8 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
                 onClick={() => setAlignment('center')}
                 className={`flex-1 px-4 py-2 border rounded-lg transition-colors ${
                   alignment === 'center' 
-                    ? 'border-[#105652] bg-[#105652] text-white' 
-                    : 'border-gray-300 hover:border-[#105652]'
+                    ? 'border-[#2596be] bg-[#2596be] text-white' 
+                    : 'border-gray-300 hover:border-[#2596be]'
                 }`}
               >
                 Center
@@ -113,8 +113,8 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
                 onClick={() => setAlignment('right')}
                 className={`flex-1 px-4 py-2 border rounded-lg transition-colors ${
                   alignment === 'right' 
-                    ? 'border-[#105652] bg-[#105652] text-white' 
-                    : 'border-gray-300 hover:border-[#105652]'
+                    ? 'border-[#2596be] bg-[#2596be] text-white' 
+                    : 'border-gray-300 hover:border-[#2596be]'
                 }`}
               >
                 Right
@@ -125,7 +125,7 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
           {/* Preview */}
           {authorName.trim() && (
             <div className="mb-4 p-4 bg-gray-50 rounded-lg">
-              <p className="text-sm font-medium mb-3" style={{ color: '#105652' }}>Preview:</p>
+              <p className="text-sm font-medium mb-3" style={{ color: '#2596be' }}>Preview:</p>
               <div style={{ textAlign: alignment }}>
                 <div className="terminal-loader-preview" style={{
                 border: '0.1em solid #333',
@@ -189,7 +189,7 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
               onCancel();
             }}
             className="px-6 py-2 border rounded-lg hover:bg-gray-50 transition-colors"
-            style={{ borderColor: '#105652', color: '#105652' }}
+            style={{ borderColor: '#2596be', color: '#2596be' }}
           >
             Cancel
           </button>
@@ -198,7 +198,7 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
             onClick={handleSave}
             disabled={!authorName.trim()}
             className="px-6 py-2 rounded-lg text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             Insert Author
           </button>
@@ -207,3 +207,4 @@ export default function AuthorInput({ onSave, onCancel, initialData }) {
     </div>
   );
 }
+

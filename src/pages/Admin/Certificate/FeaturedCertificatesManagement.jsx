@@ -52,12 +52,12 @@ export default function FeaturedCertificatesManagement() {
 
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6" style={{ color: '#105652' }}>Featured Certificates</h1>
+      <h1 className="text-3xl font-bold mb-6" style={{ color: '#2596be' }}>Featured Certificates</h1>
       <p className="text-gray-600 mb-6">Select which certificates to display on the homepage.</p>
 
       {/* Featured Section */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold mb-4" style={{ color: '#105652' }}>
+        <h2 className="text-xl font-semibold mb-4" style={{ color: '#2596be' }}>
           Featured ({featuredCerts.length})
         </h2>
         {featuredCerts.length === 0 ? (
@@ -73,7 +73,7 @@ export default function FeaturedCertificatesManagement() {
                   </div>
                 </div>
                 <div className="p-3 flex items-center justify-between">
-                  <h4 className="font-semibold text-sm line-clamp-1" style={{ color: '#105652' }}>{cert.title}</h4>
+                  <h4 className="font-semibold text-sm line-clamp-1" style={{ color: '#2596be' }}>{cert.title}</h4>
                   <button
                     onClick={() => toggleFeatured(cert)}
                     className="p-2 bg-yellow-100 text-yellow-600 rounded-lg hover:bg-yellow-200"
@@ -101,10 +101,10 @@ export default function FeaturedCertificatesManagement() {
                   <img src={cert.imageUrl} alt={cert.title} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-3 flex items-center justify-between">
-                  <h4 className="font-semibold text-sm line-clamp-1" style={{ color: '#105652' }}>{cert.title}</h4>
+                  <h4 className="font-semibold text-sm line-clamp-1" style={{ color: '#2596be' }}>{cert.title}</h4>
                   <button
                     onClick={() => toggleFeatured(cert)}
-                    className="p-2 bg-gray-100 text-gray-600 rounded-lg hover:bg-[#105652] hover:text-white"
+                    className="p-2 bg-gray-100 text-gray-600 rounded-lg hover:bg-[#2596be] hover:text-white"
                     title="Add to featured"
                   >
                     <Star className="w-4 h-4" />
@@ -118,3 +118,4 @@ export default function FeaturedCertificatesManagement() {
     </div>
   );
 }
+

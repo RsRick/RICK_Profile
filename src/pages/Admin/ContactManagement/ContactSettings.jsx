@@ -197,14 +197,14 @@ export default function ContactSettings() {
   return (
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>
+        <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>
           Contact Settings
         </h1>
       </div>
 
       <form onSubmit={handleSubmit} className="max-w-4xl">
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h2 className="text-xl font-bold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-xl font-bold mb-4" style={{ color: '#2596be' }}>
             Profile Information
           </h2>
 
@@ -217,12 +217,12 @@ export default function ContactSettings() {
                   src={formData.profileImage} 
                   alt="Profile" 
                   className="w-24 h-24 rounded-full object-cover border-2"
-                  style={{ borderColor: '#105652' }}
+                  style={{ borderColor: '#2596be' }}
                 />
               ) : (
                 <div 
                   className="w-24 h-24 rounded-full bg-gray-100 flex items-center justify-center border-2"
-                  style={{ borderColor: '#105652' }}
+                  style={{ borderColor: '#2596be' }}
                 >
                   <ImageIcon className="w-8 h-8 text-gray-400" />
                 </div>
@@ -233,7 +233,7 @@ export default function ContactSettings() {
                   onClick={() => setShowCropper(true)}
                   disabled={uploadingImage}
                   className="flex items-center gap-2 px-4 py-2 rounded-lg text-white text-sm transition-all hover:scale-105 disabled:opacity-50"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   {uploadingImage ? (
                     <>
@@ -265,7 +265,7 @@ export default function ContactSettings() {
                 onChange={handleInputChange}
                 required
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
             </div>
             <div>
@@ -278,7 +278,7 @@ export default function ContactSettings() {
                 required
                 placeholder="e.g., GIS & Remote Sensing Specialist"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
             </div>
           </div>
@@ -292,7 +292,7 @@ export default function ContactSettings() {
               onChange={handleInputChange}
               rows="3"
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-              style={{ borderColor: '#105652' }}
+              style={{ borderColor: '#2596be' }}
               placeholder="Brief description about yourself..."
             />
           </div>
@@ -300,7 +300,7 @@ export default function ContactSettings() {
 
         {/* Contact Information */}
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h2 className="text-xl font-bold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-xl font-bold mb-4" style={{ color: '#2596be' }}>
             Contact Information
           </h2>
 
@@ -313,7 +313,7 @@ export default function ContactSettings() {
                 value={formData.phone}
                 onChange={handleInputChange}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
                 placeholder="+880 1703 958919"
               />
             </div>
@@ -326,7 +326,7 @@ export default function ContactSettings() {
                 onChange={handleInputChange}
                 required
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
             </div>
           </div>
@@ -339,7 +339,7 @@ export default function ContactSettings() {
               value={formData.location}
               onChange={handleInputChange}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-              style={{ borderColor: '#105652' }}
+              style={{ borderColor: '#2596be' }}
               placeholder="e.g., Bangladesh"
             />
           </div>
@@ -348,14 +348,14 @@ export default function ContactSettings() {
         {/* Social Links */}
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold" style={{ color: '#105652' }}>
+            <h2 className="text-xl font-bold" style={{ color: '#2596be' }}>
               Social Media Links
             </h2>
             <button
               type="button"
               onClick={addSocialLink}
               className="flex items-center gap-2 px-4 py-2 rounded-lg text-white text-sm transition-all hover:scale-105"
-              style={{ backgroundColor: '#105652' }}
+              style={{ backgroundColor: '#2596be' }}
             >
               <Plus className="w-4 h-4" />
               Add Link
@@ -373,7 +373,7 @@ export default function ContactSettings() {
                       value={link.platform}
                       onChange={(e) => updateSocialLink(index, 'platform', e.target.value)}
                       className="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2"
-                      style={{ borderColor: '#105652' }}
+                      style={{ borderColor: '#2596be' }}
                       placeholder="e.g., LinkedIn"
                     />
                   </div>
@@ -383,7 +383,7 @@ export default function ContactSettings() {
                       value={link.icon}
                       onChange={(e) => updateSocialLink(index, 'icon', e.target.value)}
                       className="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2"
-                      style={{ borderColor: '#105652' }}
+                      style={{ borderColor: '#2596be' }}
                     >
                       {iconOptions.map(opt => (
                         <option key={opt.value} value={opt.value}>{opt.label}</option>
@@ -397,7 +397,7 @@ export default function ContactSettings() {
                       value={link.url}
                       onChange={(e) => updateSocialLink(index, 'url', e.target.value)}
                       className="w-full px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2"
-                      style={{ borderColor: '#105652' }}
+                      style={{ borderColor: '#2596be' }}
                       placeholder="https://..."
                     />
                   </div>
@@ -430,7 +430,7 @@ export default function ContactSettings() {
             type="submit"
             disabled={saving}
             className="flex items-center gap-2 px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105 disabled:opacity-50"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             <Save className="w-5 h-5" />
             {saving ? 'Saving...' : 'Save Settings'}
@@ -448,3 +448,4 @@ export default function ContactSettings() {
     </div>
   );
 }
+

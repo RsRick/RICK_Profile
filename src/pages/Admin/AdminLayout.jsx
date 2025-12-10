@@ -106,7 +106,7 @@ export default function AdminLayout() {
               onClick={() => !isSidebarCollapsed && setIsHomeExpanded(!isHomeExpanded)}
               className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : 'justify-between'} gap-3 px-4 py-3 rounded-lg transition-colors ${
                 isHomeActive
-                  ? 'bg-[#105652] text-white'
+                  ? 'bg-[#2596be] text-white'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
               title={isSidebarCollapsed ? 'Home' : ''}
@@ -128,7 +128,7 @@ export default function AdminLayout() {
                   to="/admin/menubar"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isMenubarActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -139,7 +139,7 @@ export default function AdminLayout() {
                   to="/admin/header-section"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isHeaderSectionActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -150,7 +150,7 @@ export default function AdminLayout() {
                   to="/admin/about-me"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isAboutMeActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -167,7 +167,7 @@ export default function AdminLayout() {
               onClick={() => !isSidebarCollapsed && setIsProjectsExpanded(!isProjectsExpanded)}
               className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : 'justify-between'} gap-3 px-4 py-3 rounded-lg transition-colors ${
                 isProjectsActive || isCategoriesActive
-                  ? 'bg-[#105652] text-white'
+                  ? 'bg-[#2596be] text-white'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
               title={isSidebarCollapsed ? 'Projects' : ''}
@@ -189,7 +189,7 @@ export default function AdminLayout() {
                   to="/admin/projects"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isProjectsActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -200,7 +200,7 @@ export default function AdminLayout() {
                   to="/admin/categories"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isCategoriesActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -217,7 +217,7 @@ export default function AdminLayout() {
               onClick={() => !isSidebarCollapsed && setIsBlogsExpanded(!isBlogsExpanded)}
               className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : 'justify-between'} gap-3 px-4 py-3 rounded-lg transition-colors ${
                 isBlogsActive || isBlogCategoriesActive
-                  ? 'bg-[#105652] text-white'
+                  ? 'bg-[#2596be] text-white'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
               title={isSidebarCollapsed ? 'Blogs' : ''}
@@ -239,7 +239,7 @@ export default function AdminLayout() {
                   to="/admin/blogs"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isBlogsActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -250,7 +250,7 @@ export default function AdminLayout() {
                   to="/admin/blog-categories"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isBlogCategoriesActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -267,7 +267,7 @@ export default function AdminLayout() {
               onClick={() => !isSidebarCollapsed && setIsContactExpanded(!isContactExpanded)}
               className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : 'justify-between'} gap-3 px-4 py-3 rounded-lg transition-colors ${
                 isContactSettingsActive || isContactResponsesActive
-                  ? 'bg-[#105652] text-white'
+                  ? 'bg-[#2596be] text-white'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
               title={isSidebarCollapsed ? 'Contact' : ''}
@@ -289,7 +289,7 @@ export default function AdminLayout() {
                   to="/admin/contact-settings"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isContactSettingsActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -300,7 +300,7 @@ export default function AdminLayout() {
                   to="/admin/contact-responses"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isContactResponsesActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -317,7 +317,7 @@ export default function AdminLayout() {
               onClick={() => !isSidebarCollapsed && setIsSpatialExpanded(!isSpatialExpanded)}
               className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : 'justify-between'} gap-3 px-4 py-3 rounded-lg transition-colors ${
                 isMapUploadActive || isMapCategoriesActive || isFeaturedMapsActive
-                  ? 'bg-[#105652] text-white'
+                  ? 'bg-[#2596be] text-white'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
               title={isSidebarCollapsed ? 'Spatial Canvas' : ''}
@@ -339,7 +339,7 @@ export default function AdminLayout() {
                   to="/admin/map-upload"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isMapUploadActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -350,7 +350,7 @@ export default function AdminLayout() {
                   to="/admin/map-categories"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isMapCategoriesActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -361,7 +361,7 @@ export default function AdminLayout() {
                   to="/admin/featured-maps"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isFeaturedMapsActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -378,7 +378,7 @@ export default function AdminLayout() {
               onClick={() => !isSidebarCollapsed && setIsCertificateExpanded(!isCertificateExpanded)}
               className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : 'justify-between'} gap-3 px-4 py-3 rounded-lg transition-colors ${
                 isCertificateUploadActive || isCertificateCategoriesActive || isFeaturedCertificatesActive
-                  ? 'bg-[#105652] text-white'
+                  ? 'bg-[#2596be] text-white'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
               title={isSidebarCollapsed ? 'Certificate' : ''}
@@ -400,7 +400,7 @@ export default function AdminLayout() {
                   to="/admin/certificate-upload"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isCertificateUploadActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -411,7 +411,7 @@ export default function AdminLayout() {
                   to="/admin/certificate-categories"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isCertificateCategoriesActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -422,7 +422,7 @@ export default function AdminLayout() {
                   to="/admin/featured-certificates"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isFeaturedCertificatesActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -438,7 +438,7 @@ export default function AdminLayout() {
             to="/admin/experiences"
             className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : ''} gap-3 px-4 py-3 rounded-lg transition-colors ${
               isExperiencesActive
-                ? 'bg-[#105652] text-white'
+                ? 'bg-[#2596be] text-white'
                 : 'text-gray-700 hover:bg-gray-100'
             }`}
             title={isSidebarCollapsed ? 'Experience' : ''}
@@ -452,7 +452,7 @@ export default function AdminLayout() {
             to="/admin/project-gallery"
             className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : ''} gap-3 px-4 py-3 rounded-lg transition-colors ${
               isProjectGalleryActive
-                ? 'bg-[#105652] text-white'
+                ? 'bg-[#2596be] text-white'
                 : 'text-gray-700 hover:bg-gray-100'
             }`}
             title={isSidebarCollapsed ? 'Project Gallery' : ''}
@@ -467,7 +467,7 @@ export default function AdminLayout() {
               onClick={() => !isSidebarCollapsed && setIsShopExpanded(!isShopExpanded)}
               className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : 'justify-between'} gap-3 px-4 py-3 rounded-lg transition-colors ${
                 isProductsActive || isShopCategoriesActive || isCouponsActive || isOrdersActive
-                  ? 'bg-[#105652] text-white'
+                  ? 'bg-[#2596be] text-white'
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
               title={isSidebarCollapsed ? 'Shop' : ''}
@@ -489,7 +489,7 @@ export default function AdminLayout() {
                   to="/admin/products"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isProductsActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -500,7 +500,7 @@ export default function AdminLayout() {
                   to="/admin/shop-categories"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isShopCategoriesActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -511,7 +511,7 @@ export default function AdminLayout() {
                   to="/admin/coupons"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isCouponsActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -522,7 +522,7 @@ export default function AdminLayout() {
                   to="/admin/orders"
                   className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-colors ${
                     isOrdersActive
-                      ? 'bg-[#105652] text-white'
+                      ? 'bg-[#2596be] text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >
@@ -538,7 +538,7 @@ export default function AdminLayout() {
             to="/admin/newsletter"
             className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : ''} gap-3 px-4 py-3 rounded-lg transition-colors ${
               isNewsletterActive
-                ? 'bg-[#105652] text-white'
+                ? 'bg-[#2596be] text-white'
                 : 'text-gray-700 hover:bg-gray-100'
             }`}
             title={isSidebarCollapsed ? 'Newsletter' : ''}
@@ -552,7 +552,7 @@ export default function AdminLayout() {
             to="/admin/shortlinks"
             className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : ''} gap-3 px-4 py-3 rounded-lg transition-colors ${
               isShortlinksActive
-                ? 'bg-[#105652] text-white'
+                ? 'bg-[#2596be] text-white'
                 : 'text-gray-700 hover:bg-gray-100'
             }`}
             title={isSidebarCollapsed ? 'Shortlinks' : ''}
@@ -566,7 +566,7 @@ export default function AdminLayout() {
             to="/admin/settings"
             className={`w-full flex items-center ${isSidebarCollapsed ? 'justify-center' : ''} gap-3 px-4 py-3 rounded-lg transition-colors ${
               isSettingsActive
-                ? 'bg-[#105652] text-white'
+                ? 'bg-[#2596be] text-white'
                 : 'text-gray-700 hover:bg-gray-100'
             }`}
             title={isSidebarCollapsed ? 'Settings' : ''}
@@ -605,4 +605,5 @@ export default function AdminLayout() {
     </div>
   );
 }
+
 

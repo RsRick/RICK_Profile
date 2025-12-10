@@ -9,7 +9,7 @@ const SOCIAL_PLATFORMS = [
   { id: 'linkedin', name: 'LinkedIn', icon: Linkedin, color: '#0077b5' },
   { id: 'youtube', name: 'YouTube', icon: Youtube, color: '#ff0000' },
   { id: 'github', name: 'GitHub', icon: Github, color: '#333333' },
-  { id: 'website', name: 'Website', icon: Globe, color: '#105652' },
+  { id: 'website', name: 'Website', icon: Globe, color: '#2596be' },
   { id: 'email', name: 'Email', icon: Mail, color: '#ea4335' },
 ];
 
@@ -98,7 +98,7 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
       >
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b" style={{ borderColor: '#e5e7eb' }}>
-          <h2 className="text-2xl font-bold" style={{ color: '#105652' }}>
+          <h2 className="text-2xl font-bold" style={{ color: '#2596be' }}>
             Insert Social Media Links
           </h2>
           <button
@@ -110,7 +110,7 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
             }}
             className="p-2 hover:bg-gray-100 rounded-full transition-colors"
           >
-            <X className="w-6 h-6" style={{ color: '#105652' }} />
+            <X className="w-6 h-6" style={{ color: '#2596be' }} />
           </button>
         </div>
 
@@ -122,7 +122,7 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
 
           {/* Label Text Input */}
           <div className="mb-6">
-            <label className="block text-sm font-medium mb-2" style={{ color: '#105652' }}>
+            <label className="block text-sm font-medium mb-2" style={{ color: '#2596be' }}>
               Label Text (optional)
             </label>
             <input
@@ -131,7 +131,7 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
               onChange={(e) => setLabelText(e.target.value)}
               placeholder="e.g., Follow us on, Connect with us, Find us on"
               className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-              style={{ borderColor: '#105652' }}
+              style={{ borderColor: '#2596be' }}
             />
             <p className="text-xs text-gray-500 mt-1">
               This text will appear before the social media icons. Leave empty for no label.
@@ -148,7 +148,7 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
                     value={link.platform}
                     onChange={(e) => handlePlatformChange(index, e.target.value)}
                     className="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                    style={{ borderColor: '#105652' }}
+                    style={{ borderColor: '#2596be' }}
                   >
                     {SOCIAL_PLATFORMS.map(platform => (
                       <option key={platform.id} value={platform.id}>
@@ -166,7 +166,7 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
                     onChange={(e) => handleUrlChange(index, e.target.value)}
                     placeholder={`Enter ${SOCIAL_PLATFORMS.find(p => p.id === link.platform)?.name} URL`}
                     className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                    style={{ borderColor: '#105652' }}
+                    style={{ borderColor: '#2596be' }}
                   />
                 </div>
 
@@ -188,7 +188,7 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
             type="button"
             onClick={handleAddLink}
             className="mt-4 w-full py-3 border-2 border-dashed rounded-lg hover:bg-gray-50 transition-colors flex items-center justify-center gap-2"
-            style={{ borderColor: '#105652', color: '#105652' }}
+            style={{ borderColor: '#2596be', color: '#2596be' }}
           >
             <Plus className="w-5 h-5" />
             <span className="font-medium">Add Social Media Link</span>
@@ -197,10 +197,10 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
           {/* Preview */}
           {links.length > 0 && (
             <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-              <p className="text-sm font-medium mb-3" style={{ color: '#105652' }}>Preview:</p>
+              <p className="text-sm font-medium mb-3" style={{ color: '#2596be' }}>Preview:</p>
               <div className="flex justify-center items-center gap-3 flex-wrap">
                 {labelText.trim() && (
-                  <span className="text-lg font-medium mr-2" style={{ color: '#105652' }}>
+                  <span className="text-lg font-medium mr-2" style={{ color: '#2596be' }}>
                     {labelText}
                   </span>
                 )}
@@ -245,7 +245,7 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
               onCancel();
             }}
             className="px-6 py-2 border rounded-lg hover:bg-gray-50 transition-colors"
-            style={{ borderColor: '#105652', color: '#105652' }}
+            style={{ borderColor: '#2596be', color: '#2596be' }}
           >
             Cancel
           </button>
@@ -254,7 +254,7 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
             onClick={handleSave}
             disabled={links.filter(link => link.url.trim()).length === 0}
             className="px-6 py-2 rounded-lg text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             Insert Social Links
           </button>
@@ -263,3 +263,4 @@ export default function SocialLinksInput({ onSave, onCancel, initialData }) {
     </div>
   );
 }
+

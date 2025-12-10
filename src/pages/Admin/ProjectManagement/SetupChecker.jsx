@@ -137,7 +137,7 @@ export default function SetupChecker() {
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           className="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-          style={{ backgroundColor: '#105652', color: 'white' }}
+          style={{ backgroundColor: '#2596be', color: 'white' }}
         >
           {isExpanded ? 'Hide Details' : 'Show Details'}
         </button>
@@ -201,7 +201,7 @@ export default function SetupChecker() {
             <button
               onClick={runChecks}
               className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-colors"
-              style={{ backgroundColor: '#105652' }}
+              style={{ backgroundColor: '#2596be' }}
             >
               <RefreshCw className="w-4 h-4" />
               Re-check
@@ -211,7 +211,7 @@ export default function SetupChecker() {
                 href="/QUICK_APPWRITE_SETUP.md"
                 target="_blank"
                 className="px-4 py-2 rounded-lg border-2 transition-colors"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
               >
                 View Setup Guide
               </a>
@@ -222,3 +222,4 @@ export default function SetupChecker() {
     </div>
   );
 }
+

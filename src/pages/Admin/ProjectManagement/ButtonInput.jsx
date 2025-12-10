@@ -7,7 +7,7 @@ const PRESETS = [
     name: 'Modern Primary',
     className: 'btn-design-modern-primary',
     style: {
-      backgroundColor: '#105652',
+      backgroundColor: '#2596be',
       color: '#ffffff',
       padding: '12px 24px',
       borderRadius: '8px',
@@ -70,12 +70,12 @@ const PRESETS = [
     className: 'btn-design-outline',
     style: {
       backgroundColor: 'transparent',
-      color: '#105652',
+      color: '#2596be',
       padding: '10px 24px',
       borderRadius: '4px',
       fontSize: '16px',
       fontWeight: '500',
-      border: '2px solid #105652',
+      border: '2px solid #2596be',
       transition: 'all 0.3s ease'
     }
   },
@@ -427,3 +427,4 @@ export default function ButtonInput({ initialData, customFonts = [], googleFonts
     </div>
   );
 }
+

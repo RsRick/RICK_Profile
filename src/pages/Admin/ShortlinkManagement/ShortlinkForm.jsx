@@ -235,7 +235,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
         width: 300,
         margin: 2,
         color: {
-          dark: '#105652',
+          dark: '#2596be',
           light: '#FFFFFF'
         }
       });
@@ -262,7 +262,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <div>
-          <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>
+          <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>
             {shortlink ? 'Edit Shortlink' : 'Create Shortlink'}
           </h1>
           <p className="text-gray-600 mt-1">
@@ -272,7 +272,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
         <button
           onClick={onCancel}
           className="flex items-center gap-2 px-4 py-2 rounded-lg border-2 transition-all duration-300 hover:scale-105"
-          style={{ borderColor: '#105652', color: '#105652' }}
+          style={{ borderColor: '#2596be', color: '#2596be' }}
         >
           <X className="w-5 h-5" />
           Cancel
@@ -282,7 +282,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Destination URL */}
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h2 className="text-xl font-semibold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-xl font-semibold mb-4" style={{ color: '#2596be' }}>
             Destination URL
           </h2>
           
@@ -300,7 +300,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
               className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 ${
                 errors.destinationUrl ? 'border-red-500' : ''
               }`}
-              style={{ borderColor: errors.destinationUrl ? '#ef4444' : '#105652' }}
+              style={{ borderColor: errors.destinationUrl ? '#ef4444' : '#2596be' }}
             />
             {errors.destinationUrl && (
               <p className="text-red-500 text-sm mt-1 flex items-center gap-1">
@@ -316,7 +316,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
 
         {/* Custom Path */}
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h2 className="text-xl font-semibold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-xl font-semibold mb-4" style={{ color: '#2596be' }}>
             Short URL Path
           </h2>
 
@@ -379,7 +379,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
                       minLength={2}
                       maxLength={30}
                       className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 text-sm"
-                      style={{ borderColor: '#105652' }}
+                      style={{ borderColor: '#2596be' }}
                     />
                     <p className="text-xs text-gray-500 mt-1">
                       2-30 characters, letters, numbers, hyphens, and underscores only
@@ -411,7 +411,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
                   className={`flex-1 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 ${
                     errors.customPath ? 'border-red-500' : ''
                   }`}
-                  style={{ borderColor: errors.customPath ? '#ef4444' : '#105652' }}
+                  style={{ borderColor: errors.customPath ? '#ef4444' : '#2596be' }}
                 />
               </div>
               
@@ -461,7 +461,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
                 value={formData.domainId || ''}
                 onChange={handleInputChange}
                 className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               >
                 <option value="">Main domain ({window.location.hostname})</option>
                 {domains.map(domain => (
@@ -496,7 +496,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
                 className="w-5 h-5 cursor-pointer"
               />
               <div className="flex items-center gap-2">
-                <QrCode className="w-5 h-5" style={{ color: '#105652' }} />
+                <QrCode className="w-5 h-5" style={{ color: '#2596be' }} />
                 <div>
                   <span className="font-medium">Generate QR Code</span>
                   <p className="text-sm text-gray-600">
@@ -521,7 +521,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
                       type="button"
                       onClick={downloadQRCode}
                       className="flex items-center gap-2 px-4 py-2 rounded-lg border-2 transition-all duration-300 hover:scale-105"
-                      style={{ borderColor: '#105652', color: '#105652' }}
+                      style={{ borderColor: '#2596be', color: '#2596be' }}
                     >
                       <Download className="w-4 h-4" />
                       Download QR Code
@@ -535,7 +535,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
 
         {/* Preview Image */}
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h2 className="text-xl font-semibold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-xl font-semibold mb-4" style={{ color: '#2596be' }}>
             Social Media Preview (Optional)
           </h2>
 
@@ -546,7 +546,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
             
             {!previewImageUrl ? (
               <label className="w-full flex flex-col items-center justify-center gap-3 px-6 py-8 border-2 border-dashed rounded-lg cursor-pointer hover:bg-gray-50 transition-colors"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               >
                 <Upload className="w-8 h-8 text-gray-400" />
                 <div className="text-center">
@@ -600,7 +600,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
                 placeholder="Page title for social media"
                 maxLength={60}
                 className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
               <p className="text-gray-500 text-sm mt-1">
                 {formData.title.length}/60 characters
@@ -619,7 +619,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
                 maxLength={160}
                 rows={3}
                 className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
               <p className="text-gray-500 text-sm mt-1">
                 {formData.description.length}/160 characters
@@ -634,7 +634,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
             type="button"
             onClick={onCancel}
             className="px-6 py-3 rounded-lg border-2 transition-all duration-300 hover:scale-105"
-            style={{ borderColor: '#105652', color: '#105652' }}
+            style={{ borderColor: '#2596be', color: '#2596be' }}
           >
             Cancel
           </button>
@@ -642,7 +642,7 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
             type="submit"
             disabled={loading || (collisionCheck.checking && !formData.autoGenerate)}
             className="px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             {loading ? (
               <>
@@ -661,3 +661,4 @@ export default function ShortlinkForm({ shortlink, onSubmit, onCancel }) {
     </div>
   );
 }
+

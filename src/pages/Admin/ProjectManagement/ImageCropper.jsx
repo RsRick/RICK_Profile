@@ -120,7 +120,7 @@ export default function ImageCropper({ onCropComplete, onCancel, aspectRatio = 1
       <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div className="p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-2xl font-bold" style={{ color: '#105652' }}>
+            <h2 className="text-2xl font-bold" style={{ color: '#2596be' }}>
               Crop Image
             </h2>
             <button
@@ -172,7 +172,7 @@ export default function ImageCropper({ onCropComplete, onCancel, aspectRatio = 1
                 <button
                   onClick={() => fileInputRef.current?.click()}
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   <Upload className="w-5 h-5" />
                   Choose Image
@@ -265,7 +265,7 @@ export default function ImageCropper({ onCropComplete, onCancel, aspectRatio = 1
                 <h4 className="font-semibold mb-2 text-gray-700">
                   Preview (465×{Math.round(465 / aspectRatio)}px)
                 </h4>
-                <div className="inline-block border-2 rounded-lg overflow-hidden" style={{ borderColor: '#105652' }}>
+                <div className="inline-block border-2 rounded-lg overflow-hidden" style={{ borderColor: '#2596be' }}>
                   <canvas
                     ref={canvasRef}
                     className="max-w-full h-auto"
@@ -279,7 +279,7 @@ export default function ImageCropper({ onCropComplete, onCancel, aspectRatio = 1
                 <button
                   onClick={onCancel}
                   className="flex items-center gap-2 px-6 py-3 rounded-lg border-2 transition-all duration-300 hover:scale-105"
-                  style={{ borderColor: '#105652', color: '#105652' }}
+                  style={{ borderColor: '#2596be', color: '#2596be' }}
                 >
                   <X className="w-5 h-5" />
                   Cancel
@@ -287,7 +287,7 @@ export default function ImageCropper({ onCropComplete, onCancel, aspectRatio = 1
                 <button
                   onClick={handleCropConfirm}
                   className="flex items-center gap-2 px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   <Check className="w-5 h-5" />
                   Use Cropped Image
@@ -300,3 +300,4 @@ export default function ImageCropper({ onCropComplete, onCancel, aspectRatio = 1
     </div>
   );
 }
+

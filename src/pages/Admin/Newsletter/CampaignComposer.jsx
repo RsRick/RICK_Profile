@@ -123,7 +123,7 @@ export default function CampaignComposer({ initialData, recipients, folders, onB
 </head>
 <body style="margin: 0; padding: 20px; background-color: #f5f5f5; font-family: Arial, sans-serif;">
   <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-    <div style="background: #105652; padding: 30px; text-align: center;">
+    <div style="background: #2596be; padding: 30px; text-align: center;">
       <h1 style="color: white; margin: 0; font-size: 24px;">Your Newsletter Title</h1>
     </div>
     <div style="padding: 30px;">
@@ -145,18 +145,18 @@ export default function CampaignComposer({ initialData, recipients, folders, onB
 </head>
 <body style="margin: 0; padding: 20px; background-color: #f0f4f8; font-family: 'Segoe UI', Arial, sans-serif;">
   <div style="max-width: 600px; margin: 0 auto; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-    <div style="background: linear-gradient(135deg, #105652 0%, #1E8479 100%); padding: 40px; text-align: center;">
+    <div style="background: linear-gradient(135deg, #2596be 0%, #3ba8d1 100%); padding: 40px; text-align: center;">
       <span style="font-size: 48px;">🎉</span>
       <h1 style="color: white; margin: 16px 0 0; font-size: 28px;">Big Announcement!</h1>
     </div>
     <div style="padding: 40px;">
       <p style="color: #333; line-height: 1.8; font-size: 16px;">Hi there,</p>
       <p style="color: #333; line-height: 1.8; font-size: 16px;">We have exciting news to share with you!</p>
-      <div style="background: #f8fafc; border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid #105652;">
-        <p style="color: #105652; font-weight: 600; margin: 0;">Your announcement details here...</p>
+      <div style="background: #f8fafc; border-radius: 12px; padding: 24px; margin: 24px 0; border-left: 4px solid #2596be;">
+        <p style="color: #2596be; font-weight: 600; margin: 0;">Your announcement details here...</p>
       </div>
       <div style="text-align: center; margin-top: 32px;">
-        <a href="#" style="display: inline-block; background: #105652; color: white; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-weight: 600;">Learn More</a>
+        <a href="#" style="display: inline-block; background: #2596be; color: white; text-decoration: none; padding: 14px 32px; border-radius: 8px; font-weight: 600;">Learn More</a>
       </div>
     </div>
     <div style="background: #f8fafc; padding: 24px; text-align: center; border-top: 1px solid #e2e8f0;">

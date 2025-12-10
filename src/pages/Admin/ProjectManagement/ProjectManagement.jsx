@@ -346,13 +346,13 @@ export default function ProjectManagement() {
   return (
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>
+        <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>
           Project Management
         </h1>
         <button
           onClick={() => setShowForm(!showForm)}
           className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all duration-300 hover:scale-105"
-          style={{ backgroundColor: '#105652' }}
+          style={{ backgroundColor: '#2596be' }}
         >
           {showForm ? <X className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
           {showForm ? 'Cancel' : 'Add Project'}
@@ -361,20 +361,20 @@ export default function ProjectManagement() {
 
       {showForm && (
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: '#105652' }}>
+          <h2 className="text-2xl font-bold mb-4" style={{ color: '#2596be' }}>
             {editingProject ? 'Edit Project' : 'Add New Project'}
           </h2>
           
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Collapsible Basic Info Section */}
-            <div className="border rounded-lg" style={{ borderColor: '#105652' }}>
+            <div className="border rounded-lg" style={{ borderColor: '#2596be' }}>
               {/* Section Header with Toggle */}
               <button
                 type="button"
                 onClick={() => setIsBasicInfoCollapsed(!isBasicInfoCollapsed)}
                 className="w-full flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 transition-colors rounded-t-lg"
               >
-                <h3 className="text-lg font-semibold" style={{ color: '#105652' }}>
+                <h3 className="text-lg font-semibold" style={{ color: '#2596be' }}>
                   Basic Project Information
                 </h3>
                 <div className="flex items-center gap-2">
@@ -382,9 +382,9 @@ export default function ProjectManagement() {
                     {isBasicInfoCollapsed ? 'Expand' : 'Collapse'}
                   </span>
                   {isBasicInfoCollapsed ? (
-                    <ChevronRight className="w-5 h-5" style={{ color: '#105652' }} />
+                    <ChevronRight className="w-5 h-5" style={{ color: '#2596be' }} />
                   ) : (
-                    <ChevronLeft className="w-5 h-5 transform rotate-90" style={{ color: '#105652' }} />
+                    <ChevronLeft className="w-5 h-5 transform rotate-90" style={{ color: '#2596be' }} />
                   )}
                 </div>
               </button>
@@ -403,7 +403,7 @@ export default function ProjectManagement() {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                  style={{ borderColor: '#105652', focusRing: '#1E8479' }}
+                  style={{ borderColor: '#2596be', focusRing: '#3ba8d1' }}
                 />
               </div>
 
@@ -426,7 +426,7 @@ export default function ProjectManagement() {
                     onChange={handleInputChange}
                     required
                     className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                    style={{ borderColor: '#105652' }}
+                    style={{ borderColor: '#2596be' }}
                   >
                     <option value="">Select a category</option>
                     {categories.map((cat) => (
@@ -452,7 +452,7 @@ export default function ProjectManagement() {
                 rows="2"
                 maxLength="150"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
                 placeholder="Brief description (max 150 characters)"
               />
               <p className="text-sm text-gray-500 mt-1">
@@ -468,7 +468,7 @@ export default function ProjectManagement() {
                   type="button"
                   onClick={addProjectDetail}
                   className="flex items-center gap-1 px-3 py-1 text-sm rounded-lg text-white transition-all duration-300 hover:scale-105"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   <Plus className="w-4 h-4" />
                   Add Field
@@ -484,7 +484,7 @@ export default function ProjectManagement() {
                         value={detail.label}
                         onChange={(e) => updateProjectDetail(index, 'label', e.target.value)}
                         className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 text-sm"
-                        style={{ borderColor: '#105652' }}
+                        style={{ borderColor: '#2596be' }}
                         placeholder="Label (e.g., Software)"
                       />
                     </div>
@@ -494,7 +494,7 @@ export default function ProjectManagement() {
                         value={detail.value}
                         onChange={(e) => updateProjectDetail(index, 'value', e.target.value)}
                         className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 text-sm"
-                        style={{ borderColor: '#105652' }}
+                        style={{ borderColor: '#2596be' }}
                         placeholder="Value (e.g., ArcGIS Pro)"
                       />
                     </div>
@@ -524,7 +524,7 @@ export default function ProjectManagement() {
                 value={formData.projectLink}
                 onChange={handleInputChange}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
                 placeholder="https://example.com"
               />
             </div>
@@ -555,7 +555,7 @@ export default function ProjectManagement() {
                 type="button"
                 onClick={() => setShowCropper(true)}
                 className="w-full flex items-center justify-center gap-2 px-4 py-3 border-2 border-dashed rounded-lg transition-colors hover:border-blue-400"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               >
                 <Crop className="w-5 h-5" />
                 <span>Choose & Crop Image</span>
@@ -584,7 +584,7 @@ export default function ProjectManagement() {
                 multiple
                 onChange={handleGalleryChange}
                 className="w-full px-4 py-2 border rounded-lg"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
               {formData.galleryUrls.length > 0 && (
                 <div className="relative mt-2">
@@ -627,7 +627,7 @@ export default function ProjectManagement() {
                         onClick={() => setGalleryScrollPosition(Math.max(0, galleryScrollPosition - 1))}
                         disabled={galleryScrollPosition === 0}
                         className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
-                        style={{ color: '#105652' }}
+                        style={{ color: '#2596be' }}
                       >
                         <ChevronLeft className="w-5 h-5" />
                       </button>
@@ -636,7 +636,7 @@ export default function ProjectManagement() {
                         onClick={() => setGalleryScrollPosition(Math.min(formData.galleryUrls.length - 4, galleryScrollPosition + 1))}
                         disabled={galleryScrollPosition >= formData.galleryUrls.length - 4}
                         className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
-                        style={{ color: '#105652' }}
+                        style={{ color: '#2596be' }}
                       >
                         <ChevronRight className="w-5 h-5" />
                       </button>
@@ -657,7 +657,7 @@ export default function ProjectManagement() {
                   onChange={handleInputChange}
                   min="0"
                   className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                  style={{ borderColor: '#105652' }}
+                  style={{ borderColor: '#2596be' }}
                 />
               </div>
 
@@ -679,14 +679,14 @@ export default function ProjectManagement() {
             </div>
 
             {/* Rich Text Editor - Collapsible */}
-            <div className="border rounded-lg" style={{ borderColor: '#105652' }}>
+            <div className="border rounded-lg" style={{ borderColor: '#2596be' }}>
               {/* Section Header with Toggle */}
               <button
                 type="button"
                 onClick={() => setIsRichTextCollapsed(!isRichTextCollapsed)}
                 className="w-full flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 transition-colors rounded-t-lg"
               >
-                <h3 className="text-lg font-semibold" style={{ color: '#105652' }}>
+                <h3 className="text-lg font-semibold" style={{ color: '#2596be' }}>
                   Full Description (Rich Text) *
                 </h3>
                 <div className="flex items-center gap-2">
@@ -694,9 +694,9 @@ export default function ProjectManagement() {
                     {isRichTextCollapsed ? 'Expand' : 'Collapse'}
                   </span>
                   {isRichTextCollapsed ? (
-                    <ChevronRight className="w-5 h-5" style={{ color: '#105652' }} />
+                    <ChevronRight className="w-5 h-5" style={{ color: '#2596be' }} />
                   ) : (
-                    <ChevronLeft className="w-5 h-5 transform rotate-90" style={{ color: '#105652' }} />
+                    <ChevronLeft className="w-5 h-5 transform rotate-90" style={{ color: '#2596be' }} />
                   )}
                 </div>
               </button>
@@ -713,14 +713,14 @@ export default function ProjectManagement() {
             </div>
 
             {/* Link Management - Collapsible */}
-            <div className="border rounded-lg" style={{ borderColor: '#105652' }}>
+            <div className="border rounded-lg" style={{ borderColor: '#2596be' }}>
               {/* Section Header with Toggle */}
               <button
                 type="button"
                 onClick={() => setIsLinkManagementCollapsed(!isLinkManagementCollapsed)}
                 className="w-full flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 transition-colors rounded-t-lg"
               >
-                <h3 className="text-lg font-semibold" style={{ color: '#105652' }}>
+                <h3 className="text-lg font-semibold" style={{ color: '#2596be' }}>
                   Link Management (Custom URL)
                 </h3>
                 <div className="flex items-center gap-2">
@@ -728,9 +728,9 @@ export default function ProjectManagement() {
                     {isLinkManagementCollapsed ? 'Expand' : 'Collapse'}
                   </span>
                   {isLinkManagementCollapsed ? (
-                    <ChevronRight className="w-5 h-5" style={{ color: '#105652' }} />
+                    <ChevronRight className="w-5 h-5" style={{ color: '#2596be' }} />
                   ) : (
-                    <ChevronLeft className="w-5 h-5 transform rotate-90" style={{ color: '#105652' }} />
+                    <ChevronLeft className="w-5 h-5 transform rotate-90" style={{ color: '#2596be' }} />
                   )}
                 </div>
               </button>
@@ -778,7 +778,7 @@ export default function ProjectManagement() {
                       }}
                       placeholder="my-awesome-project"
                       className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                      style={{ borderColor: '#105652' }}
+                      style={{ borderColor: '#2596be' }}
                       required
                     />
                     <p className="text-xs text-gray-500 mt-1">
@@ -799,7 +799,7 @@ export default function ProjectManagement() {
                     }}
                     disabled={!formData.title}
                     className="px-4 py-2 text-sm rounded-lg border-2 transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ borderColor: '#105652', color: '#105652' }}
+                    style={{ borderColor: '#2596be', color: '#2596be' }}
                   >
                     Auto-generate from Title
                   </button>
@@ -841,7 +841,7 @@ export default function ProjectManagement() {
                 type="submit"
                 disabled={loading}
                 className="flex items-center gap-2 px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105 disabled:opacity-50"
-                style={{ backgroundColor: '#105652' }}
+                style={{ backgroundColor: '#2596be' }}
               >
                 <Save className="w-5 h-5" />
                 {loading ? 'Saving...' : editingProject ? 'Update Project' : 'Create Project'}
@@ -850,7 +850,7 @@ export default function ProjectManagement() {
                 type="button"
                 onClick={resetForm}
                 className="px-6 py-3 rounded-lg border-2 transition-all duration-300 hover:scale-105"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
               >
                 Cancel
               </button>
@@ -861,7 +861,7 @@ export default function ProjectManagement() {
 
       {/* Projects List */}
       <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-4" style={{ color: '#105652' }}>
+        <h2 className="text-xl font-bold mb-4" style={{ color: '#2596be' }}>
           All Projects ({projects.length})
         </h2>
         
@@ -910,7 +910,7 @@ export default function ProjectManagement() {
                     <button
                       onClick={() => handleEdit(project)}
                       className="flex-1 flex items-center justify-center px-3 py-2 rounded-lg text-white text-sm transition-all duration-300 hover:scale-105"
-                      style={{ backgroundColor: '#105652' }}
+                      style={{ backgroundColor: '#2596be' }}
                       title="Edit Project"
                     >
                       <Edit2 className="w-5 h-5" />
@@ -956,3 +956,4 @@ export default function ProjectManagement() {
     </div>
   );
 }
+

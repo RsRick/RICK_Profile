@@ -185,7 +185,7 @@ export default function MapUpload() {
 
   const getCategoryColor = (categoryName) => {
     const cat = categories.find(c => c.name === categoryName);
-    return cat?.color || '#105652';
+    return cat?.color || '#2596be';
   };
 
   if (loading) {
@@ -195,11 +195,11 @@ export default function MapUpload() {
   return (
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>Map Upload</h1>
+        <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>Map Upload</h1>
         <button
           onClick={() => setShowForm(true)}
           className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all hover:scale-105"
-          style={{ backgroundColor: '#105652' }}
+          style={{ backgroundColor: '#2596be' }}
         >
           <Plus className="w-5 h-5" />
           Add Map
@@ -209,7 +209,7 @@ export default function MapUpload() {
       {/* Add/Edit Form */}
       {showForm && (
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h3 className="text-lg font-bold mb-4" style={{ color: '#105652' }}>
+          <h3 className="text-lg font-bold mb-4" style={{ color: '#2596be' }}>
             {editingId ? 'Edit Map' : 'Add New Map'}
           </h3>
           
@@ -218,9 +218,9 @@ export default function MapUpload() {
             <div>
               <label className="block text-sm font-medium mb-2">Map Image (A4 Portrait)</label>
               <div 
-                className="border-2 border-dashed rounded-lg p-4 text-center cursor-pointer hover:border-[#105652] transition-colors"
+                className="border-2 border-dashed rounded-lg p-4 text-center cursor-pointer hover:border-[#2596be] transition-colors"
                 onClick={() => fileInputRef.current?.click()}
-                style={{ borderColor: formData.imageUrl ? '#105652' : '#d1d5db' }}
+                style={{ borderColor: formData.imageUrl ? '#2596be' : '#d1d5db' }}
               >
                 {formData.imageUrl ? (
                   <img 
@@ -237,7 +237,7 @@ export default function MapUpload() {
                 )}
                 {uploading && (
                   <div className="mt-2 flex items-center justify-center gap-2 text-sm text-gray-500">
-                    <div className="w-4 h-4 border-2 border-[#105652] border-t-transparent rounded-full animate-spin" />
+                    <div className="w-4 h-4 border-2 border-[#2596be] border-t-transparent rounded-full animate-spin" />
                     Uploading...
                   </div>
                 )}
@@ -260,7 +260,7 @@ export default function MapUpload() {
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
                   className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                  style={{ borderColor: '#105652' }}
+                  style={{ borderColor: '#2596be' }}
                   placeholder="e.g., Sundarban NDVI Map"
                 />
               </div>
@@ -271,7 +271,7 @@ export default function MapUpload() {
                   <label className="flex items-center gap-2 cursor-pointer">
                     <span className="text-xs text-gray-500">{formData.useSlug ? 'Enabled' : 'Disabled'}</span>
                     <div 
-                      className={`relative w-10 h-5 rounded-full transition-colors ${formData.useSlug ? 'bg-[#105652]' : 'bg-gray-300'}`}
+                      className={`relative w-10 h-5 rounded-full transition-colors ${formData.useSlug ? 'bg-[#2596be]' : 'bg-gray-300'}`}
                       onClick={() => setFormData({ ...formData, useSlug: !formData.useSlug })}
                     >
                       <div className={`absolute top-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform ${formData.useSlug ? 'translate-x-5' : 'translate-x-0.5'}`} />
@@ -281,8 +281,8 @@ export default function MapUpload() {
                 {formData.useSlug && (
                   <>
                     <div className="flex gap-2">
-                      <div className="flex-1 flex items-center border rounded-lg overflow-hidden" style={{ borderColor: '#105652' }}>
-                        <span className="px-3 py-2 bg-gray-100 text-gray-600 text-sm border-r" style={{ borderColor: '#105652' }}>
+                      <div className="flex-1 flex items-center border rounded-lg overflow-hidden" style={{ borderColor: '#2596be' }}>
+                        <span className="px-3 py-2 bg-gray-100 text-gray-600 text-sm border-r" style={{ borderColor: '#2596be' }}>
                           /map/
                         </span>
                         <input
@@ -297,7 +297,7 @@ export default function MapUpload() {
                         type="button"
                         onClick={() => setFormData({ ...formData, slug: generateSlug(formData.title) })}
                         className="px-3 py-2 text-sm border rounded-lg hover:bg-gray-50"
-                        style={{ borderColor: '#105652', color: '#105652' }}
+                        style={{ borderColor: '#2596be', color: '#2596be' }}
                         title="Auto-generate from title"
                       >
                         Auto
@@ -319,7 +319,7 @@ export default function MapUpload() {
                   value={formData.category}
                   onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                   className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                  style={{ borderColor: '#105652' }}
+                  style={{ borderColor: '#2596be' }}
                 >
                   <option value="">Select Category</option>
                   {categories.map(cat => (
@@ -335,7 +335,7 @@ export default function MapUpload() {
                   onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                   rows="4"
                   className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                  style={{ borderColor: '#105652' }}
+                  style={{ borderColor: '#2596be' }}
                   placeholder="Brief description of the map..."
                 />
               </div>
@@ -358,7 +358,7 @@ export default function MapUpload() {
                   onClick={handleSubmit}
                   disabled={uploading}
                   className="flex items-center gap-2 px-6 py-2 rounded-lg text-white disabled:opacity-50"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   <Save className="w-4 h-4" />
                   {editingId ? 'Update' : 'Save'}
@@ -434,7 +434,7 @@ export default function MapUpload() {
                 >
                   {map.category}
                 </span>
-                <h4 className="font-semibold mt-2 text-sm line-clamp-2" style={{ color: '#105652' }}>
+                <h4 className="font-semibold mt-2 text-sm line-clamp-2" style={{ color: '#2596be' }}>
                   {map.title}
                 </h4>
               </div>
@@ -445,3 +445,4 @@ export default function MapUpload() {
     </div>
   );
 }
+

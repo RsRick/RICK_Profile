@@ -179,7 +179,7 @@ function ImageEditor({ imageFile, onSave, onCancel }) {
 
           {/* Preview Area */}
           <div 
-            className="relative mx-auto bg-gray-100 rounded-xl overflow-hidden cursor-move border-2 border-[#105652] shadow-lg"
+            className="relative mx-auto bg-gray-100 rounded-xl overflow-hidden cursor-move border-2 border-[#2596be] shadow-lg"
             style={{ width: previewWidth, height: previewHeight }}
             onMouseDown={handleMouseDown}
             onTouchStart={handleTouchStart}
@@ -221,14 +221,14 @@ function ImageEditor({ imageFile, onSave, onCancel }) {
                 step={(maxScale - minScale) / 100}
                 value={scale}
                 onChange={handleSliderChange}
-                className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#105652]"
+                className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#2596be]"
                 style={{
-                  background: `linear-gradient(to right, #105652 0%, #105652 ${((scale - minScale) / (maxScale - minScale)) * 100}%, #e5e7eb ${((scale - minScale) / (maxScale - minScale)) * 100}%, #e5e7eb 100%)`
+                  background: `linear-gradient(to right, #2596be 0%, #2596be ${((scale - minScale) / (maxScale - minScale)) * 100}%, #e5e7eb ${((scale - minScale) / (maxScale - minScale)) * 100}%, #e5e7eb 100%)`
                 }}
               />
               <ZoomIn className="w-5 h-5 text-gray-400 flex-shrink-0" />
             </div>
-            <p className="text-center text-sm text-[#105652] font-medium mt-2">{zoomPercent}%</p>
+            <p className="text-center text-sm text-[#2596be] font-medium mt-2">{zoomPercent}%</p>
           </div>
 
           {/* Action Buttons */}
@@ -244,7 +244,7 @@ function ImageEditor({ imageFile, onSave, onCancel }) {
               type="button"
               onClick={handleSave}
               disabled={saving}
-              className="flex-1 px-4 py-2.5 bg-[#105652] text-white rounded-lg hover:bg-[#0d4543] flex items-center justify-center gap-2 font-medium"
+              className="flex-1 px-4 py-2.5 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4543] flex items-center justify-center gap-2 font-medium"
             >
               {saving ? (
                 <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white" />
@@ -595,7 +595,7 @@ export default function ProductManagement() {
           <h1 className="text-2xl font-bold text-gray-800">Product Management</h1>
           <p className="text-gray-600 mt-1">Manage your shop products</p>
         </div>
-        <button onClick={openAddModal} className="flex items-center gap-2 px-4 py-2 bg-[#105652] text-white rounded-lg hover:bg-[#0d4543] transition-colors">
+        <button onClick={openAddModal} className="flex items-center gap-2 px-4 py-2 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4543] transition-colors">
           <Plus className="w-5 h-5" />
           Add Product
         </button>
@@ -604,7 +604,7 @@ export default function ProductManagement() {
       {/* Products Grid */}
       {loading ? (
         <div className="flex justify-center py-12">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#105652]"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#2596be]"></div>
         </div>
       ) : products.length === 0 ? (
         <div className="text-center py-12 bg-white rounded-lg border border-gray-200">
@@ -625,7 +625,7 @@ export default function ProductManagement() {
                 )}
                 <div className="absolute top-2 left-2 flex flex-col gap-1">
                   {product.onSale && <span className="px-2 py-1 bg-red-500 text-white text-xs font-bold rounded">SALE</span>}
-                  {product.featured && <span className="px-2 py-1 bg-[#105652] text-white text-xs font-bold rounded">FEATURED</span>}
+                  {product.featured && <span className="px-2 py-1 bg-[#2596be] text-white text-xs font-bold rounded">FEATURED</span>}
                 </div>
               </div>
               <div className="p-4">
@@ -634,10 +634,10 @@ export default function ProductManagement() {
                   {product.onSale && product.discountedPrice ? (
                     <>
                       <span className="text-gray-400 line-through text-sm">${product.price?.toFixed(2)}</span>
-                      <span className="text-[#105652] font-bold">${product.discountedPrice?.toFixed(2)}</span>
+                      <span className="text-[#2596be] font-bold">${product.discountedPrice?.toFixed(2)}</span>
                     </>
                   ) : (
-                    <span className="text-[#105652] font-bold">${product.price?.toFixed(2)}</span>
+                    <span className="text-[#2596be] font-bold">${product.price?.toFixed(2)}</span>
                   )}
                 </div>
                 <div className="flex gap-2">
@@ -674,7 +674,7 @@ export default function ProductManagement() {
                       <button type="button" onClick={() => setFormData(prev => ({ ...prev, imageUrl: '', imageId: '', fullImageUrl: '', fullImageId: '' }))} className="absolute top-2 right-2 p-1 bg-red-500 text-white rounded-full hover:bg-red-600">
                         <X className="w-4 h-4" />
                       </button>
-                      <label className="absolute bottom-2 right-2 px-3 py-1 bg-[#105652] text-white text-sm rounded cursor-pointer hover:bg-[#0d4543]">
+                      <label className="absolute bottom-2 right-2 px-3 py-1 bg-[#2596be] text-white text-sm rounded cursor-pointer hover:bg-[#0d4543]">
                         Change
                         <input type="file" accept="image/*" onChange={handleImageSelect} className="hidden" />
                       </label>
@@ -682,7 +682,7 @@ export default function ProductManagement() {
                   ) : (
                     <label className="flex flex-col items-center cursor-pointer py-4">
                       {uploading ? (
-                        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#105652]"></div>
+                        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#2596be]"></div>
                       ) : (
                         <>
                           <Upload className="w-8 h-8 text-gray-400 mb-2" />
@@ -699,7 +699,7 @@ export default function ProductManagement() {
               {/* Product Name */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Product Name *</label>
-                <input type="text" value={formData.name} onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))} className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent" placeholder="Enter product name" required />
+                <input type="text" value={formData.name} onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))} className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent" placeholder="Enter product name" required />
               </div>
 
               {/* Price */}
@@ -707,7 +707,7 @@ export default function ProductManagement() {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Price ($) *</label>
                 <div className="relative">
                   <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-                  <input type="number" step="0.01" min="0" value={formData.price} onChange={(e) => setFormData(prev => ({ ...prev, price: e.target.value }))} className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent" placeholder="0.00" required />
+                  <input type="number" step="0.01" min="0" value={formData.price} onChange={(e) => setFormData(prev => ({ ...prev, price: e.target.value }))} className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent" placeholder="0.00" required />
                 </div>
               </div>
 
@@ -719,7 +719,7 @@ export default function ProductManagement() {
                 </div>
                 <label className="relative inline-flex items-center cursor-pointer">
                   <input type="checkbox" checked={formData.onSale} onChange={(e) => setFormData(prev => ({ ...prev, onSale: e.target.checked }))} className="sr-only peer" />
-                  <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#105652]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-500"></div>
+                  <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#2596be]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-500"></div>
                 </label>
               </div>
 
@@ -729,7 +729,7 @@ export default function ProductManagement() {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Discounted Price ($)</label>
                   <div className="relative">
                     <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-                    <input type="number" step="0.01" min="0" value={formData.discountedPrice} onChange={(e) => setFormData(prev => ({ ...prev, discountedPrice: e.target.value }))} className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent" placeholder="0.00" />
+                    <input type="number" step="0.01" min="0" value={formData.discountedPrice} onChange={(e) => setFormData(prev => ({ ...prev, discountedPrice: e.target.value }))} className="w-full pl-9 pr-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent" placeholder="0.00" />
                   </div>
                   <p className="text-xs text-gray-500 mt-1">Leave empty to show original price only</p>
                 </div>
@@ -741,7 +741,7 @@ export default function ProductManagement() {
                 <select
                   value={formData.category}
                   onChange={(e) => setFormData(prev => ({ ...prev, category: e.target.value }))}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                 >
                   <option value="">Select a category</option>
                   {categories.map(cat => (
@@ -759,7 +759,7 @@ export default function ProductManagement() {
                     value={tagInput}
                     onChange={(e) => setTagInput(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' && (e.preventDefault(), addTag())}
-                    className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                    className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                     placeholder="Add a tag and press Enter"
                   />
                   <button type="button" onClick={addTag} className="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200">Add</button>
@@ -767,7 +767,7 @@ export default function ProductManagement() {
                 {formData.tags.length > 0 && (
                   <div className="flex flex-wrap gap-2">
                     {formData.tags.map(tag => (
-                      <span key={tag} className="inline-flex items-center gap-1 px-2 py-1 bg-[#105652]/10 text-[#105652] text-sm rounded-full">
+                      <span key={tag} className="inline-flex items-center gap-1 px-2 py-1 bg-[#2596be]/10 text-[#2596be] text-sm rounded-full">
                         {tag}
                         <button type="button" onClick={() => removeTag(tag)} className="hover:text-red-500">
                           <X className="w-3 h-3" />
@@ -808,7 +808,7 @@ export default function ProductManagement() {
                   {/* Upload Button */}
                   <label className="flex items-center justify-center gap-2 cursor-pointer py-3 px-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
                     {uploadingGallery ? (
-                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-[#105652]" />
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-[#2596be]" />
                     ) : (
                       <>
                         <Upload className="w-4 h-4 text-gray-500" />
@@ -855,14 +855,14 @@ export default function ProductManagement() {
                 <span className="text-sm font-medium text-gray-700">Featured on Homepage</span>
                 <label className="relative inline-flex items-center cursor-pointer">
                   <input type="checkbox" checked={formData.featured} onChange={(e) => setFormData(prev => ({ ...prev, featured: e.target.checked }))} className="sr-only peer" />
-                  <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#105652]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#105652]"></div>
+                  <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[#2596be]/20 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#2596be]"></div>
                 </label>
               </div>
 
               {/* Submit Button */}
               <div className="flex gap-3 pt-4">
                 <button type="button" onClick={() => setShowModal(false)} className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">Cancel</button>
-                <button type="submit" className="flex-1 px-4 py-2 bg-[#105652] text-white rounded-lg hover:bg-[#0d4543] transition-colors">{editingProduct ? 'Update' : 'Create'}</button>
+                <button type="submit" className="flex-1 px-4 py-2 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4543] transition-colors">{editingProduct ? 'Update' : 'Create'}</button>
               </div>
             </form>
           </div>
@@ -880,3 +880,4 @@ export default function ProductManagement() {
     </div>
   );
 }
+

@@ -99,7 +99,7 @@ export default function ShortlinkManagement() {
         width: 512,
         margin: 2,
         color: {
-          dark: '#105652',
+          dark: '#2596be',
           light: '#FFFFFF'
         }
       });
@@ -185,7 +185,7 @@ export default function ShortlinkManagement() {
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <div>
-          <h1 className="text-3xl font-bold" style={{ color: '#105652' }}>
+          <h1 className="text-3xl font-bold" style={{ color: '#2596be' }}>
             Shortlink Management
           </h1>
           <p className="text-gray-600 mt-1">
@@ -196,7 +196,7 @@ export default function ShortlinkManagement() {
           <button
             onClick={() => setShowDomains(true)}
             className="flex items-center gap-2 px-4 py-2 rounded-lg border-2 transition-all duration-300 hover:scale-105"
-            style={{ borderColor: '#105652', color: '#105652' }}
+            style={{ borderColor: '#2596be', color: '#2596be' }}
           >
             <Globe className="w-5 h-5" />
             Manage Domains
@@ -204,7 +204,7 @@ export default function ShortlinkManagement() {
           <button
             onClick={handleCreate}
             className="flex items-center gap-2 px-4 py-2 rounded-lg text-white transition-all duration-300 hover:scale-105"
-            style={{ backgroundColor: '#105652' }}
+            style={{ backgroundColor: '#2596be' }}
           >
             <Plus className="w-5 h-5" />
             Create Shortlink
@@ -222,7 +222,7 @@ export default function ShortlinkManagement() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2"
-            style={{ borderColor: '#105652' }}
+            style={{ borderColor: '#2596be' }}
           />
         </div>
       </div>
@@ -233,7 +233,7 @@ export default function ShortlinkManagement() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-gray-600 text-sm">Total Shortlinks</p>
-              <p className="text-3xl font-bold mt-1" style={{ color: '#105652' }}>
+              <p className="text-3xl font-bold mt-1" style={{ color: '#2596be' }}>
                 {shortlinks.length}
               </p>
             </div>
@@ -245,7 +245,7 @@ export default function ShortlinkManagement() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-gray-600 text-sm">Total Clicks</p>
-              <p className="text-3xl font-bold mt-1" style={{ color: '#105652' }}>
+              <p className="text-3xl font-bold mt-1" style={{ color: '#2596be' }}>
                 {Object.values(analyticsData).reduce((sum, data) => sum + (data.totalClicks || 0), 0)}
               </p>
             </div>
@@ -257,7 +257,7 @@ export default function ShortlinkManagement() {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-gray-600 text-sm">Active Links</p>
-              <p className="text-3xl font-bold mt-1" style={{ color: '#105652' }}>
+              <p className="text-3xl font-bold mt-1" style={{ color: '#2596be' }}>
                 {shortlinks.filter(link => link.isActive).length}
               </p>
             </div>
@@ -269,7 +269,7 @@ export default function ShortlinkManagement() {
       {/* Shortlinks List */}
       {loading ? (
         <div className="bg-white rounded-lg shadow-lg p-12 text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 mx-auto" style={{ borderColor: '#105652' }}></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 mx-auto" style={{ borderColor: '#2596be' }}></div>
           <p className="text-gray-600 mt-4">Loading shortlinks...</p>
         </div>
       ) : filteredShortlinks.length === 0 ? (
@@ -287,7 +287,7 @@ export default function ShortlinkManagement() {
             <button
               onClick={handleCreate}
               className="px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105"
-              style={{ backgroundColor: '#105652' }}
+              style={{ backgroundColor: '#2596be' }}
             >
               Create Shortlink
             </button>
@@ -379,7 +379,7 @@ export default function ShortlinkManagement() {
                         <button
                           onClick={() => handleDownloadQR(link)}
                           className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
-                          style={{ color: '#105652' }}
+                          style={{ color: '#2596be' }}
                           title="Download QR Code"
                         >
                           <QrCode className="w-4 h-4" />
@@ -394,7 +394,7 @@ export default function ShortlinkManagement() {
                         <button
                           onClick={() => handleViewAnalytics(link)}
                           className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
-                          style={{ color: '#105652' }}
+                          style={{ color: '#2596be' }}
                           title="View Analytics"
                         >
                           <BarChart3 className="w-4 h-4" />
@@ -425,3 +425,4 @@ export default function ShortlinkManagement() {
     </div>
   );
 }
+

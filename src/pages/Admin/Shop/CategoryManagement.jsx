@@ -11,7 +11,7 @@ export default function CategoryManagement() {
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [editingCategory, setEditingCategory] = useState(null);
-  const [formData, setFormData] = useState({ name: '', color: '#105652' });
+  const [formData, setFormData] = useState({ name: '', color: '#2596be' });
 
   useEffect(() => {
     loadCategories();
@@ -81,17 +81,17 @@ export default function CategoryManagement() {
 
   const handleEdit = (category) => {
     setEditingCategory(category);
-    setFormData({ name: category.name, color: category.color || '#105652' });
+    setFormData({ name: category.name, color: category.color || '#2596be' });
     setShowModal(true);
   };
 
   const resetForm = () => {
-    setFormData({ name: '', color: '#105652' });
+    setFormData({ name: '', color: '#2596be' });
     setEditingCategory(null);
   };
 
   const colorPresets = [
-    '#105652', '#1E8479', '#ef4444', '#f97316', '#eab308', 
+    '#2596be', '#3ba8d1', '#ef4444', '#f97316', '#eab308', 
     '#22c55e', '#3b82f6', '#8b5cf6', '#ec4899', '#6b7280'
   ];
 
@@ -104,7 +104,7 @@ export default function CategoryManagement() {
         </div>
         <button
           onClick={() => { resetForm(); setShowModal(true); }}
-          className="flex items-center gap-2 px-4 py-2 bg-[#105652] text-white rounded-lg hover:bg-[#0d4543]"
+          className="flex items-center gap-2 px-4 py-2 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4543]"
         >
           <Plus className="w-5 h-5" /> Add Category
         </button>
@@ -112,7 +112,7 @@ export default function CategoryManagement() {
 
       {loading ? (
         <div className="flex justify-center py-12">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#105652]"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#2596be]"></div>
         </div>
       ) : categories.length === 0 ? (
         <div className="text-center py-12 bg-white rounded-lg border border-gray-200">
@@ -130,7 +130,7 @@ export default function CategoryManagement() {
                 <GripVertical className="w-5 h-5 text-gray-400 cursor-grab" />
                 <div
                   className="w-4 h-4 rounded-full"
-                  style={{ backgroundColor: category.color || '#105652' }}
+                  style={{ backgroundColor: category.color || '#2596be' }}
                 />
                 <span className="font-medium text-gray-800">{category.name}</span>
               </div>
@@ -174,7 +174,7 @@ export default function CategoryManagement() {
                   type="text"
                   value={formData.name}
                   onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#105652] focus:border-transparent"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2596be] focus:border-transparent"
                   placeholder="e.g., Maps, Posters, Digital"
                   required
                 />
@@ -207,7 +207,7 @@ export default function CategoryManagement() {
                     value={formData.color}
                     onChange={(e) => setFormData(prev => ({ ...prev, color: e.target.value }))}
                     className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm"
-                    placeholder="#105652"
+                    placeholder="#2596be"
                   />
                 </div>
               </div>
@@ -222,7 +222,7 @@ export default function CategoryManagement() {
                 </button>
                 <button
                   type="submit"
-                  className="flex-1 px-4 py-2 bg-[#105652] text-white rounded-lg hover:bg-[#0d4543]"
+                  className="flex-1 px-4 py-2 bg-[#2596be] text-white rounded-lg hover:bg-[#0d4543]"
                 >
                   {editingCategory ? 'Update' : 'Create'}
                 </button>
@@ -234,3 +234,4 @@ export default function CategoryManagement() {
     </div>
   );
 }
+

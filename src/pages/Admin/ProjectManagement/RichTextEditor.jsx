@@ -97,7 +97,7 @@ export default function RichTextEditor({ value, onChange }) {
   const [showBorderSettings, setShowBorderSettings] = useState(false);
   const [borderStyle, setBorderStyle] = useState('solid');
   const [borderWidth, setBorderWidth] = useState(1);
-  const [borderColor, setBorderColor] = useState('#105652');
+  const [borderColor, setBorderColor] = useState('#2596be');
   const [fullscreenEmbed, setFullscreenEmbed] = useState(null);
 
   // Quoteblock states
@@ -135,7 +135,7 @@ export default function RichTextEditor({ value, onChange }) {
   const [showDividerInput, setShowDividerInput] = useState(false);
   const [selectedDivider, setSelectedDivider] = useState(null);
   const [dividerDesign, setDividerDesign] = useState('solid');
-  const [dividerColor, setDividerColor] = useState('#105652');
+  const [dividerColor, setDividerColor] = useState('#2596be');
   const [dividerWidth, setDividerWidth] = useState(100);
   const [dividerThickness, setDividerThickness] = useState(2);
   const [dividerGapTop, setDividerGapTop] = useState(20);
@@ -181,8 +181,8 @@ export default function RichTextEditor({ value, onChange }) {
   const colorPalette = [
     '#000000', '#FFFFFF', '#FF0000', '#00FF00', '#0000FF',
     '#FFFF00', '#FF00FF', '#00FFFF', '#FFA500', '#800080',
-    '#008000', '#FFC0CB', '#A52A2A', '#808080', '#105652',
-    '#1E8479', '#2d3748', '#4a5568', '#718096', '#e53e3e',
+    '#008000', '#FFC0CB', '#A52A2A', '#808080', '#2596be',
+    '#3ba8d1', '#2d3748', '#4a5568', '#718096', '#e53e3e',
   ];
   
   // Divider designs
@@ -277,7 +277,7 @@ export default function RichTextEditor({ value, onChange }) {
         .social-linkedin { --social-color: #0077b5; }
         .social-youtube { --social-color: #ff0000; }
         .social-github { --social-color: #333333; }
-        .social-website { --social-color: #105652; }
+        .social-website { --social-color: #2596be; }
         .social-email { --social-color: #ea4335; }
       `;
       document.head.appendChild(style);
@@ -1249,7 +1249,7 @@ export default function RichTextEditor({ value, onChange }) {
         const link = document.createElement('a');
         link.href = validatedUrl;
         link.textContent = selectedText;
-        link.style.color = '#1E8479';
+        link.style.color = '#3ba8d1';
         link.style.textDecoration = 'underline';
         link.style.cursor = 'pointer';
         link.target = '_blank';
@@ -1275,7 +1275,7 @@ export default function RichTextEditor({ value, onChange }) {
         const link = document.createElement('a');
         link.href = validatedUrl;
         link.textContent = linkTitle;
-        link.style.color = '#1E8479';
+        link.style.color = '#3ba8d1';
         link.style.textDecoration = 'underline';
         link.style.cursor = 'pointer';
         link.target = '_blank';
@@ -1381,7 +1381,7 @@ export default function RichTextEditor({ value, onChange }) {
       width: ${dimensions.width}px;
       height: ${dimensions.height}px;
       margin: 1rem 0;
-      border: 1px solid #105652;
+      border: 1px solid #2596be;
       border-radius: 0.5rem;
       overflow: hidden;
       cursor: pointer;
@@ -1992,7 +1992,7 @@ export default function RichTextEditor({ value, onChange }) {
   };
 
   const insertHeading = (level) => {
-    const color = level === 1 ? '#105652' : '#1E8479';
+    const color = level === 1 ? '#2596be' : '#3ba8d1';
     const size = level === 1 ? '2rem' : level === 2 ? '1.5rem' : '1.25rem';
     const selectedText = window.getSelection().toString() || `Heading ${level}`;
     insertHTML(`<h${level} style="color: ${color}; font-size: ${size}; font-weight: bold; margin: 2rem 0 1rem;">${selectedText}</h${level}><p><br></p>`);
@@ -3167,7 +3167,7 @@ export default function RichTextEditor({ value, onChange }) {
       padding: 1rem;
       background: #f9fafb;
       border-radius: 8px;
-      border: 2px dashed #105652;
+      border: 2px dashed #2596be;
       position: relative;
     `;
     
@@ -3178,7 +3178,7 @@ export default function RichTextEditor({ value, onChange }) {
       top: -12px;
       left: 50%;
       transform: translateX(-50%);
-      background: #105652;
+      background: #2596be;
       color: white;
       padding: 2px 12px;
       border-radius: 4px;
@@ -3212,7 +3212,7 @@ export default function RichTextEditor({ value, onChange }) {
       border: 1px solid #e5e7eb;
       font-size: 14px;
       font-weight: 500;
-      color: #105652;
+      color: #2596be;
       cursor: default;
       pointer-events: none;
     `;
@@ -3238,7 +3238,7 @@ export default function RichTextEditor({ value, onChange }) {
       border: 1px solid #e5e7eb;
       font-size: 14px;
       font-weight: 500;
-      color: #105652;
+      color: #2596be;
       cursor: default;
       pointer-events: none;
     `;
@@ -3329,7 +3329,7 @@ export default function RichTextEditor({ value, onChange }) {
       labelSpan.style.cssText = `
         font-size: 18px;
         font-weight: 500;
-        color: #105652;
+        color: #2596be;
         margin-right: 15px;
       `;
       iconsContainer.appendChild(labelSpan);
@@ -3354,7 +3354,7 @@ export default function RichTextEditor({ value, onChange }) {
       linkedin: '#0077b5',
       youtube: '#ff0000',
       github: '#333333',
-      website: '#105652',
+      website: '#2596be',
       email: '#ea4335',
     };
     
@@ -4063,7 +4063,7 @@ export default function RichTextEditor({ value, onChange }) {
   ];
 
   return (
-    <div className="border rounded-lg relative" style={{ borderColor: '#105652' }}>
+    <div className="border rounded-lg relative" style={{ borderColor: '#2596be' }}>
       {/* Sticky Toolbar Container */}
       <div className="sticky top-0 z-10 bg-white rounded-t-lg">
         {/* Toolbar */}
@@ -4088,7 +4088,7 @@ export default function RichTextEditor({ value, onChange }) {
               className="p-2 rounded hover:bg-gray-100 transition-colors"
               title={title}
             >
-              <Icon className="w-5 h-5" style={{ color: '#105652' }} />
+              <Icon className="w-5 h-5" style={{ color: '#2596be' }} />
             </button>
           ))}
 
@@ -4108,12 +4108,12 @@ export default function RichTextEditor({ value, onChange }) {
               className="p-2 rounded hover:bg-gray-100 transition-colors flex items-center gap-1"
               title="Font Family"
             >
-              <Type className="w-5 h-5" style={{ color: '#105652' }} />
-              <span className="text-xs" style={{ color: '#105652' }}>Font</span>
+              <Type className="w-5 h-5" style={{ color: '#2596be' }} />
+              <span className="text-xs" style={{ color: '#2596be' }}>Font</span>
             </button>
             
             {showFontPicker && (
-              <div className="font-picker-container absolute top-full left-0 mt-2 w-80 max-h-96 overflow-y-auto bg-white border-2 rounded-lg shadow-xl z-50" style={{ borderColor: '#105652' }}>
+              <div className="font-picker-container absolute top-full left-0 mt-2 w-80 max-h-96 overflow-y-auto bg-white border-2 rounded-lg shadow-xl z-50" style={{ borderColor: '#2596be' }}>
                 <div className="sticky top-0 bg-white border-b p-2" style={{ borderColor: '#e5e7eb' }}>
                   <p className="text-sm font-semibold text-gray-700">Select Font</p>
                 </div>
@@ -4186,12 +4186,12 @@ export default function RichTextEditor({ value, onChange }) {
               className="p-2 rounded hover:bg-gray-100 transition-colors flex items-center gap-1"
               title="Text Color"
             >
-              <Palette className="w-5 h-5" style={{ color: '#105652' }} />
-              <span className="text-xs" style={{ color: '#105652' }}>Color</span>
+              <Palette className="w-5 h-5" style={{ color: '#2596be' }} />
+              <span className="text-xs" style={{ color: '#2596be' }}>Color</span>
             </button>
             
             {showColorPicker && (
-              <div className="color-picker-container absolute top-full left-0 mt-2 w-72 bg-white border-2 rounded-lg shadow-xl z-50 p-4" style={{ borderColor: '#105652' }}>
+              <div className="color-picker-container absolute top-full left-0 mt-2 w-72 bg-white border-2 rounded-lg shadow-xl z-50 p-4" style={{ borderColor: '#2596be' }}>
                 <div className="mb-3">
                   <p className="text-sm font-semibold text-gray-700 mb-2">Color Palette</p>
                   <div className="grid grid-cols-10 gap-2">
@@ -4203,7 +4203,7 @@ export default function RichTextEditor({ value, onChange }) {
                         className="w-6 h-6 rounded border-2 hover:scale-110 transition-transform"
                         style={{ 
                           backgroundColor: color,
-                          borderColor: colorInput === color ? '#105652' : '#e5e7eb'
+                          borderColor: colorInput === color ? '#2596be' : '#e5e7eb'
                         }}
                         title={color}
                       />
@@ -4222,7 +4222,7 @@ export default function RichTextEditor({ value, onChange }) {
                         applyColor(e.target.value);
                       }}
                       className="w-12 h-10 rounded border cursor-pointer"
-                      style={{ borderColor: '#105652' }}
+                      style={{ borderColor: '#2596be' }}
                     />
                     <input
                       type="text"
@@ -4235,13 +4235,13 @@ export default function RichTextEditor({ value, onChange }) {
                       }}
                       placeholder="#000000"
                       className="flex-1 px-3 py-2 border rounded focus:outline-none focus:ring-2"
-                      style={{ borderColor: '#105652' }}
+                      style={{ borderColor: '#2596be' }}
                     />
                     <button
                       type="button"
                       onClick={() => applyColor(colorInput)}
                       className="px-4 py-2 rounded text-white text-sm"
-                      style={{ backgroundColor: '#105652' }}
+                      style={{ backgroundColor: '#2596be' }}
                     >
                       Apply
                     </button>
@@ -4252,7 +4252,7 @@ export default function RichTextEditor({ value, onChange }) {
                   type="button"
                   onClick={() => setShowColorPicker(false)}
                   className="w-full px-4 py-2 rounded border text-sm"
-                  style={{ borderColor: '#105652', color: '#105652' }}
+                  style={{ borderColor: '#2596be', color: '#2596be' }}
                 >
                   Close
                 </button>
@@ -4274,12 +4274,12 @@ export default function RichTextEditor({ value, onChange }) {
               className="p-2 rounded hover:bg-gray-100 transition-colors flex items-center gap-1"
               title="Font Size"
             >
-              <TextCursor className="w-5 h-5" style={{ color: '#105652' }} />
-              <span className="text-xs" style={{ color: '#105652' }}>Size</span>
+              <TextCursor className="w-5 h-5" style={{ color: '#2596be' }} />
+              <span className="text-xs" style={{ color: '#2596be' }}>Size</span>
             </button>
             
             {showSizePicker && (
-              <div className="size-picker-container absolute top-full left-0 mt-2 w-64 bg-white border-2 rounded-lg shadow-xl z-50 p-4" style={{ borderColor: '#105652' }}>
+              <div className="size-picker-container absolute top-full left-0 mt-2 w-64 bg-white border-2 rounded-lg shadow-xl z-50 p-4" style={{ borderColor: '#2596be' }}>
                 <div className="mb-3">
                   <p className="text-sm font-semibold text-gray-700 mb-2">Preset Sizes</p>
                   <div className="grid grid-cols-2 gap-2">
@@ -4290,7 +4290,7 @@ export default function RichTextEditor({ value, onChange }) {
                         onClick={() => applySize(size.value)}
                         className="px-3 py-2 rounded border hover:bg-gray-50 transition-colors text-left"
                         style={{ 
-                          borderColor: sizeInput === size.value ? '#105652' : '#e5e7eb',
+                          borderColor: sizeInput === size.value ? '#2596be' : '#e5e7eb',
                           backgroundColor: sizeInput === size.value ? '#f0fdfa' : 'white'
                         }}
                       >
@@ -4317,14 +4317,14 @@ export default function RichTextEditor({ value, onChange }) {
                       max="200"
                       placeholder="16"
                       className="flex-1 px-3 py-2 border rounded focus:outline-none focus:ring-2"
-                      style={{ borderColor: '#105652' }}
+                      style={{ borderColor: '#2596be' }}
                     />
                     <span className="flex items-center text-sm text-gray-600">px</span>
                     <button
                       type="button"
                       onClick={() => applySize(sizeInput)}
                       className="px-4 py-2 rounded text-white text-sm"
-                      style={{ backgroundColor: '#105652' }}
+                      style={{ backgroundColor: '#2596be' }}
                     >
                       Apply
                     </button>
@@ -4335,7 +4335,7 @@ export default function RichTextEditor({ value, onChange }) {
                   type="button"
                   onClick={() => setShowSizePicker(false)}
                   className="w-full px-4 py-2 rounded border text-sm"
-                  style={{ borderColor: '#105652', color: '#105652' }}
+                  style={{ borderColor: '#2596be', color: '#2596be' }}
                 >
                   Close
                 </button>
@@ -4355,7 +4355,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Heading 1"
           >
-            <Heading1 className="w-5 h-5" style={{ color: '#105652' }} />
+            <Heading1 className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4366,7 +4366,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Heading 2"
           >
-            <Heading2 className="w-5 h-5" style={{ color: '#105652' }} />
+            <Heading2 className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4377,7 +4377,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Heading 3"
           >
-            <Heading3 className="w-5 h-5" style={{ color: '#105652' }} />
+            <Heading3 className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           
           {/* Remove Formatting */}
@@ -4391,7 +4391,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Remove Formatting"
           >
-            <RemoveFormatting className="w-5 h-5" style={{ color: '#105652' }} />
+            <RemoveFormatting className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
 
           <div className="w-px h-8 bg-gray-300 mx-1" />
@@ -4406,7 +4406,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Link"
           >
-            <LinkIcon className="w-5 h-5" style={{ color: '#105652' }} />
+            <LinkIcon className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4418,7 +4418,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Image"
           >
-            <ImageIcon className="w-5 h-5" style={{ color: '#105652' }} />
+            <ImageIcon className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4430,7 +4430,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Embed"
           >
-            <FileCode className="w-5 h-5" style={{ color: '#105652' }} />
+            <FileCode className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4441,7 +4441,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Quoteblock"
           >
-            <Quote className="w-5 h-5" style={{ color: '#105652' }} />
+            <Quote className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4452,7 +4452,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Button"
           >
-            <MousePointerClick className="w-5 h-5" style={{ color: '#105652' }} />
+            <MousePointerClick className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4463,7 +4463,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Divider"
           >
-            <Minus className="w-5 h-5" style={{ color: '#105652' }} />
+            <Minus className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4474,7 +4474,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert FAQ/Accordion"
           >
-            <HelpCircle className="w-5 h-5" style={{ color: '#105652' }} />
+            <HelpCircle className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4485,7 +4485,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Table"
           >
-            <TableIcon className="w-5 h-5" style={{ color: '#105652' }} />
+            <TableIcon className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4496,7 +4496,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Social Media Links"
           >
-            <Share2 className="w-5 h-5" style={{ color: '#105652' }} />
+            <Share2 className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4507,7 +4507,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Project Navigation (Scroll Post)"
           >
-            <ArrowLeftRight className="w-5 h-5" style={{ color: '#105652' }} />
+            <ArrowLeftRight className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4518,7 +4518,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Author"
           >
-            <User className="w-5 h-5" style={{ color: '#105652' }} />
+            <User className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4529,7 +4529,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert File Download"
           >
-            <FolderDown className="w-5 h-5" style={{ color: '#105652' }} />
+            <FolderDown className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           <button
             type="button"
@@ -4540,7 +4540,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Insert Photo Grid"
           >
-            <Grid3x3 className="w-5 h-5" style={{ color: '#105652' }} />
+            <Grid3x3 className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
 
           <div className="w-px h-8 bg-gray-300 mx-1" />
@@ -4558,7 +4558,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Align Left"
           >
-            <AlignLeft className="w-5 h-5" style={{ color: '#105652' }} />
+            <AlignLeft className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           
           <button
@@ -4573,7 +4573,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Align Center"
           >
-            <AlignCenter className="w-5 h-5" style={{ color: '#105652' }} />
+            <AlignCenter className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           
           <button
@@ -4588,7 +4588,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Align Right"
           >
-            <AlignRight className="w-5 h-5" style={{ color: '#105652' }} />
+            <AlignRight className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
           
           <button
@@ -4603,7 +4603,7 @@ export default function RichTextEditor({ value, onChange }) {
             className="p-2 rounded hover:bg-gray-100 transition-colors"
             title="Justify"
           >
-            <AlignJustify className="w-5 h-5" style={{ color: '#105652' }} />
+            <AlignJustify className="w-5 h-5" style={{ color: '#2596be' }} />
           </button>
         </div>
 
@@ -4611,7 +4611,7 @@ export default function RichTextEditor({ value, onChange }) {
         {showLinkInput && (
           <div className="p-3 border-b bg-gray-50" style={{ borderColor: '#e5e7eb' }}>
             <div className="mb-2">
-              <p className="text-sm font-semibold mb-1" style={{ color: '#105652' }}>
+              <p className="text-sm font-semibold mb-1" style={{ color: '#2596be' }}>
                 {editingLink ? 'Edit Link' : linkMode === 'selection' ? 'Add Link to Selected Text' : 'Insert New Link'}
               </p>
               {linkMode === 'selection' && !editingLink && (
@@ -4640,7 +4640,7 @@ export default function RichTextEditor({ value, onChange }) {
                   onChange={(e) => setLinkTitle(e.target.value)}
                   placeholder="Link title (e.g., Click here)"
                   className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                  style={{ borderColor: '#105652' }}
+                  style={{ borderColor: '#2596be' }}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') {
                       e.preventDefault();
@@ -4658,7 +4658,7 @@ export default function RichTextEditor({ value, onChange }) {
                 onChange={(e) => setLinkUrl(e.target.value)}
                 placeholder="Enter URL (https://example.com)"
                 className="flex-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') {
                     e.preventDefault();
@@ -4671,7 +4671,7 @@ export default function RichTextEditor({ value, onChange }) {
                 onClick={handleInsertLink}
                 disabled={!linkUrl || (linkMode === 'insert' && !editingLink && !linkTitle)}
                 className="px-4 py-2 rounded-lg text-white disabled:opacity-50 disabled:cursor-not-allowed"
-                style={{ backgroundColor: '#105652' }}
+                style={{ backgroundColor: '#2596be' }}
               >
                 {editingLink ? 'Update' : 'Insert'}
               </button>
@@ -4683,7 +4683,7 @@ export default function RichTextEditor({ value, onChange }) {
                     handleEditButton(editingLink);
                   }}
                   className="px-4 py-2 rounded-lg text-white"
-                  style={{ backgroundColor: '#1E8479' }}
+                  style={{ backgroundColor: '#3ba8d1' }}
                 >
                   Edit Design
                 </button>
@@ -4697,7 +4697,7 @@ export default function RichTextEditor({ value, onChange }) {
                   setEditingLink(null);
                 }}
                 className="px-4 py-2 rounded-lg border"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
               >
                 Cancel
               </button>
@@ -4739,9 +4739,9 @@ export default function RichTextEditor({ value, onChange }) {
                 onClick={() => setImageInputMode('url')}
                 className="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
                 style={{
-                  backgroundColor: imageInputMode === 'url' ? '#105652' : 'white',
-                  color: imageInputMode === 'url' ? 'white' : '#105652',
-                  border: `2px solid #105652`,
+                  backgroundColor: imageInputMode === 'url' ? '#2596be' : 'white',
+                  color: imageInputMode === 'url' ? 'white' : '#2596be',
+                  border: `2px solid #2596be`,
                 }}
               >
                 URL
@@ -4751,9 +4751,9 @@ export default function RichTextEditor({ value, onChange }) {
                 onClick={() => setImageInputMode('upload')}
                 className="px-4 py-2 rounded-lg text-sm font-medium transition-colors"
                 style={{
-                  backgroundColor: imageInputMode === 'upload' ? '#105652' : 'white',
-                  color: imageInputMode === 'upload' ? 'white' : '#105652',
-                  border: `2px solid #105652`,
+                  backgroundColor: imageInputMode === 'upload' ? '#2596be' : 'white',
+                  color: imageInputMode === 'upload' ? 'white' : '#2596be',
+                  border: `2px solid #2596be`,
                 }}
               >
                 Upload
@@ -4769,14 +4769,14 @@ export default function RichTextEditor({ value, onChange }) {
                   onChange={(e) => setImageUrl(e.target.value)}
                   placeholder="Enter image URL (https://example.com/image.jpg)"
                   className="flex-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                  style={{ borderColor: '#105652' }}
+                  style={{ borderColor: '#2596be' }}
                 />
                 <button
                   type="button"
                   onClick={handleInsertImage}
                   disabled={!imageUrl}
                   className="px-4 py-2 rounded-lg text-white disabled:opacity-50 disabled:cursor-not-allowed"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   Insert
                 </button>
@@ -4787,7 +4787,7 @@ export default function RichTextEditor({ value, onChange }) {
                     setImageUrl('');
                   }}
                   className="px-4 py-2 rounded-lg border"
-                  style={{ borderColor: '#105652', color: '#105652' }}
+                  style={{ borderColor: '#2596be', color: '#2596be' }}
                 >
                   Cancel
                 </button>
@@ -4803,14 +4803,14 @@ export default function RichTextEditor({ value, onChange }) {
                     accept="image/*"
                     onChange={(e) => setImageFile(e.target.files?.[0] || null)}
                     className="flex-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
-                    style={{ borderColor: '#105652' }}
+                    style={{ borderColor: '#2596be' }}
                   />
                   <button
                     type="button"
                     onClick={handleInsertImage}
                     disabled={!imageFile || uploadingImage}
                     className="px-4 py-2 rounded-lg text-white disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ backgroundColor: '#105652' }}
+                    style={{ backgroundColor: '#2596be' }}
                   >
                     {uploadingImage ? 'Uploading...' : 'Insert'}
                   </button>
@@ -4822,7 +4822,7 @@ export default function RichTextEditor({ value, onChange }) {
                     }}
                     disabled={uploadingImage}
                     className="px-4 py-2 rounded-lg border disabled:opacity-50"
-                    style={{ borderColor: '#105652', color: '#105652' }}
+                    style={{ borderColor: '#2596be', color: '#2596be' }}
                   >
                     Cancel
                   </button>
@@ -4844,7 +4844,7 @@ export default function RichTextEditor({ value, onChange }) {
         {showEmbedInput && (
           <div className="p-3 border-b bg-gray-50" style={{ borderColor: '#e5e7eb' }}>
             <div className="mb-3">
-              <p className="text-sm font-semibold mb-1" style={{ color: '#105652' }}>
+              <p className="text-sm font-semibold mb-1" style={{ color: '#2596be' }}>
 
                 Insert Embed Code
               </p>
@@ -4860,9 +4860,9 @@ export default function RichTextEditor({ value, onChange }) {
                 onClick={() => setEmbedViewMode('code')}
                 className="px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2"
                 style={{
-                  backgroundColor: embedViewMode === 'code' ? '#105652' : 'white',
-                  color: embedViewMode === 'code' ? 'white' : '#105652',
-                  border: `2px solid #105652`,
+                  backgroundColor: embedViewMode === 'code' ? '#2596be' : 'white',
+                  color: embedViewMode === 'code' ? 'white' : '#2596be',
+                  border: `2px solid #2596be`,
                 }}
               >
                 <FileCode className="w-4 h-4" />
@@ -4873,9 +4873,9 @@ export default function RichTextEditor({ value, onChange }) {
                 onClick={() => setEmbedViewMode('preview')}
                 className="px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2"
                 style={{
-                  backgroundColor: embedViewMode === 'preview' ? '#105652' : 'white',
-                  color: embedViewMode === 'preview' ? 'white' : '#105652',
-                  border: `2px solid #105652`,
+                  backgroundColor: embedViewMode === 'preview' ? '#2596be' : 'white',
+                  color: embedViewMode === 'preview' ? 'white' : '#2596be',
+                  border: `2px solid #2596be`,
                 }}
               >
                 <Eye className="w-4 h-4" />
@@ -4891,7 +4891,7 @@ export default function RichTextEditor({ value, onChange }) {
                   onChange={(e) => setEmbedCode(e.target.value)}
                   placeholder='<iframe src="https://example.com" width="560" height="315"></iframe>'
                   className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 font-mono text-sm"
-                  style={{ borderColor: '#105652', minHeight: '120px' }}
+                  style={{ borderColor: '#2596be', minHeight: '120px' }}
                 />
                 <div className="flex gap-2">
                   <button
@@ -4899,7 +4899,7 @@ export default function RichTextEditor({ value, onChange }) {
                     onClick={handleInsertEmbed}
                     disabled={!embedCode.trim()}
                     className="px-4 py-2 rounded-lg text-white disabled:opacity-50 disabled:cursor-not-allowed"
-                    style={{ backgroundColor: '#105652' }}
+                    style={{ backgroundColor: '#2596be' }}
                   >
                     Insert Embed
                   </button>
@@ -4911,7 +4911,7 @@ export default function RichTextEditor({ value, onChange }) {
                       setEmbedViewMode('preview');
                     }}
                     className="px-4 py-2 rounded-lg border"
-                    style={{ borderColor: '#105652', color: '#105652' }}
+                    style={{ borderColor: '#2596be', color: '#2596be' }}
                   >
                     Cancel
                   </button>
@@ -4927,7 +4927,7 @@ export default function RichTextEditor({ value, onChange }) {
               <div className="space-y-3">
                 <div 
                   className="border-2 rounded-lg p-4 bg-white"
-                  style={{ borderColor: '#105652', minHeight: '200px' }}
+                  style={{ borderColor: '#2596be', minHeight: '200px' }}
                   dangerouslySetInnerHTML={{ __html: embedCode }}
                 />
                 <div className="flex gap-2">
@@ -4935,7 +4935,7 @@ export default function RichTextEditor({ value, onChange }) {
                     type="button"
                     onClick={handleInsertEmbed}
                     className="px-4 py-2 rounded-lg text-white"
-                    style={{ backgroundColor: '#105652' }}
+                    style={{ backgroundColor: '#2596be' }}
                   >
                     Insert Embed
                   </button>
@@ -4943,7 +4943,7 @@ export default function RichTextEditor({ value, onChange }) {
                     type="button"
                     onClick={() => setEmbedViewMode('code')}
                     className="px-4 py-2 rounded-lg border"
-                    style={{ borderColor: '#105652', color: '#105652' }}
+                    style={{ borderColor: '#2596be', color: '#2596be' }}
                   >
                     Edit Code
                   </button>
@@ -4955,7 +4955,7 @@ export default function RichTextEditor({ value, onChange }) {
                       setEmbedViewMode('preview');
                     }}
                     className="px-4 py-2 rounded-lg border"
-                    style={{ borderColor: '#105652', color: '#105652' }}
+                    style={{ borderColor: '#2596be', color: '#2596be' }}
                   >
                     Cancel
                   </button>
@@ -4976,7 +4976,7 @@ export default function RichTextEditor({ value, onChange }) {
         {showDividerInput && (
           <div className="p-3 border-b bg-gray-50" style={{ borderColor: '#e5e7eb' }}>
             <div className="mb-3">
-              <p className="text-sm font-semibold mb-1" style={{ color: '#105652' }}>
+              <p className="text-sm font-semibold mb-1" style={{ color: '#2596be' }}>
                 {selectedDivider ? 'Edit Divider' : 'Insert Divider'}
               </p>
               <p className="text-xs text-gray-600">
@@ -4999,7 +4999,7 @@ export default function RichTextEditor({ value, onChange }) {
                       dividerDesign === design.id ? 'bg-teal-50 border-teal-600' : 'bg-white border-gray-300 hover:bg-gray-50'
                     }`}
                   >
-                    <div className="text-xs font-semibold" style={{ color: dividerDesign === design.id ? '#105652' : '#4a5568' }}>
+                    <div className="text-xs font-semibold" style={{ color: dividerDesign === design.id ? '#2596be' : '#4a5568' }}>
                       {design.name}
                     </div>
                     <div className="text-xs text-gray-500 mt-1 font-mono">
@@ -5022,15 +5022,15 @@ export default function RichTextEditor({ value, onChange }) {
                     value={dividerColor}
                     onChange={(e) => setDividerColor(e.target.value)}
                     className="w-12 h-10 rounded border cursor-pointer"
-                    style={{ borderColor: '#105652' }}
+                    style={{ borderColor: '#2596be' }}
                   />
                   <input
                     type="text"
                     value={dividerColor}
                     onChange={(e) => setDividerColor(e.target.value)}
-                    placeholder="#105652"
+                    placeholder="#2596be"
                     className="flex-1 px-3 py-2 border rounded focus:outline-none focus:ring-2 text-sm"
-                    style={{ borderColor: '#105652' }}
+                    style={{ borderColor: '#2596be' }}
                   />
                 </div>
               </div>
@@ -5048,7 +5048,7 @@ export default function RichTextEditor({ value, onChange }) {
                 value={dividerWidth}
                 onChange={(e) => setDividerWidth(parseInt(e.target.value))}
                 className="w-full"
-                style={{ accentColor: '#105652' }}
+                style={{ accentColor: '#2596be' }}
               />
               <div className="flex justify-between text-xs text-gray-500 mt-1">
                 <span>10%</span>
@@ -5069,7 +5069,7 @@ export default function RichTextEditor({ value, onChange }) {
                   value={dividerThickness}
                   onChange={(e) => setDividerThickness(parseInt(e.target.value))}
                   className="w-full"
-                  style={{ accentColor: '#105652' }}
+                  style={{ accentColor: '#2596be' }}
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
                   <span>1px</span>
@@ -5090,7 +5090,7 @@ export default function RichTextEditor({ value, onChange }) {
                 value={dividerGapTop}
                 onChange={(e) => setDividerGapTop(parseInt(e.target.value))}
                 className="w-full"
-                style={{ accentColor: '#105652' }}
+                style={{ accentColor: '#2596be' }}
               />
               <div className="flex justify-between text-xs text-gray-500 mt-1">
                 <span>0px</span>
@@ -5110,7 +5110,7 @@ export default function RichTextEditor({ value, onChange }) {
                 value={dividerGapBottom}
                 onChange={(e) => setDividerGapBottom(parseInt(e.target.value))}
                 className="w-full"
-                style={{ accentColor: '#105652' }}
+                style={{ accentColor: '#2596be' }}
               />
               <div className="flex justify-between text-xs text-gray-500 mt-1">
                 <span>0px</span>
@@ -5119,7 +5119,7 @@ export default function RichTextEditor({ value, onChange }) {
             </div>
             
             {/* Preview */}
-            <div className="mb-4 p-4 bg-white border rounded" style={{ borderColor: '#105652' }}>
+            <div className="mb-4 p-4 bg-white border rounded" style={{ borderColor: '#2596be' }}>
               <p className="text-xs font-medium text-gray-700 mb-2">Preview:</p>
               <div style={{ marginTop: `${dividerGapTop}px`, marginBottom: `${dividerGapBottom}px`, textAlign: 'center' }}>
                 <div style={{
@@ -5147,7 +5147,7 @@ export default function RichTextEditor({ value, onChange }) {
                 type="button"
                 onClick={handleSaveDivider}
                 className="px-4 py-2 rounded-lg text-white"
-                style={{ backgroundColor: '#105652' }}
+                style={{ backgroundColor: '#2596be' }}
               >
                 {selectedDivider ? 'Update' : 'Insert'} Divider
               </button>
@@ -5158,14 +5158,14 @@ export default function RichTextEditor({ value, onChange }) {
                   setSelectedDivider(null);
                   // Reset to defaults
                   setDividerDesign('solid');
-                  setDividerColor('#105652');
+                  setDividerColor('#2596be');
                   setDividerWidth(100);
                   setDividerThickness(2);
                   setDividerGapTop(20);
                   setDividerGapBottom(20);
                 }}
                 className="px-4 py-2 rounded-lg border"
-                style={{ borderColor: '#105652', color: '#105652' }}
+                style={{ borderColor: '#2596be', color: '#2596be' }}
               >
                 Cancel
               </button>
@@ -5209,13 +5209,13 @@ export default function RichTextEditor({ value, onChange }) {
           clear: none;
         }
         .rich-text-editor a.editor-link {
-          color: #1E8479;
+          color: #3ba8d1;
           text-decoration: underline;
           cursor: pointer;
           transition: all 0.2s;
         }
         .rich-text-editor a.editor-link:hover {
-          color: #105652;
+          color: #2596be;
           text-decoration: underline;
           background-color: #f0fdfa;
         }
@@ -5330,7 +5330,7 @@ export default function RichTextEditor({ value, onChange }) {
               left: selectedImage.offsetLeft + 'px',
               width: selectedImage.offsetWidth + 'px',
               height: selectedImage.offsetHeight + 'px',
-              border: '2px solid #105652',
+              border: '2px solid #2596be',
               boxShadow: '0 0 0 1px white',
             }}
           >
@@ -5343,7 +5343,7 @@ export default function RichTextEditor({ value, onChange }) {
                 style={{
                   width: '12px',
                   height: '12px',
-                  backgroundColor: '#105652',
+                  backgroundColor: '#2596be',
                   border: '2px solid white',
                   borderRadius: '50%',
                   ...(handle.includes('n') ? { top: '-6px' } : { bottom: '-6px' }),
@@ -5362,7 +5362,7 @@ export default function RichTextEditor({ value, onChange }) {
                 style={{
                   width: handle === 'n' || handle === 's' ? '12px' : '12px',
                   height: handle === 'e' || handle === 'w' ? '12px' : '12px',
-                  backgroundColor: '#105652',
+                  backgroundColor: '#2596be',
                   border: '2px solid white',
                   borderRadius: '50%',
                   ...(handle === 'n' && { top: '-6px', left: '50%', transform: 'translateX(-50%)' }),
@@ -5414,10 +5414,10 @@ export default function RichTextEditor({ value, onChange }) {
                   top: '-120px',
                   left: '-10px',
                   width: '280px',
-                  borderColor: '#105652',
+                  borderColor: '#2596be',
                 }}
               >
-                <h4 className="text-sm font-bold mb-3" style={{ color: '#105652' }}>
+                <h4 className="text-sm font-bold mb-3" style={{ color: '#2596be' }}>
                   Text Wrap Settings
                 </h4>
                 
@@ -5439,7 +5439,7 @@ export default function RichTextEditor({ value, onChange }) {
                       }
                     }}
                     className="w-full"
-                    style={{ accentColor: '#105652' }}
+                    style={{ accentColor: '#2596be' }}
                   />
                   <div className="flex justify-between text-xs text-gray-500 mt-1">
                     <span>0px</span>
@@ -5478,7 +5478,7 @@ export default function RichTextEditor({ value, onChange }) {
                   type="button"
                   onClick={() => setShowTextWrapOptions(false)}
                   className="mt-3 w-full px-3 py-2 rounded text-white text-sm"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   Close
                 </button>
@@ -5496,7 +5496,7 @@ export default function RichTextEditor({ value, onChange }) {
               left: selectedVideo.offsetLeft + 'px',
               width: selectedVideo.offsetWidth + 'px',
               height: selectedVideo.offsetHeight + 'px',
-              border: '2px solid #105652',
+              border: '2px solid #2596be',
               boxShadow: '0 0 0 1px white',
               zIndex: 40
             }}
@@ -5545,7 +5545,7 @@ export default function RichTextEditor({ value, onChange }) {
               left: selectedAudioPlayer.offsetLeft + 'px',
               width: selectedAudioPlayer.offsetWidth + 'px',
               height: selectedAudioPlayer.offsetHeight + 'px',
-              border: '2px solid #105652',
+              border: '2px solid #2596be',
               boxShadow: '0 0 0 1px white',
               zIndex: 40
             }}
@@ -5594,7 +5594,7 @@ export default function RichTextEditor({ value, onChange }) {
               left: selectedQuoteblock.offsetLeft + 'px',
               width: selectedQuoteblock.offsetWidth + 'px',
               height: selectedQuoteblock.offsetHeight + 'px',
-              border: '2px solid #105652',
+              border: '2px solid #2596be',
               boxShadow: '0 0 0 1px white',
               zIndex: 40
             }}
@@ -5645,7 +5645,7 @@ export default function RichTextEditor({ value, onChange }) {
               left: selectedEmbed.offsetLeft + 'px',
               width: selectedEmbed.offsetWidth + 'px',
               height: selectedEmbed.offsetHeight + 'px',
-              border: '2px solid #105652',
+              border: '2px solid #2596be',
               boxShadow: '0 0 0 1px white',
             }}
           >
@@ -5658,7 +5658,7 @@ export default function RichTextEditor({ value, onChange }) {
                 style={{
                   width: '12px',
                   height: '12px',
-                  backgroundColor: '#105652',
+                  backgroundColor: '#2596be',
                   border: '2px solid white',
                   borderRadius: '50%',
                   ...(handle.includes('n') ? { top: '-6px' } : { bottom: '-6px' }),
@@ -5677,7 +5677,7 @@ export default function RichTextEditor({ value, onChange }) {
                 style={{
                   width: handle === 'n' || handle === 's' ? '12px' : '12px',
                   height: handle === 'e' || handle === 'w' ? '12px' : '12px',
-                  backgroundColor: '#105652',
+                  backgroundColor: '#2596be',
                   border: '2px solid white',
                   borderRadius: '50%',
                   ...(handle === 'n' && { top: '-6px', left: '50%', transform: 'translateX(-50%)' }),
@@ -5776,10 +5776,10 @@ export default function RichTextEditor({ value, onChange }) {
                   top: '-250px',
                   left: '-10px',
                   width: '500px',
-                  borderColor: '#105652',
+                  borderColor: '#2596be',
                 }}
               >
-                <h4 className="text-sm font-bold mb-3" style={{ color: '#105652' }}>
+                <h4 className="text-sm font-bold mb-3" style={{ color: '#2596be' }}>
                   Embed Code
                 </h4>
                 
@@ -5790,9 +5790,9 @@ export default function RichTextEditor({ value, onChange }) {
                     onClick={() => setEmbedCodeViewMode('code')}
                     className="px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2"
                     style={{
-                      backgroundColor: embedCodeViewMode === 'code' ? '#105652' : 'white',
-                      color: embedCodeViewMode === 'code' ? 'white' : '#105652',
-                      border: `2px solid #105652`,
+                      backgroundColor: embedCodeViewMode === 'code' ? '#2596be' : 'white',
+                      color: embedCodeViewMode === 'code' ? 'white' : '#2596be',
+                      border: `2px solid #2596be`,
                     }}
                   >
                     <FileCode className="w-4 h-4" />
@@ -5803,9 +5803,9 @@ export default function RichTextEditor({ value, onChange }) {
                     onClick={() => setEmbedCodeViewMode('preview')}
                     className="px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2"
                     style={{
-                      backgroundColor: embedCodeViewMode === 'preview' ? '#105652' : 'white',
-                      color: embedCodeViewMode === 'preview' ? 'white' : '#105652',
-                      border: `2px solid #105652`,
+                      backgroundColor: embedCodeViewMode === 'preview' ? '#2596be' : 'white',
+                      color: embedCodeViewMode === 'preview' ? 'white' : '#2596be',
+                      border: `2px solid #2596be`,
                     }}
                   >
                     <Eye className="w-4 h-4" />
@@ -5820,7 +5820,7 @@ export default function RichTextEditor({ value, onChange }) {
                       value={editingEmbedCode}
                       onChange={(e) => setEditingEmbedCode(e.target.value)}
                       className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 font-mono text-sm"
-                      style={{ borderColor: '#105652', minHeight: '150px' }}
+                      style={{ borderColor: '#2596be', minHeight: '150px' }}
                     />
                     <div className="flex gap-2">
                       <button
@@ -5828,7 +5828,7 @@ export default function RichTextEditor({ value, onChange }) {
                         onClick={updateEmbedCode}
                         disabled={!editingEmbedCode.trim()}
                         className="px-4 py-2 rounded-lg text-white disabled:opacity-50 disabled:cursor-not-allowed text-sm"
-                        style={{ backgroundColor: '#105652' }}
+                        style={{ backgroundColor: '#2596be' }}
                       >
                         Update Embed
                       </button>
@@ -5836,7 +5836,7 @@ export default function RichTextEditor({ value, onChange }) {
                         type="button"
                         onClick={() => setShowEmbedCodeView(false)}
                         className="px-4 py-2 rounded-lg border text-sm"
-                        style={{ borderColor: '#105652', color: '#105652' }}
+                        style={{ borderColor: '#2596be', color: '#2596be' }}
                       >
                         Close
                       </button>
@@ -5849,14 +5849,14 @@ export default function RichTextEditor({ value, onChange }) {
                   <div className="space-y-3">
                     <div 
                       className="border-2 rounded-lg p-4 bg-white"
-                      style={{ borderColor: '#105652', minHeight: '150px', maxHeight: '300px', overflow: 'auto' }}
+                      style={{ borderColor: '#2596be', minHeight: '150px', maxHeight: '300px', overflow: 'auto' }}
                       dangerouslySetInnerHTML={{ __html: editingEmbedCode }}
                     />
                     <button
                       type="button"
                       onClick={() => setShowEmbedCodeView(false)}
                       className="w-full px-4 py-2 rounded-lg border text-sm"
-                      style={{ borderColor: '#105652', color: '#105652' }}
+                      style={{ borderColor: '#2596be', color: '#2596be' }}
                     >
                       Close
                     </button>
@@ -5880,10 +5880,10 @@ export default function RichTextEditor({ value, onChange }) {
                   top: '-200px',
                   left: '-10px',
                   width: '320px',
-                  borderColor: '#105652',
+                  borderColor: '#2596be',
                 }}
               >
-                <h4 className="text-sm font-bold mb-3" style={{ color: '#105652' }}>
+                <h4 className="text-sm font-bold mb-3" style={{ color: '#2596be' }}>
                   Border Settings
                 </h4>
                 
@@ -5907,9 +5907,9 @@ export default function RichTextEditor({ value, onChange }) {
                           borderStyle === style ? 'bg-green-100' : 'bg-white hover:bg-gray-50'
                         }`}
                         style={{ 
-                          borderColor: borderStyle === style ? '#105652' : '#e5e7eb',
+                          borderColor: borderStyle === style ? '#2596be' : '#e5e7eb',
                           borderWidth: '2px',
-                          color: borderStyle === style ? '#105652' : '#4a5568'
+                          color: borderStyle === style ? '#2596be' : '#4a5568'
                         }}
                       >
                         {style.charAt(0).toUpperCase() + style.slice(1)}
@@ -5934,7 +5934,7 @@ export default function RichTextEditor({ value, onChange }) {
                           setBorderWidth(parseInt(e.target.value));
                         }}
                         className="w-full"
-                        style={{ accentColor: '#105652' }}
+                        style={{ accentColor: '#2596be' }}
                       />
                       <div className="flex justify-between text-xs text-gray-500 mt-1">
                         <span>1px</span>
@@ -5953,15 +5953,15 @@ export default function RichTextEditor({ value, onChange }) {
                           value={borderColor}
                           onChange={(e) => setBorderColor(e.target.value)}
                           className="w-12 h-10 rounded border cursor-pointer"
-                          style={{ borderColor: '#105652' }}
+                          style={{ borderColor: '#2596be' }}
                         />
                         <input
                           type="text"
                           value={borderColor}
                           onChange={(e) => setBorderColor(e.target.value)}
-                          placeholder="#105652"
+                          placeholder="#2596be"
                           className="flex-1 px-3 py-2 border rounded focus:outline-none focus:ring-2 text-sm"
-                          style={{ borderColor: '#105652' }}
+                          style={{ borderColor: '#2596be' }}
                         />
                       </div>
                     </div>
@@ -5976,7 +5976,7 @@ export default function RichTextEditor({ value, onChange }) {
                     setShowBorderSettings(false);
                   }}
                   className="w-full px-3 py-2 rounded text-white text-sm font-medium"
-                  style={{ backgroundColor: '#105652' }}
+                  style={{ backgroundColor: '#2596be' }}
                 >
                   Apply Border
                 </button>
@@ -5985,7 +5985,7 @@ export default function RichTextEditor({ value, onChange }) {
                   type="button"
                   onClick={() => setShowBorderSettings(false)}
                   className="mt-2 w-full px-3 py-2 rounded border text-sm"
-                  style={{ borderColor: '#105652', color: '#105652' }}
+                  style={{ borderColor: '#2596be', color: '#2596be' }}
                 >
                   Close
                 </button>
@@ -6003,7 +6003,7 @@ export default function RichTextEditor({ value, onChange }) {
               left: selectedFaq.offsetLeft + 'px',
               width: selectedFaq.offsetWidth + 'px',
               height: selectedFaq.offsetHeight + 'px',
-              border: '2px solid #105652',
+              border: '2px solid #2596be',
               boxShadow: '0 0 0 1px white',
               zIndex: 40
             }}
@@ -6065,7 +6065,7 @@ export default function RichTextEditor({ value, onChange }) {
               left: selectedPhotoGrid.offsetLeft + 'px',
               width: selectedPhotoGrid.offsetWidth + 'px',
               height: selectedPhotoGrid.offsetHeight + 'px',
-              border: '2px solid #105652',
+              border: '2px solid #2596be',
               boxShadow: '0 0 0 1px white',
               zIndex: 40
             }}
@@ -6114,7 +6114,7 @@ export default function RichTextEditor({ value, onChange }) {
               left: selectedDivider.offsetLeft + 'px',
               width: selectedDivider.offsetWidth + 'px',
               height: selectedDivider.offsetHeight + 'px',
-              border: '2px solid #105652',
+              border: '2px solid #2596be',
               boxShadow: '0 0 0 1px white',
               zIndex: 40
             }}
@@ -6328,3 +6328,4 @@ export default function RichTextEditor({ value, onChange }) {
     </div>
   );
 }
+

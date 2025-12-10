@@ -37,7 +37,7 @@ export default function TableInput({ onSave, onCancel, initialData }) {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-lg shadow-xl max-w-md w-full">
         <div className="bg-white border-b px-6 py-4 flex justify-between items-center rounded-t-lg">
-          <h3 className="text-xl font-bold" style={{ color: '#105652' }}>
+          <h3 className="text-xl font-bold" style={{ color: '#2596be' }}>
             {initialData ? 'Edit Table Dimensions' : 'Insert Table'}
           </h3>
           <button onClick={onCancel} className="text-gray-500 hover:text-gray-700">
@@ -61,7 +61,7 @@ export default function TableInput({ onSave, onCancel, initialData }) {
                 value={rows}
                 onChange={(e) => setRows(Math.max(1, parseInt(e.target.value) || 1))}
                 className="border rounded px-3 py-2 w-full text-lg"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
               <p className="text-xs text-gray-500 mt-1">1-20 rows</p>
             </div>
@@ -74,7 +74,7 @@ export default function TableInput({ onSave, onCancel, initialData }) {
                 value={cols}
                 onChange={(e) => setCols(Math.max(1, parseInt(e.target.value) || 1))}
                 className="border rounded px-3 py-2 w-full text-lg"
-                style={{ borderColor: '#105652' }}
+                style={{ borderColor: '#2596be' }}
               />
               <p className="text-xs text-gray-500 mt-1">1-10 columns</p>
             </div>
@@ -111,7 +111,7 @@ export default function TableInput({ onSave, onCancel, initialData }) {
             <button
               onClick={handleSave}
               className="px-6 py-2 rounded-lg text-white"
-              style={{ backgroundColor: '#105652' }}
+              style={{ backgroundColor: '#2596be' }}
             >
               {initialData ? 'Update Dimensions' : 'Insert Table'}
             </button>
@@ -121,3 +121,4 @@ export default function TableInput({ onSave, onCancel, initialData }) {
     </div>
   );
 }
+
